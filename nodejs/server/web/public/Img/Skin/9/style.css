@@ -1,0 +1,18 @@
+/*###########################
+   @Name:草原2 
+#############################*/
+/* CSS Document begin */
+
+body{background:#b3df89 url('bg.jpg') repeat-x center top ;}
+a:link {
+	color: #49976b;
+	text-decoration: none;
+}
+a:visited {
+	color: #49976b;
+	text-decoration: none;
+}
+a:hover {
+	color: #49976b;
+	text-decoration: none;
+}

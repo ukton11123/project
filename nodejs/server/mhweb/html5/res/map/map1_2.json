@@ -1,0 +1,252 @@
+{
+  "ID": "447e00c7-71eb-48ff-ae01-eb764d324766",
+  "Version": "2.2.5.0",
+  "Name": "map1_2",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 8,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "round/map_2.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.0,
+              "Y": 568.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.1814
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "TopMargin": 88.0,
+            "BottomMargin": 88.0,
+            "Tag": 9,
+            "ActionTag": -1936796219,
+            "Size": {
+              "X": 640.0,
+              "Y": 960.0
+            },
+            "Name": "map_2_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "monster/monster2.ExportJson",
+              "Plist": ""
+            },
+            "IsLoop": true,
+            "IsAutoPlay": true,
+            "CurrentAnimationName": "stand",
+            "AnchorPoint": {},
+            "Position": {
+              "X": 338.9999,
+              "Y": 568.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.5297,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 338.9999,
+            "RightMargin": 301.0001,
+            "TopMargin": 568.0,
+            "BottomMargin": 568.0,
+            "UserData": "{\"kind\":1,\"id\":2}",
+            "Tag": 2,
+            "ActionTag": -1199808094,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "ArmatureNode_1",
+            "ctype": "ArmatureNodeObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "round/13609.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 466.7532,
+              "Y": 729.6475
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7293,
+              "Y": 0.6423
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 416.2532,
+            "RightMargin": 122.7468,
+            "TopMargin": 355.3525,
+            "BottomMargin": 678.6475,
+            "UserData": "{\"kind\":3}",
+            "Tag": 19,
+            "ActionTag": -431245651,
+            "Size": {
+              "X": 101.0,
+              "Y": 102.0
+            },
+            "Name": "Sprite_3",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "round/340.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 563.7405,
+              "Y": 670.5048
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8808,
+              "Y": 0.5902
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 483.7405,
+            "RightMargin": -3.7405,
+            "TopMargin": 351.9952,
+            "BottomMargin": 557.0048,
+            "UserData": "{\"kind\":3}",
+            "Tag": 20,
+            "ActionTag": 1186547899,
+            "Size": {
+              "X": 160.0,
+              "Y": 227.0
+            },
+            "Name": "Sprite_4",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "round/7527.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 595.6759,
+              "Y": 506.0948
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9307,
+              "Y": 0.4455
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 537.1759,
+            "RightMargin": -14.1759,
+            "TopMargin": 579.9052,
+            "BottomMargin": 456.0948,
+            "UserData": "{\"kind\":3}",
+            "Tag": 21,
+            "ActionTag": -651134179,
+            "Size": {
+              "X": 117.0,
+              "Y": 100.0
+            },
+            "Name": "Sprite_5",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

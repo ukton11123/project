@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {{include "meta"}}
+
+    <style type="text/css">
+        body
+        {
+            background-image: url(/public/Img/BG.jpg);
+            background-repeat:repeat;
+            background-attachment:fixed;;
+        }
+        .TopDiv {
+            float: left;
+            width: 190px;
+            border: 1px solid #CCC;
+            margin: 5px;
+            padding: 5px 5px;
+            height: 220px;
+
+            background: rgba(255, 255, 255, 0.5) !important; /* IE无效，FF有效 */
+            filter: alpha(opacity=50);
+            background: #fff;
+
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        .Title {
+            border-bottom: 1px solid #CCC;
+            font-size: 18px;
+        }
+
+        .Table {
+            border: 1px solid #CCC;
+        }
+
+        .Item {
+            cursor: pointer;
+            width: 190px;
+            clear: both;
+            overflow: hidden;
+        }
+
+        .Item:hover {
+            background-color: #F0F0F0;
+        }
+    </style>
+    <title>{{sysSetup.ShortName}}排行榜</title>
+    <script>
+        function OnClick(aType, aCode) {
+            if (aType == 1)
+                CreateFlashPage('UserInfo', '/public/Flash/UserInfo.swf?UserCode=' + aCode, 330, 200);
+            if (aType == 2)
+                enterRoom(aCode,1);
+        }
+    </script>
+</head>
+
+<body>
+{{include "head"}}
+<div style="width: 660px; margin: 0 auto">
+    {{each topData as data j}}
+
+    <div class="TopDiv">
+        <div style="position:relative;">
+            <div class="Title"><img src="{{data.img}}" width="45" height="45">{{data.name}}</div>
+
+            {{each data.items as item i}}
+            {{if (i==0)}}
+            <div onclick="OnClick({{data.type}},{{item.code}})"  class="Item" style="height:40px;line-height:16px;color:red">
+                <div style="float:left;width:40px;"><img width="32" height="32" src="{{item.img}}" /></div>
+                <div style="width:110px;float:left">{{item.code}}<br />{{item.name}}</div>
+                <div style="width:40px;float:left">{{item.money}}</div>
+            </div>
+            {{else}}
+            <div onclick="OnClick({{data.type}},{{item.code}})" class="Item" >
+                <div style="width:150px;height:18px;overflow:hidden;float:left">{{item.name}}[{{item.code}}]</div>
+                <div style="width:40px;float:left">{{item.money}}</div>
+            </div>
+            {{/if}}
+            {{/each}}
+
+            <div style=" clear: both;"></div>
+
+        </div>
+    </div>
+
+    {{/each}}
+
+</div>
+{{include "bottom"}}
+</body>
+</html>

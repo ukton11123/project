@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{{title}}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/public/css/Global.css" type="text/css" media="screen" />
+</head>
+
+<body>
+
+<div align="center" style=" margin:0 0; padding: 0 0; z-index:0;  height:600px ">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+            width="800" height="600" id="Swf">
+        <param name="movie" value="/public/flash/GameLoader.swf" />
+        <param name="quality" value="high" />
+        <param name="bgcolor" value="#FBFBFB" />
+        <param name="allowScriptAccess" value="*" />
+        <param name="allowFullScreen" value="false" />
+        <param name="wmode" value="{{flashName=='Horse'?'direct':'window'}}" />
+        <param name="FlashVars" value="{{flashParam}}" />
+        <!--[if !IE]>--> <object type="application/x-shockwave-flash"
+                                 data="/public/flash/GameLoader.swf" width="800" height="600">
+        <param name="quality" value="high" />
+        <param name="bgcolor" value="#FBFBFB" />
+        <param name="allowScriptAccess" value="*" />
+        <param name="allowFullScreen" value="true" />
+        <param name="wmode" value="{{flashName=='Horse'?'direct':'window'}}" />
+        <param name="FlashVars" value="{{flashParam}}" />
+        <!--<![endif]--> <!--[if gte IE 6]>-->
+
+        <!--<![endif]--> <a href="http://www.adobe.com/go/getflashplayer">
+        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"
+             alt="Get Adobe Flash Player" />
+    </a> <!--[if !IE]>-->
+    </object> <!--<![endif]-->
+    </object>
+</div>
+<!--{{include "head"}}-->
+<!--{{if !userCode}}-->
+<!--<a href='/'>运行此游戏需要先登录，点击返回首页登录。</a>-->
+<!--{{else}}-->
+
+
+<!--{{/if}}-->
+<!--{{include "bottom"}}-->
+</body>
+</html>

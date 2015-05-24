@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {{include "../meta"}}
+
+</head>
+<style>
+
+    html { overflow-x: auto; overflow-y: auto; }
+    .mainDiv {
+        margin-top:10px;
+        text-align: center;
+        width: 100%;
+    }
+</style>
+
+<body>
+{{include "menu"}}
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{tableComment}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="window.location.href='/admin/data/show/{{tableName}}'" class="pure-button">刷新</button></h3>
+
+                <table class="pure-table-bordered mainDiv center" border="1">
+                    <thead >
+                    <tr align="center">
+                        {{each fields as field}}
+                        <td>
+                        {{if field.Comment.substr(1,1)=="_"}}{{field.Comment.substr(2,field.Comment.length)}}{{else}}{{field.Comment}}{{/if}}
+
+                        </td>
+                        {{/each}}
+                     <td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <form class="pure-form pure-form-aligned"  action="/admin/data/insert/{{tableName}}" method="post">
+                        <tr>
+
+
+                            {{each fields as field}}
+                            <td>
+
+                            {{if field.Comment.substr(0,2)=="C_"}}
+                            <input  name="{{field.Field}}"   type="color" placeholder="" >
+                             {{else if field.Comment.substr(0,2)=="S_"}}
+                                <select  name="{{field.Field}}">
+                                    {{i=0}}
+                                    {{each fields.selectData[field.Comment] as option}}
+                                    <option value="{{i}}" >{{option}}</option>
+                                    {{i++}}
+                                    {{/each}}
+                                </select>
+
+                                {{else if (field.Field=="partID")}}
+                                <select width="200" name="{{field.Field}}">
+                                    <option value="0">无</option>
+                                    {{each parts as round}}
+                                    <option value="{{round["ID"]}}">
+                                    {{if (round["hard"]==0)}}普通{{/if}}
+                                    {{if (round["hard"]==1)}}英雄{{/if}}
+                                    {{if (round["hard"]==2)}}地狱{{/if}}
+                                    {{round["name"]}}
+                                    </option>
+                                    {{/each}}
+                                </select>
+                                {{else if (field.Field=="roleID")}}
+                                <select width="200" name="{{field.Field}}">
+                                    <option value="0">无</option>
+                                    {{each roles as data}}
+                                    <option value="{{data["ID"]}}">
+                                    {{data["name"]}}
+                                    </option>
+                                    {{/each}}
+                                </select>
+                             {{else if (field.Field=="preID")}}
+                                <select width="200" name="{{field.Field}}">
+                                    <option value="0">无</option>
+                                    {{each rows as preRow}}
+                                    <option value="{{preRow.ID}}">
+                                        {{if (preRow.hard==0)}}普通{{/if}}
+                                        {{if (preRow.hard==1)}}英雄{{/if}}
+                                        {{if (preRow.hard==2)}}地狱{{/if}} {{preRow.name}}
+                                    </option>
+                                    {{/each}}
+                                </select>
+                            {{else if field.Comment.substr(0,2)=="B_"}}
+                            <select  name="{{field.Field}}">
+                                <option value="0">否</option>
+                                <option value="1">是</option>
+                            </select>
+
+                                {{else if (field.Field=="ID")}}
+                                {{else if (field.Field=="items")}}
+                            {{else}}
+                            <input  name="{{field.Field}}"  required type="text" placeholder=""  size="
+                            {{ if (field.Type.substr(0,3)=='int')}}3
+                            {{else if (field.Type.substr(0,3)=='tex')}}100
+                            {{else}}10{{/if}}"
+                            value="{{field.Default}}   "  placeholder="请输入数据...">
+                                {{/if}}
+                            </td>
+                            {{/each}}
+                            <td><button type="submit" class="pure-button pure-button-primary">新建</button></td>
+
+                        </tr>
+                    </form>
+
+                    {{each rows as row}}
+                    <form name="form{{row.ID}}" class="pure-form pure-form-aligned" action="/admin/data/modify/{{tableName}}/{{row.ID}}" method="post">
+                        <tr>
+                            {{each fields as field}}
+                            <td>
+                                {{if field.Field=="img"}}
+                                <img src="/public/img/{{tableName}}/{{row.img}}"/>
+                                {{/if}}
+                                {{if field.Comment.substr(0,2)=="S_"}}
+                                <select  name="{{field.Field}}">
+                                    {{i=0}}
+                                    {{each fields.selectData[field.Comment] as option}}
+                                    <option value="{{i}}" {{row[field.Field]==i?"selected":""}}>{{option}}</option>
+                                    {{i++}}
+                                    {{/each}}
+                                </select>
+                                {{else if (field.Field=="partID")}}
+                                <select width="200" name="{{field.Field}}">
+                                    <option value="0">无</option>
+                                    {{each parts as data}}
+                                    <option value="{{data["ID"]}}" {{row[field.Field]==data["ID"]?"selected":""}}>
+                                    {{if (data["hard"]==0)}}普通{{/if}}
+                                    {{if (data["hard"]==1)}}英雄{{/if}}
+                                    {{if (data["hard"]==2)}}地狱{{/if}}
+                                    {{data["name"]}}
+                                    </option>
+                                    {{/each}}
+                                </select>
+                                {{else if (field.Field=="preID")}}
+                                <select width="200" name="{{field.Field}}">
+                                    <option value="0">无</option>
+                                    {{each rows as preRow}}
+                                    {{if row.ID!=preRow["ID"]}}
+                                    <option value="{{preRow.ID}}"  {{row[field.Field]==preRow["ID"]?"selected":""}}>
+                                        {{if (preRow.hard==0)}}普通{{/if}}
+                                        {{if (preRow.hard==1)}}英雄{{/if}}
+                                        {{if (preRow.hard==2)}}地狱{{/if}}{{preRow.name}}
+                                    </option>
+                                    {{/if}}
+                                    {{/each}}
+                                </select>
+                                {{else if (field.Field=="roleID")}}
+                                <select width="200" name="{{field.Field}}">
+                                    <option value="0">无</option>
+                                    {{each roles as data}}
+                                    <option value="{{data["ID"]}}"  {{row[field.Field]==data["ID"]?"selected":""}}>
+                                    {{data["name"]}}
+                                    </option>
+                                    {{/each}}
+                                </select>
+
+
+                            {{else if field.Comment.substr(0,2)=="B_"}}
+                            <select  name="{{field.Field}}">
+                                <option value="0" {{row[field.Field]==0?"selected":""}}>否</option>
+                                <option value="1" {{row[field.Field]==1?"selected":""}}>是</option>
+                            </select>
+                                {{else if field.Field=="itemID"}}
+                                <input type="text" name="itemID"  value="{{row.itemID}}" size="5"/>
+                                {{each items as item}}
+                                {{if item.ID==row.itemID}}
+                                <span style="color:
+                                {{ if item.quality==1}}#00cc33{{/if}}
+                                {{ if item.quality==2}}#0000cc{{/if}}
+                                {{ if item.quality==3}}#ac5bff{{/if}}
+                                {{ if item.quality==4}}#ee7700{{/if}}
+                                {{ if item.quality==5}}red{{/if}}
+                                ">
+                                {{item.name}}
+                                </span>
+                                {{/if}}
+                                {{/each}}
+                                {{else if field.Field=="items"}}
+                                <input type="hidden" name="items" id="items{{row.ID}}" value="{{row.items}}"/>
+                                {{each row.itemsJson as itemJson}}
+                                {{each items as item}}
+                                {{if item.ID==itemJson.id}}
+                                <span style="color:
+                                {{ if item.quality==1}}#00cc33{{/if}}
+                                {{ if item.quality==2}}#0000cc{{/if}}
+                                {{ if item.quality==3}}#ac5bff{{/if}}
+                                {{ if item.quality==4}}#ee7700{{/if}}
+                                {{ if item.quality==5}}red{{/if}}
+                                ">
+                                {{item.name}}X{{itemJson.amount}}
+                                </span><br>
+                                {{/if}}
+                                {{/each}}
+                                {{/each}}
+                                {{else}}
+                            <input  name="{{field.Field}}"   type="text" placeholder=""
+                                    size="
+                            {{ if (field.Type.substr(0,3)=='int')}}3
+                            {{else if (field.Type.substr(0,3)=='tex')}}100
+                            {{else}}10{{/if}}"
+                               value="{{row[field.Field]}}">
+
+                            {{/if}}
+                            </td>
+                            {{/each}}
+
+
+                            <td> <button type="submit" class="pure-button pure-button-primary">修改</button>
+                                <button onclick="window.location.href='/admin/data/delete/{{tableName}}/{{row.ID}}'" class="pure-button">删除</button>
+                                {{each fields as field}}
+                                {{if field.Field=="items"}}
+                                 <button onclick="window.open('/admin/dataSelect/show/{{row.ID}}/{{row["items"]}}')" class="pure-button">选择物品</button>
+                                {{/if}}
+
+                                {{/each}}
+                                {{if tableName=="sysMail"}}
+                                <button onclick="window.location.href='/admin/data/sendMail/{{row.ID}}'" class="pure-button">发送邮件</button>
+                                {{/if}}
+                            </td>
+                        </tr>
+                    </tbody>
+                    </form>
+                    {{/each}}
+                </table>
+
+</body>
+</html>
+
+{{if msg}}
+<script>
+    $.colorbox.showHint('{{msg}}');
+</script>
+{{/if}}

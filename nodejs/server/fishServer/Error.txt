@@ -1,0 +1,642 @@
+/////////////////////////////////////////////////////////////////////////////////////////////
+缓存数据表setup出错:Null Row
+2015-05-16 03:51
+/////////////////////////////////////////////////////////////////////////////////////////////
+缓存数据表setup出错:Null Row
+2015-05-16 03:51
+/////////////////////////////////////////////////////////////////////////////////////////////
+缓存数据表setup出错:Null Row
+2015-05-16 03:51
+/////////////////////////////////////////////////////////////////////////////////////////////
+缓存数据表setup出错:Null Row
+2015-05-16 03:51
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:Error: Cannot find module 'e:\nodejs\server\fishServer\controls\webSocket\login'
+    at Function.Module._resolveFilename (module.js:336:15)
+    at Function.Module._load (module.js:278:25)
+    at Module.require (module.js:365:17)
+    at require (module.js:384:17)
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:45:27)
+    at Connection.emit (events.js:107:17)
+    at Connection.processFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:519:9)
+    at Connection.extractFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:461:14)
+    at Connection.doRead (e:\nodejs\node_modules\nodejs-websocket\Connection.js:209:23)
+    at Socket.<anonymous> (e:\nodejs\node_modules\nodejs-websocket\Connection.js:52:8)
+2015-05-16 03:54
+/////////////////////////////////////////////////////////////////////////////////////////////
+查询数据出错:Error: ER_NO_SUCH_TABLE: Table 'fish.userinfo' doesn't exist
+select * from userInfo where userName='1'  and passWD=''
+2015-05-16 03:54
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: undefined is not a function
+select * from userInfo where userName='1'  and passWD=''
+2015-05-16 03:54
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: Data is not defined
+    at exports.on (e:\nodejs\server\fishServer\controls\webSocket\login.js:15:15)
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:53:27)
+    at Connection.emit (events.js:107:17)
+    at Connection.processFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:519:9)
+    at Connection.extractFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:461:14)
+    at Connection.doRead (e:\nodejs\node_modules\nodejs-websocket\Connection.js:209:23)
+    at Socket.<anonymous> (e:\nodejs\node_modules\nodejs-websocket\Connection.js:52:8)
+    at Socket.emit (events.js:104:17)
+    at emitReadable_ (_stream_readable.js:424:10)
+    at emitReadable (_stream_readable.js:418:7)
+2015-05-16 04:23
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: data is not defined
+    at exports.on (e:\nodejs\server\fishServer\controls\webSocket\login.js:15:15)
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:53:27)
+    at Connection.emit (events.js:107:17)
+    at Connection.processFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:519:9)
+    at Connection.extractFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:461:14)
+    at Connection.doRead (e:\nodejs\node_modules\nodejs-websocket\Connection.js:209:23)
+    at Socket.<anonymous> (e:\nodejs\node_modules\nodejs-websocket\Connection.js:52:8)
+    at Socket.emit (events.js:104:17)
+    at emitReadable_ (_stream_readable.js:424:10)
+    at emitReadable (_stream_readable.js:418:7)
+2015-05-16 04:23
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: Converting circular structure to JSON
+select * from user where userName='1'  and passWD=''
+2015-05-16 05:58
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: Converting circular structure to JSON
+select * from user where userName='1'  and passWD=''
+2015-05-16 06:01
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: Converting circular structure to JSON
+select * from user where userName='1'  and passWD=''
+2015-05-16 06:01
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: Converting circular structure to JSON
+select * from user where userName='1'  and passWD=''
+2015-05-16 06:02
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: Converting circular structure to JSON
+select * from user where userName='1'  and passWD=''
+2015-05-16 06:02
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: User is not defined
+    at Object.<anonymous> (e:\nodejs\server\fishServer\Controls\webSocket\game.js:109:14)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Module.require (module.js:365:17)
+    at require (module.js:384:17)
+    at Object.<anonymous> (e:\nodejs\server\fishServer\Controls\onStart.js:7:10)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+2015-05-16 06:03
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: Converting circular structure to JSON
+select * from user where userName='1'  and passWD=''
+2015-05-16 06:03
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: Converting circular structure to JSON
+select * from user where userName='1'  and passWD=''
+2015-05-16 06:04
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: Converting circular structure to JSON
+select * from user where userName='1'  and passWD=''
+2015-05-16 06:09
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: undefined is not a function
+select * from user where userName='1'  and passWD=''
+2015-05-16 06:11
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: undefined is not a function
+select * from user where userName='1'  and passWD=''
+2015-05-16 06:11
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: undefined is not a function
+select * from user where userName='1'  and passWD=''
+2015-05-16 06:12
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: undefined is not a function
+select * from user where userName='1'  and passWD=''
+2015-05-16 06:12
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:TypeError: Cannot read property 'length' of undefined
+    at checkData (e:\nodejs\server\fishServer\Controls\onStart.js:19:28)
+    at wrapper [as _onTimeout] (timers.js:265:14)
+    at Timer.listOnTimeout (timers.js:110:15)
+2015-05-16 06:17
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: Cannot read property 'length' of undefined
+select * from user where userName='1'  and passWD=''
+2015-05-16 06:18
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:TypeError: Cannot read property 'createRate' of undefined
+    at createFish (e:\nodejs\server\fishServer\controls\webSocket\game.js:11:45)
+    at Table.createFish (e:\nodejs\server\fishServer\controls\webSocket\game.js:66:23)
+    at checkData (e:\nodejs\server\fishServer\Controls\onStart.js:25:19)
+    at wrapper [as _onTimeout] (timers.js:265:14)
+    at Timer.listOnTimeout (timers.js:110:15)
+2015-05-16 06:18
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: Cannot read property 'length' of undefined
+select * from user where userName='1'  and passWD=''
+2015-05-16 06:19
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: Cannot read property 'length' of undefined
+select * from user where userName='1'  and passWD=''
+2015-05-16 06:19
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:TypeError: Cannot read property 'createRate' of undefined
+    at createFish (e:\nodejs\server\fishServer\controls\webSocket\game.js:11:45)
+    at Table.createFish (e:\nodejs\server\fishServer\controls\webSocket\game.js:66:23)
+    at checkData (e:\nodejs\server\fishServer\Controls\onStart.js:25:19)
+    at wrapper [as _onTimeout] (timers.js:265:14)
+    at Timer.listOnTimeout (timers.js:110:15)
+2015-05-16 06:19
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:TypeError: Cannot read property 'createRate' of undefined
+    at createFish (e:\nodejs\server\fishServer\controls\webSocket\game.js:12:45)
+    at Table.createFish (e:\nodejs\server\fishServer\controls\webSocket\game.js:67:23)
+    at checkData (e:\nodejs\server\fishServer\Controls\onStart.js:25:19)
+    at wrapper [as _onTimeout] (timers.js:265:14)
+    at Timer.listOnTimeout (timers.js:110:15)
+2015-05-16 06:21
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:TypeError: Cannot read property 'createRate' of undefined
+    at createFish (e:\nodejs\server\fishServer\controls\webSocket\game.js:13:45)
+    at Table.createFish (e:\nodejs\server\fishServer\controls\webSocket\game.js:68:23)
+    at checkData (e:\nodejs\server\fishServer\Controls\onStart.js:25:19)
+    at wrapper [as _onTimeout] (timers.js:265:14)
+    at Timer.listOnTimeout (timers.js:110:15)
+2015-05-16 06:22
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:TypeError: Cannot read property 'createRate' of undefined
+    at createFish (e:\nodejs\server\fishServer\controls\webSocket\game.js:13:45)
+    at Table.createFish (e:\nodejs\server\fishServer\controls\webSocket\game.js:68:23)
+    at checkData (e:\nodejs\server\fishServer\Controls\onStart.js:25:19)
+    at wrapper [as _onTimeout] (timers.js:265:14)
+    at Timer.listOnTimeout (timers.js:110:15)
+2015-05-16 06:23
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:TypeError: object is not a function
+    at Table.checkFish (e:\nodejs\server\fishServer\controls\webSocket\game.js:80:22)
+    at checkData (e:\nodejs\server\fishServer\Controls\onStart.js:26:15)
+    at wrapper [as _onTimeout] (timers.js:265:14)
+    at Timer.listOnTimeout (timers.js:110:15)
+2015-05-16 06:24
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:TypeError: Cannot read property 'send' of undefined
+    at Table.checkFish (e:\nodejs\server\fishServer\controls\webSocket\game.js:95:37)
+    at checkData (e:\nodejs\server\fishServer\Controls\onStart.js:29:15)
+    at wrapper [as _onTimeout] (timers.js:265:14)
+    at Timer.listOnTimeout (timers.js:110:15)
+2015-05-16 06:31
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: consle is not defined
+    at Table.checkFish (e:\nodejs\server\fishServer\controls\webSocket\game.js:97:21)
+    at checkData (e:\nodejs\server\fishServer\Controls\onStart.js:29:15)
+    at wrapper [as _onTimeout] (timers.js:265:14)
+    at Timer.listOnTimeout (timers.js:110:15)
+2015-05-16 06:34
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:TypeError: Cannot read property 'y' of undefined
+    at Object.exports.getLength (e:\nodejs\server\node_modules\lib\func.js:232:45)
+    at Table.checkFish (e:\nodejs\server\fishServer\Controls\webSocket\game.js:81:29)
+    at checkData (e:\nodejs\server\fishServer\Controls\onStart.js:29:15)
+    at wrapper [as _onTimeout] (timers.js:265:14)
+    at Timer.listOnTimeout (timers.js:110:15)
+2015-05-16 06:45
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:TypeError: undefined is not a function
+    at exports.on (e:\nodejs\server\fishServer\controls\webSocket\catchFish.js:12:23)
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:53:27)
+    at Connection.emit (events.js:107:17)
+    at Connection.processFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:519:9)
+    at Connection.extractFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:461:14)
+    at Connection.doRead (e:\nodejs\node_modules\nodejs-websocket\Connection.js:209:23)
+    at Socket.<anonymous> (e:\nodejs\node_modules\nodejs-websocket\Connection.js:52:8)
+    at Socket.emit (events.js:104:17)
+    at emitReadable_ (_stream_readable.js:424:10)
+    at emitReadable (_stream_readable.js:418:7)
+2015-05-16 08:11
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: users is not defined
+    at exports.on (e:\nodejs\server\fishServer\controls\webSocket\catchFish.js:36:35)
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:53:27)
+    at Connection.emit (events.js:107:17)
+    at Connection.processFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:519:9)
+    at Connection.extractFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:461:14)
+    at Connection.doRead (e:\nodejs\node_modules\nodejs-websocket\Connection.js:209:23)
+    at Socket.<anonymous> (e:\nodejs\node_modules\nodejs-websocket\Connection.js:52:8)
+    at Socket.emit (events.js:104:17)
+    at emitReadable_ (_stream_readable.js:424:10)
+    at emitReadable (_stream_readable.js:418:7)
+2015-05-16 08:19
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:TypeError: undefined is not a function
+    at Server.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:13:14)
+    at Server.emit (events.js:107:17)
+    at Connection.<anonymous> (e:\nodejs\node_modules\nodejs-websocket\Server.js:38:9)
+    at Connection.g (events.js:199:16)
+    at Connection.emit (events.js:104:17)
+    at Connection.readHandshake (e:\nodejs\node_modules\nodejs-websocket\Connection.js:273:8)
+    at Connection.doRead (e:\nodejs\node_modules\nodejs-websocket\Connection.js:201:13)
+    at Socket.<anonymous> (e:\nodejs\node_modules\nodejs-websocket\Connection.js:52:8)
+    at Socket.emit (events.js:104:17)
+    at emitReadable_ (_stream_readable.js:424:10)
+2015-05-16 14:17
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: ids is not defined
+    at exports.on (e:\nodejs\server\fishServer\controls\webSocket\catchFish.js:35:30)
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:58:27)
+    at Connection.emit (events.js:107:17)
+    at Connection.processFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:519:9)
+    at Connection.extractFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:461:14)
+    at Connection.doRead (e:\nodejs\node_modules\nodejs-websocket\Connection.js:209:23)
+    at Socket.<anonymous> (e:\nodejs\node_modules\nodejs-websocket\Connection.js:52:8)
+    at Socket.emit (events.js:104:17)
+    at emitReadable_ (_stream_readable.js:424:10)
+    at emitReadable (_stream_readable.js:418:7)
+2015-05-16 14:45
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: data is not defined
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:64:17)
+    at Connection.emit (events.js:129:20)
+    at Socket.Connection.onclose (e:\nodejs\node_modules\nodejs-websocket\Connection.js:69:9)
+    at Socket.g (events.js:199:16)
+    at Socket.emit (events.js:129:20)
+    at finishMaybe (_stream_writable.js:484:14)
+    at endWritable (_stream_writable.js:493:3)
+    at Socket.Writable.end (_stream_writable.js:459:5)
+    at Socket.end (net.js:415:31)
+    at Socket.destroySoon (net.js:441:10)
+2015-05-16 15:05
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: data is not defined
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:64:17)
+    at Connection.emit (events.js:129:20)
+    at Socket.Connection.onclose (e:\nodejs\node_modules\nodejs-websocket\Connection.js:69:9)
+    at Socket.g (events.js:199:16)
+    at Socket.emit (events.js:107:17)
+    at TCP.close (net.js:485:12)
+2015-05-16 15:05
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: data is not defined
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:64:17)
+    at Connection.emit (events.js:129:20)
+    at Socket.Connection.onclose (e:\nodejs\node_modules\nodejs-websocket\Connection.js:69:9)
+    at Socket.g (events.js:199:16)
+    at Socket.emit (events.js:129:20)
+    at finishMaybe (_stream_writable.js:484:14)
+    at endWritable (_stream_writable.js:493:3)
+    at Socket.Writable.end (_stream_writable.js:459:5)
+    at Socket.end (net.js:415:31)
+    at Socket.destroySoon (net.js:441:10)
+2015-05-16 15:06
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: data is not defined
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:64:17)
+    at Connection.emit (events.js:129:20)
+    at Socket.Connection.onclose (e:\nodejs\node_modules\nodejs-websocket\Connection.js:69:9)
+    at Socket.g (events.js:199:16)
+    at Socket.emit (events.js:107:17)
+    at TCP.close (net.js:485:12)
+2015-05-16 15:06
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: data is not defined
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:64:17)
+    at Connection.emit (events.js:129:20)
+    at Socket.Connection.onclose (e:\nodejs\node_modules\nodejs-websocket\Connection.js:69:9)
+    at Socket.g (events.js:199:16)
+    at Socket.emit (events.js:129:20)
+    at finishMaybe (_stream_writable.js:484:14)
+    at endWritable (_stream_writable.js:493:3)
+    at Socket.Writable.end (_stream_writable.js:459:5)
+    at Socket.end (net.js:415:31)
+    at Socket.destroySoon (net.js:441:10)
+2015-05-16 15:06
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: data is not defined
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:64:17)
+    at Connection.emit (events.js:129:20)
+    at Socket.Connection.onclose (e:\nodejs\node_modules\nodejs-websocket\Connection.js:69:9)
+    at Socket.g (events.js:199:16)
+    at Socket.emit (events.js:107:17)
+    at TCP.close (net.js:485:12)
+2015-05-16 15:06
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: data is not defined
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:64:17)
+    at Connection.emit (events.js:129:20)
+    at Socket.Connection.onclose (e:\nodejs\node_modules\nodejs-websocket\Connection.js:69:9)
+    at Socket.g (events.js:199:16)
+    at Socket.emit (events.js:129:20)
+    at finishMaybe (_stream_writable.js:484:14)
+    at endWritable (_stream_writable.js:493:3)
+    at Socket.Writable.end (_stream_writable.js:459:5)
+    at Socket.end (net.js:415:31)
+    at Socket.destroySoon (net.js:441:10)
+2015-05-16 15:06
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: data is not defined
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:64:17)
+    at Connection.emit (events.js:129:20)
+    at Socket.Connection.onclose (e:\nodejs\node_modules\nodejs-websocket\Connection.js:69:9)
+    at Socket.g (events.js:199:16)
+    at Socket.emit (events.js:107:17)
+    at TCP.close (net.js:485:12)
+2015-05-16 15:06
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: data is not defined
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:64:17)
+    at Connection.emit (events.js:129:20)
+    at Socket.Connection.onclose (e:\nodejs\node_modules\nodejs-websocket\Connection.js:69:9)
+    at Socket.g (events.js:199:16)
+    at Socket.emit (events.js:129:20)
+    at finishMaybe (_stream_writable.js:484:14)
+    at endWritable (_stream_writable.js:493:3)
+    at Socket.Writable.end (_stream_writable.js:459:5)
+    at Socket.end (net.js:415:31)
+    at Socket.destroySoon (net.js:441:10)
+2015-05-16 15:08
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: data is not defined
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:64:17)
+    at Connection.emit (events.js:129:20)
+    at Socket.Connection.onclose (e:\nodejs\node_modules\nodejs-websocket\Connection.js:69:9)
+    at Socket.g (events.js:199:16)
+    at Socket.emit (events.js:107:17)
+    at TCP.close (net.js:485:12)
+2015-05-16 15:08
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: data is not defined
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:64:17)
+    at Connection.emit (events.js:129:20)
+    at Socket.Connection.onclose (e:\nodejs\node_modules\nodejs-websocket\Connection.js:69:9)
+    at Socket.g (events.js:199:16)
+    at Socket.emit (events.js:129:20)
+    at finishMaybe (_stream_writable.js:484:14)
+    at endWritable (_stream_writable.js:493:3)
+    at Socket.Writable.end (_stream_writable.js:459:5)
+    at Socket.end (net.js:415:31)
+    at Socket.destroySoon (net.js:441:10)
+2015-05-16 15:08
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: data is not defined
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:64:17)
+    at Connection.emit (events.js:129:20)
+    at Socket.Connection.onclose (e:\nodejs\node_modules\nodejs-websocket\Connection.js:69:9)
+    at Socket.g (events.js:199:16)
+    at Socket.emit (events.js:107:17)
+    at TCP.close (net.js:485:12)
+2015-05-16 15:08
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: tableID is not defined
+    at Object.exports.on (e:\nodejs\server\fishServer\controls\webSocket\onClose.js:7:29)
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:63:25)
+    at Connection.emit (events.js:129:20)
+    at Socket.Connection.onclose (e:\nodejs\node_modules\nodejs-websocket\Connection.js:69:9)
+    at Socket.g (events.js:199:16)
+    at Socket.emit (events.js:129:20)
+    at finishMaybe (_stream_writable.js:484:14)
+    at endWritable (_stream_writable.js:493:3)
+    at Socket.Writable.end (_stream_writable.js:459:5)
+    at Socket.end (net.js:415:31)
+2015-05-16 15:09
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: tableID is not defined
+    at Object.exports.on (e:\nodejs\server\fishServer\controls\webSocket\onClose.js:7:29)
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:63:25)
+    at Connection.emit (events.js:129:20)
+    at Socket.Connection.onclose (e:\nodejs\node_modules\nodejs-websocket\Connection.js:69:9)
+    at Socket.g (events.js:199:16)
+    at Socket.emit (events.js:107:17)
+    at TCP.close (net.js:485:12)
+2015-05-16 15:09
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: Cannot read property 'undefined' of undefined
+select * from user where userName='1'  and passWD=''
+2015-05-16 16:53
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: Cannot read property 'undefined' of undefined
+select * from user where userName='1'  and passWD=''
+2015-05-16 16:53
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: Cannot read property 'undefined' of undefined
+select * from user where userName='1'  and passWD=''
+2015-05-16 16:53
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: Cannot read property 'undefined' of undefined
+select * from user where userName='1'  and passWD=''
+2015-05-16 16:54
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: Cannot read property 'undefined' of undefined
+select * from user where userName='1'  and passWD=''
+2015-05-16 16:54
+/////////////////////////////////////////////////////////////////////////////////////////////
+查询数据出错:Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1' at line 1
+select * from user where id='1
+2015-05-16 18:27
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:TypeError: Cannot read property 'fishs' of undefined
+    at Table.createFishs (e:\nodejs\server\fishServer\controls\webSocket\game.js:91:26)
+    at Table.changeWater (e:\nodejs\server\fishServer\controls\webSocket\game.js:66:14)
+    at checkData (e:\nodejs\server\fishServer\Controls\onStart.js:31:19)
+    at wrapper [as _onTimeout] (timers.js:265:14)
+    at Timer.listOnTimeout (timers.js:110:15)
+2015-05-17 12:30
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:TypeError: Cannot read property 'fishs' of undefined
+    at Table.createFishs (e:\nodejs\server\fishServer\controls\webSocket\game.js:92:26)
+    at Table.changeWater (e:\nodejs\server\fishServer\controls\webSocket\game.js:66:14)
+    at checkData (e:\nodejs\server\fishServer\Controls\onStart.js:31:19)
+    at wrapper [as _onTimeout] (timers.js:265:14)
+    at Timer.listOnTimeout (timers.js:110:15)
+2015-05-17 12:32
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: data is not defined
+    at Table.createFishs (e:\nodejs\server\fishServer\controls\webSocket\game.js:114:23)
+    at Table.changeWater (e:\nodejs\server\fishServer\controls\webSocket\game.js:66:14)
+    at checkData (e:\nodejs\server\fishServer\Controls\onStart.js:31:19)
+    at wrapper [as _onTimeout] (timers.js:265:14)
+    at Timer.listOnTimeout (timers.js:110:15)
+2015-05-17 12:32
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:TypeError: Cannot read property 'y' of undefined
+    at Object.exports.getLength (e:\nodejs\server\node_modules\lib\func.js:232:36)
+    at Table.checkFish (e:\nodejs\server\fishServer\controls\webSocket\game.js:158:29)
+    at checkData (e:\nodejs\server\fishServer\Controls\onStart.js:29:15)
+    at wrapper [as _onTimeout] (timers.js:265:14)
+    at Timer.listOnTimeout (timers.js:110:15)
+2015-05-17 12:45
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: undefined is not a function
+select * from user where userName='5'  and passWD=''
+2015-05-17 13:44
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: undefined is not a function
+select * from user where userName='5'  and passWD=''
+2015-05-17 13:45
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:ReferenceError: consoloe is not defined
+    at exports.on (e:\nodejs\server\fishServer\controls\webSocket\login.js:7:5)
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:58:27)
+    at Connection.emit (events.js:107:17)
+    at Connection.processFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:519:9)
+    at Connection.extractFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:461:14)
+    at Connection.doRead (e:\nodejs\node_modules\nodejs-websocket\Connection.js:209:23)
+    at Socket.<anonymous> (e:\nodejs\node_modules\nodejs-websocket\Connection.js:52:8)
+    at Socket.emit (events.js:104:17)
+    at emitReadable_ (_stream_readable.js:424:10)
+    at emitReadable (_stream_readable.js:418:7)
+2015-05-17 13:45
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: undefined is not a function
+select * from user where userName='5'  and passWD=''
+2015-05-17 13:45
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: undefined is not a function
+select * from user where userName='5'  and passWD=''
+2015-05-17 13:46
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: undefined is not a function
+select * from user where userName='5'  and passWD=''
+2015-05-17 13:46
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: undefined is not a function
+select * from user where userName='0'  and passWD=''
+2015-05-17 14:18
+/////////////////////////////////////////////////////////////////////////////////////////////
+数据结果处理出错:TypeError: undefined is not a function
+select * from user where userName='0'  and passWD=''
+2015-05-17 14:18
+/////////////////////////////////////////////////////////////////////////////////////////////
+查询数据出错:Error: ER_NO_SUCH_TABLE: Table 'fish.syssetup' doesn't exist
+show full fields from sysSetup
+2015-05-17 15:09
+/////////////////////////////////////////////////////////////////////////////////////////////
+查询数据出错:Error: ER_NO_SUCH_TABLE: Table 'fish.syssetup' doesn't exist
+select *  from sysSetup
+2015-05-17 15:09
+/////////////////////////////////////////////////////////////////////////////////////////////
+查询数据出错:Error: ER_NO_SUCH_TABLE: Table 'fish.syssetup' doesn't exist
+show full fields from sysSetup
+2015-05-17 15:10
+/////////////////////////////////////////////////////////////////////////////////////////////
+查询数据出错:Error: ER_NO_SUCH_TABLE: Table 'fish.syssetup' doesn't exist
+select *  from sysSetup
+2015-05-17 15:10
+/////////////////////////////////////////////////////////////////////////////////////////////
+查询数据出错:Error: ER_NO_SUCH_TABLE: Table 'fish.syssetup' doesn't exist
+show full fields from sysSetup
+2015-05-17 15:10
+/////////////////////////////////////////////////////////////////////////////////////////////
+查询数据出错:Error: ER_NO_SUCH_TABLE: Table 'fish.syssetup' doesn't exist
+select *  from sysSetup
+2015-05-17 15:10
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/FBk2.png
+2015-05-17 15:11
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/FBk1.png
+2015-05-17 15:11
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish2.png
+2015-05-17 15:11
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish11.png
+2015-05-17 15:11
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish9.png
+2015-05-17 15:11
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish10.png
+2015-05-17 15:11
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish8.png
+2015-05-17 15:11
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish7.png
+2015-05-17 15:11
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish6.png
+2015-05-17 15:11
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish5.png
+2015-05-17 15:11
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish4.png
+2015-05-17 15:11
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish3.png
+2015-05-17 15:11
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish1.png
+2015-05-17 15:11
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/FBk2.png
+2015-05-17 15:12
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/FBk1.png
+2015-05-17 15:12
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish2.png
+2015-05-17 15:12
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish11.png
+2015-05-17 15:12
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish10.png
+2015-05-17 15:12
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish9.png
+2015-05-17 15:12
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish8.png
+2015-05-17 15:12
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish7.png
+2015-05-17 15:12
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish6.png
+2015-05-17 15:12
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish5.png
+2015-05-17 15:12
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish4.png
+2015-05-17 15:12
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish3.png
+2015-05-17 15:12
+/////////////////////////////////////////////////////////////////////////////////////////////
+404:访问了不存在的资源e:\nodejs\server\fishServer/public/img/fish/fish1.png
+2015-05-17 15:12
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:e:\nodejs\server\fishServer\controls\webSocket\login.js:70
+            }
+            ^
+SyntaxError: Unexpected token }
+    at exports.runInThisContext (vm.js:73:16)
+    at Module._compile (module.js:443:25)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Module.require (module.js:365:17)
+    at require (module.js:384:17)
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:57:27)
+    at Connection.emit (events.js:107:17)
+    at Connection.processFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:519:9)
+2015-05-17 15:19
+/////////////////////////////////////////////////////////////////////////////////////////////
+捕获的全局错误:TypeError: Cannot read property 'users' of null
+    at checkUser (e:\nodejs\server\fishServer\controls\webSocket\login.js:23:28)
+    at exports.on (e:\nodejs\server\fishServer\controls\webSocket\login.js:38:12)
+    at Connection.<anonymous> (e:\nodejs\server\node_modules\lib\webSocket.js:58:27)
+    at Connection.emit (events.js:107:17)
+    at Connection.processFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:519:9)
+    at Connection.extractFrame (e:\nodejs\node_modules\nodejs-websocket\Connection.js:461:14)
+    at Connection.doRead (e:\nodejs\node_modules\nodejs-websocket\Connection.js:209:23)
+    at Socket.<anonymous> (e:\nodejs\node_modules\nodejs-websocket\Connection.js:52:8)
+    at Socket.emit (events.js:104:17)
+    at emitReadable_ (_stream_readable.js:424:10)
+2015-05-17 15:19

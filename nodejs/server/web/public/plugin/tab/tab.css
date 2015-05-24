@@ -1,0 +1,44 @@
+#UITab
+{
+    background:#fefefe;
+}
+#UITab .UITabList
+{
+
+}
+#UITab .UITabList ul
+{
+    list-style:none; /* 去掉ul前面的符号 */
+    margin: 0px; /* 与外界元素的距离为0 */
+    padding: 0px; /* 与内部元素的距离为0 */
+    width: auto; /* 宽度根据元素内容调整 */
+    background:#fefefe;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+#UITab .UITabList li
+{
+    float:left; /* 向左漂移，将竖排变为横排 */
+    width: 80px;
+    border: 1px #bfbfbf solid;
+}
+#UITab .UITabList .cur
+{
+    border-left: 1px #bfbfbf solid;
+    border-right: 1px #bfbfbf solid;
+    border-top: 1px #bfbfbf solid;
+    border-bottom: 0px;
+}
+
+#UITab .UITabBody{
+    height: 100%;
+    overflow:auto;
+    overflow-x:hidden;
+
+    border-left: 1px #bfbfbf solid;
+    border-right: 1px #bfbfbf solid;
+    border-bottom: 1px #bfbfbf solid;
+    border-top: 0px;
+}

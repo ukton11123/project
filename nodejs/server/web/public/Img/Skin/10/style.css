@@ -1,0 +1,31 @@
+/*###########################
+
+   @Name:希望 
+
+#############################*/
+/* CSS Document begin */
+
+
+body {
+	background-color: #E0EBDB;
+	background-image: url(bg.jpg);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font: 12px/1.75;
+}
+a:link {
+	color: #0a8cd2;
+	text-decoration: none;
+}
+a:visited {
+	color: #0a8cd2;
+	text-decoration: none;
+}
+a:hover {
+	color: #0a8cd2;
+	text-decoration: none;
+}
+.header {
+	background: #3b3e3d;
+}

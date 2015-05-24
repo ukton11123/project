@@ -1,0 +1,54 @@
+<style>
+    .UploadDiv{
+        height: 30px;
+        width: 90px;
+        font-size:12px;
+        position:relative;
+    }
+    .inputstyle{
+        width: 90px;
+        height: 30px;
+        cursor: pointer;
+        font-size: 30px;
+        outline: medium none;
+        position: absolute;
+        filter:alpha(opacity=0);
+        -moz-opacity:0;
+        opacity:0;
+        left:0px;
+        top: 0px;
+    }
+</style>
+<script>
+    function uploadfile(form,Code,Type){
+        //obj=document.getElementById("UploadForm"+Type);
+        //请求服务器端
+        form.target = "UploadFrame"+Type;
+        form.action = "/upload/uploadImg/"+Code+"/"+Type;
+        form.submit();
+
+    }
+    //回调函数
+    function UploadCallBack(Result,Msg,Type)
+    {
+        //处理结果
+        if (Result==0)
+        {
+            ShowHint(Msg);
+            return;
+        }
+        var Str="<img src='"+Msg+"'/>";
+        $("#ChatContent"+Type).append(Str);
+    }
+</script>
+
+<form action="/Upload/UploadFile" method="post" name="UploadForm{{chatType}}" enctype="multipart/form-data">
+
+    <div class="UploadDiv">
+        <div style="text-align:center"><img width=20 height=20 src="/public/Img/Image.png"/>插入图片</div>
+        <input type="file" size="1" class="inputstyle" name="userfile" id="userfile"  onchange="uploadfile(UploadForm{{chatType}},{{myCode}},{{chatType}})"/>
+    </div>
+    <div class="clear"></div>
+    <iframe  id="UploadFrame{{chatType}}" name="UploadFrame{{chatType}}" style="display:none" ></iframe>
+
+</form>

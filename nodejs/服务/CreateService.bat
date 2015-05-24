@@ -1,0 +1,1 @@
+d:\nodejs\Service\instsrv.exe RoomServer d:\nodejs\Service\Srvany.exe

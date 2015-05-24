@@ -1,0 +1,28 @@
+/*###########################
+   @Name:恋爱时刻 
+#############################*/
+/* CSS Document begin */
+
+html {
+	background: none;
+}
+body {
+	background-color: #F5F5E9;
+	background-image: url(bg.jpg);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font: 12px/1.75;
+}
+a:link {
+	color: #5C2C27;
+	text-decoration: none;
+}
+a:visited {
+	color: #5C2C27;
+	text-decoration: none;
+}
+a:hover {
+	color: #5C2C27;
+	text-decoration: none;
+}

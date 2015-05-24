@@ -1,0 +1,21 @@
+{
+	"packageUrl" : "http://192.168.1.100/public/update/",
+	"remoteManifestUrl" : "http://192.168.1.100/public/update/project.manifest",
+	"remoteVersionUrl" : "http://192.168.1.100/public/update/version.manifest",
+	"version" : "1.0.0",
+	"groupVersions" : {
+		"1" : "1.1.0"
+	},
+	"engineVersion" : "3.5",
+
+	"assets" : {
+		"background" : {
+			"path" : "res/ui.png",
+			"md5" : "....",
+			"group" : "1"
+		}
+	},
+    
+    "searchPaths" : [
+    ]
+}

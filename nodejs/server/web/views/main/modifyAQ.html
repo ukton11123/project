@@ -1,0 +1,48 @@
+<style>
+    #divModify{
+        margin: 10px 30px;
+        width:300px;
+    }
+</style>
+<script type='text/javascript' src='/public/js/jQuery.md5.js'></script>
+
+<div class="borderLeft">
+    <div id="divModify" class="center">
+
+        <div class="font18 b importColor">设置密保</div>
+        <div class="" >
+            <br><br><br>
+            <form class="pure-form">
+                <fieldset>
+
+                    <div >
+                        <label for="question">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提示问题:&nbsp;&nbsp;</label>
+                        <select id="question" class="pure-input-medium" style="width: 180px" type="text"  >
+                            <option value="我的生日是?">我的生日是?</option>
+                            <option value="我最好的朋友是?">我最好的朋友是?</option>
+                            <option value="我喜欢的人是?">我喜欢的人是?</option>
+                            <option value="我的小学校名称是?">我的小学校名称是?</option>
+                            <option value="我高中学校名称是??">我高中学校名称是?</option>
+                        </select>
+                    </div><br>
+                    <div >
+                        <label for="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密保答案:&nbsp;&nbsp;</label>
+                        <input id="answer"  style="width: 180px" type="text" value="" >
+                    </div><br>
+
+
+                    <div class="textCenter">
+                        <span  id="btnModify" class="pure-button button-blue" onclick="modifyAQ()" style="width: 120px">设置密保</span>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready()
+    {
+        $.setTip("answer","请输入您的密保答案");
+    };
+</script>
+

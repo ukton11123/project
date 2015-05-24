@@ -1,0 +1,71 @@
+<style type="text/css">
+
+    .Main
+    {
+        margin:0px 30px;
+    }
+    .User
+    {
+        float:left;
+        width:100px;
+        height:140px;
+        text-align:center;
+        cursor:pointer;
+
+    }
+    .Face
+    {
+        border:5px solid #FFF;
+    }
+    .ZoneMenu{
+
+    }
+    .MenuItemSelect {
+        float: left;
+        width: 100px;
+        background:#ff9f24;
+        text-align:center;
+        color:#fff;
+        cursor:pointer;
+        height:40px;
+        line-height:40px;
+        display: block;
+        border:1px solid  #eee;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    .MenuItem {
+        float: left;
+        width: 100px;
+        text-align:center;
+        cursor:pointer;
+        height:40px;
+        line-height:40px;
+        display: block;
+        border:1px solid  #eee;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+    .MenuItem:hover {
+        color:#fff;
+        background:#ff9f24;
+    }
+</style>
+<div class="Main">
+    <div >
+
+        <span id="Menu1" class="MenuItem{{chatType==3?"Select":""}}" onclick="window.location.href='/zone/userMsg/3'"> 我收到的消息 </span>
+        <span id="Menu2" class="MenuItem{{chatType==4?"Select":""}}" onclick="window.location.href='/zone/userMsg/4'"> 我发送的消息 </span>
+    </div>
+    <div class="clear"></div><br/>
+
+</div>
+
+
+<div class="clear"></div>
+<div id="chatListDiv">
+    {{include "chatList"}}
+</div>

@@ -1,0 +1,10 @@
+{{if page==0}}
+<div class="title import b ">{{currType}}</div>
+{{/if}}
+<div>
+    {{each dataRoomList as data}}
+    {{include "roomItem" data}}
+    {{/each}}
+</div>
+<div class="clear"></div>
+

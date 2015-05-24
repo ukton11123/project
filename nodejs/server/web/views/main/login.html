@@ -1,0 +1,83 @@
+
+<style>
+    .regButtonDiv
+    {
+        border-left: 1px dotted #777777;
+        margin-top: 50px;
+        padding-left: 10px;
+
+    }
+    .formDiv
+    {
+        width: 90%;
+    }
+</style>
+<script type='text/javascript' src='/public/js/jQuery.md5.js'></script>
+
+<div class="pure-g" style="width: 530px;height: 260px;">
+    <div class="pure-u-5-8">
+        <div class="center formDiv">
+            <div class="font24 b importColor">现在登录</div>
+            <div>您就可以与好友互动了！</div><br/>
+            <div class="textcenter" style="margin-left: 50px">
+                <form class="pure-form">
+                    <fieldset>
+                        <div >
+                            <label for="userCode">号码:&nbsp;&nbsp;</label>
+                            <input id="userCode"  type="text" style="width: 180px">
+                        </div>
+                        <br/>
+                        <div >
+                            <label for="passWD">密码:&nbsp;&nbsp;</label>
+                            <input id="passWD" required type="password"  style="width: 180px">
+                        </div>
+
+                        <div class="textCenter">
+                            <label for="remember" class="pure-checkbox">
+                                <input id="remember" type="checkbox"> 记住登录状态 </label>
+
+                            <img src="/public/img/loginbutton.png" id="btnLogin" class="hand" onclick="login()"/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="importColor hand" onclick="showFindPWD()"> 忘记密码?</span>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="pure-u-3-8">
+        <div class="regButtonDiv textCenter">
+            <br>
+            还没有账号?<br>
+            <img onclick="showReg()" class="hand" src="/public/img/regbutton.png"/><br>
+            或者<br>
+            <span id="qqLoginBtn"></span><!--<img class="hand"  onclick="QQLogin()" src="/public/img/QQlogo.png"/>-->
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready()
+    {
+        numOnly("userCode");
+        $.setTip("userCode","请输入用户号码");
+        $.setTip("passWD","请输入用户密码");
+
+    };
+</script>
+<script type="text/javascript">
+    //调用QC.Login方法，指定btnId参数将按钮绑定在容器节点中
+    QC.Login({
+                //btnId：插入按钮的节点id，必选
+                btnId:"qqLoginBtn",
+                //用户需要确认的scope授权项，可选，默认all
+                scope:"all",
+                //按钮尺寸，可用值[A_XL| A_L| A_M| A_S|  B_M| B_S| C_S]，可选，默认B_S
+                size: "A_L"
+            }, function(reqData, opts){//登录成功
+                //根据返回数据，更换按钮显示状态方法
+                QQReg(reqData.nickname,reqData.gender,reqData.figureurl_2);
+            }, function(opts){//注销成功
+            }
+    );
+</script>

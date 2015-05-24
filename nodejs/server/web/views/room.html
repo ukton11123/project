@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>{{title}}</title>
+    {{include "meta"}}
+    <link rel="stylesheet" href="/public/Img/Skin/{{skinID}}/Style.css" type="text/css" media="screen"/>
+    <script language="javascript" type="text/javascript">
+        function OnQuit() {
+
+            GetMovie("Swf").IEQuit();
+        }
+        //进入房间
+        function ChangeRoom(aCode, aRoomCode) {
+            window.location.href="{{index_page}}/Room/" + aRoomCode;
+        }
+    </script>
+</head>
+<body onunload="OnQuit()">
+
+<div  style=" padding: 0 0; z-index:0; height:100%">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+            width="100%" height="100%">
+        <param name="movie" value="/public/flash/Room.swf" />
+        <param name="quality" value="high" />
+        <param name="bgcolor" value="#FBFBFB" />
+        <param name="allowScriptAccess" value="*" />
+        <param name="allowFullScreen" value="true" />
+        <param name="wmode" value="transparent" />
+        <param name="FlashVars" value="{{flashParam}}" />
+        <!--[if !IE]>--> <object type="application/x-shockwave-flash"
+                                 data="/public/flash/Room.swf" width="100%" height="100%" id="Swf">
+        <param name="quality" value="high" />
+        <param name="bgcolor" value="#FBFBFB" />
+        <param name="allowScriptAccess" value="*" />
+        <param name="allowFullScreen" value="true" />
+        <param name="wmode" value="transparent" />
+        <param name="FlashVars" value="{{flashParam}}" />
+        <!--<![endif]--> <!--[if gte IE 6]>-->
+        <!--<![endif]--> <a href="http://www.adobe.com/go/getflashplayer">
+        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"
+             alt="Get Adobe Flash Player" />
+    </a> <!--[if !IE]>-->
+    </object> <!--<![endif]-->
+    </object>
+</div>
+{{include "roomBottom"}}
+</body>
+</html>

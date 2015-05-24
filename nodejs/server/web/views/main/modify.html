@@ -1,0 +1,52 @@
+<style>
+    #divModify{
+        margin: 10px 30px;
+        width:300px;
+    }
+</style>
+<script type='text/javascript' src='/public/js/jQuery.md5.js'></script>
+
+<div id="divFace" style="position: absolute;top:30px;left:210px;"></div>
+<div class="borderLeft">
+    <div id="divModify" class="center">
+
+        <div class="font18 b importColor">修改资料</div>
+        <div class="" >
+            <form class="pure-form">
+                <fieldset>
+                <div >
+                    <label for="userFace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;头像:&nbsp;&nbsp;</label>
+                    <img id="userFace" src="{{dataUser.face}}" width="60" height="60"/> <a class="importColor" onclick="showFace()">选择头像</a>
+                </div>
+                <div>
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性别:&nbsp;&nbsp;</label>
+
+                    <input  type="radio" name="sex" value="0" {{if dataUser.sex==0}}checked{{/if}}>女生&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input  type="radio" name="sex" value="1" {{if dataUser.sex==1}}checked{{/if}}>男生
+                </div>
+                <div >
+                    <label for="nickName">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;昵称:&nbsp;&nbsp;</label>
+                    <input id="nickName"  style="width: 200px" type="text" value="{{dataUser.nickName}}" >
+                </div><br>
+                <div >
+                    <label for="explain">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;简介:&nbsp;&nbsp;</label>
+                    <textarea id="explain" cols="19" rows="5" style="width: 200px" >{{dataUser.userExplain}}</textarea>
+                </div><br>
+                <div class="textCenter">
+                    <span  id="btnModify" class="pure-button button-blue" onclick="modify()" style="width: 120px">修改</span>
+                </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready()
+    {
+        $("#divModify").click(function(){
+            closeFace();
+        })
+        $.setTip("nickName");
+    };
+</script>
+

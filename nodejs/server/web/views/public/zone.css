@@ -1,0 +1,29 @@
+.inputDiv { //
+margin: 0 10px;
+}
+
+.contentbox {
+    height: 80px;
+    border: 1px #aaa solid;
+    text-align: left;
+    word-wrap: break-word;
+    overflow: auto;
+    background: #FBFBFB;
+}
+
+.SendButton {
+    background: url('/public/img/Skin/send.gif');
+    width: 112px;
+    height: 30px;
+    line-height: 30px;
+    background-position: 0 0;
+    border-width: 0;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold
+}
+
+.SendButton:hover {
+    background-position: 0 -30px;
+}

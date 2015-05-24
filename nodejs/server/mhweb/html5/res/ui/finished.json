@@ -1,0 +1,1266 @@
+{
+  "ID": "e2954cd8-f09d-4ae8-8329-e36212547ac1",
+  "Version": "2.2.5.0",
+  "Name": "finished",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 80,
+        "Speed": 1.0,
+        "Timelines": [
+          {
+            "ActionTag": -203786258,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 320.0012,
+                "Y": 716.2,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 320.0,
+                "Y": 716.2,
+                "FrameIndex": 24,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 320.0,
+                "Y": 716.2,
+                "FrameIndex": 25,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 320.0057,
+                "Y": 716.2026,
+                "FrameIndex": 40,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -203786258,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 0.0108,
+                "Y": 8.3555,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0108,
+                "Y": 11.5772,
+                "FrameIndex": 24,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0108,
+                "Y": 11.5772,
+                "FrameIndex": 25,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.341,
+                "Y": 11.542,
+                "FrameIndex": 40,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -203786258,
+            "Property": "Alpha",
+            "Frames": [
+              {
+                "Value": 0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              },
+              {
+                "Value": 0,
+                "FrameIndex": 24,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              },
+              {
+                "Value": 240,
+                "FrameIndex": 25,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -203786258,
+            "Property": "FileData",
+            "Frames": [
+              {
+                "TextureFile": {
+                  "Type": "Normal",
+                  "Path": "res/finish3.png",
+                  "Plist": ""
+                },
+                "FrameIndex": 40,
+                "Tween": false,
+                "ctype": "TextureFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -1766834696,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 320.0,
+                "Y": 500.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 320.0,
+                "Y": 600.0,
+                "FrameIndex": 25,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -1766834696,
+            "Property": "Alpha",
+            "Frames": [
+              {
+                "Value": 0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              },
+              {
+                "Value": 255,
+                "FrameIndex": 25,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1547972591,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 320.0,
+                "Y": 900.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 320.0,
+                "Y": 800.0,
+                "FrameIndex": 25,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1547972591,
+            "Property": "Alpha",
+            "Frames": [
+              {
+                "Value": 0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              },
+              {
+                "Value": 255,
+                "FrameIndex": 25,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1852287575,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 3.0,
+                "Y": 3.0,
+                "FrameIndex": 40,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 70,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.2,
+                "Y": 1.2,
+                "FrameIndex": 75,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 80,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -795416216,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 189.009,
+                "Y": 89.8543,
+                "FrameIndex": 80,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 770579347,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 280.2842,
+                "Y": 90.2932,
+                "FrameIndex": 80,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -1259547663,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 144.6939,
+                "Y": 93.91,
+                "FrameIndex": 80,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1707669157,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 236.2741,
+                "Y": 93.91,
+                "FrameIndex": 80,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1338165149,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 365.1094,
+                "Y": 91.5994,
+                "FrameIndex": 80,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -1951182965,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 321.3337,
+                "Y": 93.91,
+                "FrameIndex": 80,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 564180770,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 252.1594,
+                "Y": 128.7497,
+                "FrameIndex": 80,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -1353447133,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 246.5768,
+                "Y": -31.3573,
+                "FrameIndex": 80,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -1353447133,
+            "Property": "AnchorPoint",
+            "Frames": [
+              {
+                "X": 0.5,
+                "Y": 1.0,
+                "FrameIndex": 80,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 734495005,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 319.9999,
+                "Y": 799.8649,
+                "FrameIndex": 40,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 734495005,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 40,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 734495005,
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 40,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 734495005,
+            "Property": "Alpha",
+            "Frames": [
+              {
+                "Value": 0,
+                "FrameIndex": 39,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              },
+              {
+                "Value": 0,
+                "FrameIndex": 40,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              },
+              {
+                "Value": 255,
+                "FrameIndex": 40,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "IntFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -226192400,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 40,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 71,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -226192400,
+            "Property": "AnchorPoint",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 71,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          }
+        ],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 68,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 13,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "res/finish3.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 320.0057,
+                  "Y": 716.2026
+                },
+                "Scale": {
+                  "ScaleX": 1.341,
+                  "ScaleY": 11.542
+                },
+                "Alpha": 240,
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.6305
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 89.0057,
+                "RightMargin": 88.9943,
+                "TopMargin": 403.7974,
+                "BottomMargin": 700.2026,
+                "Tag": 71,
+                "ActionTag": -203786258,
+                "Size": {
+                  "X": 462.0,
+                  "Y": 32.0
+                },
+                "Name": "finish3_3",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "res/finish1.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 320.0,
+                  "Y": 600.0
+                },
+                "Scale": {
+                  "ScaleX": 1.4193,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.5282
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 91.5,
+                "RightMargin": 91.5,
+                "TopMargin": 511.0,
+                "BottomMargin": 575.0,
+                "Tag": 69,
+                "ActionTag": -1766834696,
+                "Size": {
+                  "X": 457.0,
+                  "Y": 50.0
+                },
+                "Name": "finish1_1",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "res/finish2.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 320.0,
+                  "Y": 800.0
+                },
+                "Scale": {
+                  "ScaleX": 1.3943,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.7042
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 92.0,
+                "RightMargin": 92.0,
+                "TopMargin": 311.0,
+                "BottomMargin": 775.0,
+                "Tag": 70,
+                "ActionTag": 1547972591,
+                "Size": {
+                  "X": 456.0,
+                  "Y": 50.0
+                },
+                "Name": "finish2_2",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 319.9999,
+                  "Y": 799.8649
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.7041
+                },
+                "PreSize": {
+                  "X": 2.5,
+                  "Y": 1.0
+                },
+                "LeftMargin": 69.9999,
+                "RightMargin": 70.0001,
+                "TopMargin": 336.1351,
+                "BottomMargin": 599.8649,
+                "Tag": 23,
+                "Children": [
+                  {
+                    "InnerNodeSize": {
+                      "Width": 1640,
+                      "Height": 70
+                    },
+                    "ScrollDirectionType": "Horizontal",
+                    "ClipAble": true,
+                    "BackColorAlpha": 102,
+                    "SingleColor": {
+                      "G": 150,
+                      "B": 100
+                    },
+                    "FirstColor": {
+                      "G": 150,
+                      "B": 100
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 250.0,
+                      "Y": 41.9379
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.2097
+                    },
+                    "PreSize": {
+                      "X": 2.5,
+                      "Y": 0.35
+                    },
+                    "TopMargin": 123.0621,
+                    "BottomMargin": 6.9379,
+                    "Tag": 22,
+                    "ActionTag": 1092382180,
+                    "Size": {
+                      "X": 500.0,
+                      "Y": 70.0
+                    },
+                    "Name": "ScrollView_item",
+                    "ctype": "ScrollViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "res/finish4.png",
+                      "Plist": "ui.plist"
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 250.0,
+                      "Y": 169.0
+                    },
+                    "Scale": {
+                      "ScaleX": 3.0,
+                      "ScaleY": 3.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.845
+                    },
+                    "PreSize": {
+                      "X": 0.4,
+                      "Y": 0.255
+                    },
+                    "LeftMargin": 150.0,
+                    "RightMargin": 150.0,
+                    "TopMargin": 5.5,
+                    "BottomMargin": 143.5,
+                    "Tag": 66,
+                    "ActionTag": 1852287575,
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 51.0
+                    },
+                    "Name": "Image_1",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 14,
+                    "LabelText": "99999999",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "G": 127,
+                      "B": 80
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 189.009,
+                      "Y": 89.8543
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.378,
+                      "Y": 0.4493
+                    },
+                    "PreSize": {
+                      "X": 0.1802,
+                      "Y": 0.05
+                    },
+                    "LeftMargin": 159.009,
+                    "RightMargin": 280.991,
+                    "TopMargin": 100.1457,
+                    "BottomMargin": 79.8543,
+                    "Tag": 49,
+                    "ActionTag": -795416216,
+                    "Size": {
+                      "X": 60.0,
+                      "Y": 20.0
+                    },
+                    "Name": "Text_money",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 14,
+                    "LabelText": "99999999",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "G": 127,
+                      "B": 80
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 280.2842,
+                      "Y": 90.2932
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5606,
+                      "Y": 0.4515
+                    },
+                    "PreSize": {
+                      "X": 0.1802,
+                      "Y": 0.05
+                    },
+                    "LeftMargin": 250.2842,
+                    "RightMargin": 189.7158,
+                    "TopMargin": 99.7068,
+                    "BottomMargin": 80.2932,
+                    "Tag": 50,
+                    "ActionTag": 770579347,
+                    "Size": {
+                      "X": 60.0,
+                      "Y": 20.0
+                    },
+                    "Name": "Text_exp",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "res/money.png",
+                      "Plist": "ui.plist"
+                    },
+                    "Scale9Width": 16,
+                    "Scale9Height": 16,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 144.6939,
+                      "Y": 93.91
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2894,
+                      "Y": 0.4696
+                    },
+                    "PreSize": {
+                      "X": 0.048,
+                      "Y": 0.04
+                    },
+                    "LeftMargin": 136.6939,
+                    "RightMargin": 347.3061,
+                    "TopMargin": 98.09,
+                    "BottomMargin": 85.91,
+                    "Tag": 51,
+                    "ActionTag": -1259547663,
+                    "Size": {
+                      "X": 16.0,
+                      "Y": 16.0
+                    },
+                    "Name": "Image_money",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "res/exp.png",
+                      "Plist": "ui.plist"
+                    },
+                    "Scale9Width": 46,
+                    "Scale9Height": 29,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 236.2741,
+                      "Y": 93.91
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4725,
+                      "Y": 0.4696
+                    },
+                    "PreSize": {
+                      "X": 0.0721,
+                      "Y": 0.04
+                    },
+                    "LeftMargin": 224.2741,
+                    "RightMargin": 251.7259,
+                    "TopMargin": 98.09,
+                    "BottomMargin": 85.91,
+                    "Tag": 52,
+                    "ActionTag": 1707669157,
+                    "Size": {
+                      "X": 24.0,
+                      "Y": 16.0
+                    },
+                    "Name": "Image_exp",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 14,
+                    "LabelText": "99999999",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "G": 127,
+                      "B": 80
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 365.1094,
+                      "Y": 91.5994
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7302,
+                      "Y": 0.458
+                    },
+                    "PreSize": {
+                      "X": 0.1802,
+                      "Y": 0.05
+                    },
+                    "LeftMargin": 335.1094,
+                    "RightMargin": 104.8906,
+                    "TopMargin": 98.4006,
+                    "BottomMargin": 81.5994,
+                    "Tag": 53,
+                    "ActionTag": 1338165149,
+                    "Size": {
+                      "X": 60.0,
+                      "Y": 20.0
+                    },
+                    "Name": "Text_token",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "res/token.png",
+                      "Plist": "ui.plist"
+                    },
+                    "Scale9Width": 32,
+                    "Scale9Height": 32,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 321.3337,
+                      "Y": 93.91
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6427,
+                      "Y": 0.4696
+                    },
+                    "PreSize": {
+                      "X": 0.04,
+                      "Y": 0.1
+                    },
+                    "LeftMargin": 311.3337,
+                    "RightMargin": 168.6663,
+                    "TopMargin": 96.09,
+                    "BottomMargin": 83.91,
+                    "Tag": 54,
+                    "ActionTag": -1951182965,
+                    "Size": {
+                      "X": 20.0,
+                      "Y": 20.0
+                    },
+                    "Name": "Image_token",
+                    "ctype": "ImageViewObjectData"
+                  },
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 20,
+                    "LabelText": "Title",
+                    "HorizontalAlignmentType": "HT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "G": 127,
+                      "B": 80
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 252.1594,
+                      "Y": 128.7497
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5043,
+                      "Y": 0.6437
+                    },
+                    "PreSize": {
+                      "X": 0.4,
+                      "Y": 0.1
+                    },
+                    "LeftMargin": 152.1594,
+                    "RightMargin": 147.8406,
+                    "TopMargin": 61.2503,
+                    "BottomMargin": 118.7497,
+                    "Tag": 55,
+                    "ActionTag": 564180770,
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 20.0
+                    },
+                    "Name": "Text_title",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 16,
+                    "LabelText": "点击关闭",
+                    "HorizontalAlignmentType": "HT_Center",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "G": 127,
+                      "B": 80
+                    },
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 1.0
+                    },
+                    "Position": {
+                      "X": 246.5768,
+                      "Y": -31.3573
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4932,
+                      "Y": -0.1568
+                    },
+                    "PreSize": {
+                      "X": 1.2,
+                      "Y": 2.5
+                    },
+                    "LeftMargin": -53.4232,
+                    "RightMargin": -46.5768,
+                    "TopMargin": 231.3573,
+                    "BottomMargin": -531.3573,
+                    "Tag": 56,
+                    "ActionTag": -1353447133,
+                    "Size": {
+                      "X": 600.0,
+                      "Y": 500.0
+                    },
+                    "Name": "Text_close",
+                    "ctype": "TextObjectData"
+                  }
+                ],
+                "ActionTag": 734495005,
+                "Size": {
+                  "X": 500.0,
+                  "Y": 200.0
+                },
+                "Name": "Panel_2",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": -226192400,
+            "Size": {
+              "X": 640.0,
+              "Y": 1136.0
+            },
+            "Name": "Panel_1",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Layer"
+}

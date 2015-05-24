@@ -1,0 +1,87 @@
+    <script type="text/javascript">
+        function MenuClick(aURL) {
+            window.location.href=aURL;
+        }
+    </script>
+    <style>
+        .DivMenu {
+            /*  background: rgba(255, 255, 255, 0.8) !important;  IE无效，FF有效 */
+            /* filter: alpha(opacity =  80);
+            background: #fff;*/
+
+            width: 100%;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            text-align: center;
+            z-index:1;
+        }
+
+
+
+
+    </style>
+    <script type="text/javascript" language="javascript">
+        //加入收藏
+        function AddFavorite(sURL, sTitle)
+        {
+            sURL = encodeURI(sURL);
+
+            try{
+                window.external.addFavorite(sURL, sTitle);
+            }catch(e)
+            {
+                try{
+                    window.sidebar.addPanel(sTitle, sURL, "");
+                }catch (e)
+                {
+                    ShowHint("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.",280,100,3000);
+                }
+            }
+        }
+        //设为首页
+        function SetHome(url){
+
+            if (document.all)
+            {
+
+                document.body.style.behavior='url(#default#homepage)';
+                document.body.setHomePage(url);
+            }else{
+                ShowHint("您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!",280,100,3000);
+            }
+        }
+    </script>
+
+<div class="DivMenu">
+    <div style="position: relative; width: 980px; margin: 0 auto;">
+        <div onclick="MenuClick('/')" style="cursor:pointer;position: absolute; left: 230px; top: 0px; z-index: 10">
+            <img width=100 height=100 src="/Public/Img/Menu1.png" />
+        </div>
+        <div onclick="MenuClick('/soft')" style="cursor:pointer;position: absolute; left: 360px; top: 0px; z-index: 10">
+            <img width=100 height=100 src="/Public/Img/Menu5.png" />
+        </div>
+        <div onclick="MenuClick('/mall')" style="cursor:pointer;position: absolute; left: 490px; top: 0px; z-index: 10">
+            <img width=100 height=100 src="/Public/Img/Menu2.png" />
+        </div>
+        <div onclick="MenuClick('/top')" style="cursor:pointer;position: absolute; left: 620px; top: 0px; z-index: 10">
+            <img 	width=100 height=100 src="/Public/Img/Menu3.png" />
+        </div>
+        <div onclick="MenuClick('/zone')" style="cursor:pointer;position: absolute; left: 750px; top: 0px; z-index: 10">
+            <img 	width=100 height=100 src="/Public/Img/Menu4.png" />
+        </div>
+
+        <div style="float: left; width: 180"><img src="/Public/Img/WebLogo.png" /></div>
+
+        <div style="float: right; width: 180"><a  onclick="SetHome('{{sysSetup.HomePage}}')">设为首页</a><br />
+            <a onclick="AddFavorite('{{sysSetup.HomePage}}','{{sysSetup.SiteName}}')">收藏本站</a><br />
+            <a href="/public/download/{{sysSetup.SiteName}}.url">保存桌面</a><br />
+            <a href="/zone/userChat/77000">你提我改</a></div>
+
+
+    </div>
+
+    <div class="clear"></div>
+</div>
+
+<div class="clear"></div>

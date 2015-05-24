@@ -1,0 +1,54 @@
+
+<script type='text/javascript' src='/public/js/jQuery.md5.js'></script>
+
+<div  style=" width: 300px;height:200px;">
+    <div class="font24 b importColor">找回密码</div>
+
+    <div class="textCenter" id="step1">
+        <form class="pure-form">
+            <fieldset>
+            <div >
+                <div><label for="userCode">请输入要找回的号码</label><br/>
+                    <br/><input id="userCode" style="width: 180px" type="text"></div>
+                <br/>
+                <div>
+                    <span  id="btnNext1" class="pure-button button-blue" onclick="findPWD(1)" style="width: 200px">下一步</span>
+                </div>
+            </div>
+                </fieldset>
+        </form>
+    </div>
+    <div class="textCenter" id="step2" style="display: none">
+        <form class="pure-form">
+            <div >
+                <div><label for="userCode">密保提示问题:&nbsp;&nbsp;</label><span class="importColor" id="question"></span> </div> <br/>
+                <div><label for="userCode">输入您的答案:&nbsp;&nbsp;</label><input id="answer" style="width: 180px" type="text"></div> <br/>
+                <div >
+                    <span  id="btnNext2" class="pure-button button-blue" onclick="findPWD(2)" style="width: 200px">下一步</span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="textCenter" id="step3" style="display: none">
+        <form class="pure-form">
+            <div >
+                <div><label for="userCode">请输入新密码:&nbsp;&nbsp;</label><input id="passWD"  type="password"></div> <br/>
+                <div><label for="userCode">请确认新密码:&nbsp;&nbsp;</label><input id="conPWD"  type="password"></div> <br/>
+                <div class="textCenter">
+                    <span  id="btnNext3" class="pure-button button-blue" onclick="findPWD(3)" style="width: 200px">完成</span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    $(document).ready()
+    {
+        numOnly("userCode");
+        $.setTip("userCode","请输入要找回的号码");
+        $.setTip("answer","请输入输入您的答案");
+        $.setTip("PWD","请输入您的新密码");
+        $.setTip("conPWD","请确认您的新密码");
+
+    };
+</script>

@@ -1,0 +1,47 @@
+<style>
+    #divModify{
+        margin: 10px 30px;
+        width:300px;
+    }
+</style>
+<script type='text/javascript' src='/public/js/jQuery.md5.js'></script>
+
+<div class="borderLeft">
+    <div id="divModify" class="center">
+
+        <div class="font18 b importColor">修改银行密码</div>
+        <div class="" >
+            <br><br><br>
+            <form class="pure-form">
+                <fieldset>
+
+                    <div >
+                        <label for="oldPWD">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;原银行密码:&nbsp;&nbsp;</label>
+                        <input id="oldPWD"  style="width: 180px" type="password" value="" >
+                    </div><br>
+                    <div >
+                        <label for="newPWD">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新银行密码:&nbsp;&nbsp;</label>
+                        <input id="newPWD"  style="width: 180px" type="password" value="" >
+                    </div><br>
+                    <div >
+                        <label for="conPWD">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;确认新密码:&nbsp;&nbsp;</label>
+                        <input id="conPWD"  style="width: 180px" type="password" value="" >
+                    </div><br>
+
+                    <div class="textCenter">
+                        <span id="btnModify" class="pure-button button-blue" onclick="modifyPayPWD()" style="width: 120px">修改银行密码</span>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready()
+    {
+        $.setTip("oldPWD","请输入原登录密码");
+        $.setTip("newPWD","请输入新登录密码");
+        $.setTip("conPWD","请确认新登录密码");
+    };
+</script>
+

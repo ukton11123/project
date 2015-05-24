@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{{sysSetup.SiteName}}后台管理系统</title>
+    {{include "../meta"}}
+
+</head>
+<style>
+    .mainDiv {
+        width:1224px;
+        margin-top:10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+{{include "menu"}}
+<div class="mainDiv alpha center radius">
+    <div style="margin: 10px 10px;position:relative;">
+        <h3>系统红包管理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="window.location.href='/admin/redBag'" class="pure-button">刷新</button></h3>
+        <table class="pure-table pure-table-horizontal">
+            <thead>
+            <tr align="center">
+                {{each rowsfields as field}}
+                <th>
+                    {{if field.Comment.substr(1,1)=="_"}}
+                    {{field.Comment.substr(2,field.Comment.length)}}
+                    {{else}}
+                    {{field.Comment}}
+                    {{/if}}
+                </th>
+                {{/each}}
+                <th>操作</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <form class="pure-form"  action="/admin/redBag/send/" method="post">
+                    <td colspan="3">
+
+                        <input class="pure-input" required type="text" name="money" placeholder="请输入数据...">
+
+                    </td>
+                    <td>
+                        <button type="submit"  class="pure-button pure-button-primary">立即发送</button></td>
+                </form>
+            </tr>
+            <tr>
+                <form class="pure-form"  action="/admin/redBag/insert/{{tableName}}" method="post">
+                    {{each rowsfields as field}}
+                    <td>
+                    {{if field.Field!="ID"}}
+                    <input class="pure-input" required type="text" name="{{field.Field}}" placeholder="请输入数据...">
+                    {{/if}}
+                    </td>
+                    {{/each}}
+                    <td><button type="submit" class="pure-button pure-button-primary">新建</button>
+                    </td>
+                </form>
+            </tr>
+            {{each rowsData as row}}
+
+            <tr>
+                <form class="pure-form" accept-charset="utf-8" action="/admin/redBag/modify/{{row.ID}}" method="post">
+                    {{each rowsfields as field}}
+
+                    <td>
+
+                        <input class="pure-input" {{if field.Field=="ID"}} readonly {{/if}} type="text" name="{{field.Field}}"   value="{{row[field.Field]}}">
+
+
+                    </td>
+
+                    {{/each}}
+                    <td>
+                        <button type="submit" class="pure-button pure-button-primary">修改</button>
+                </form>
+                <button onclick="window.location.href='/admin/redBag/delete/{{row.ID}}'" class="pure-button">删除</button>
+
+                </td>
+
+
+            </tr>
+
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
+
+{{if msg}}
+<script>
+    $.colorbox.showHint('{{msg}}');
+</script>
+{{/if}}
+</body>
+</html>

@@ -1,0 +1,439 @@
+{
+  "ID": "1617acdd-9a25-4a45-bb3a-e050d04bbfaa",
+  "Version": "2.2.5.0",
+  "Name": "home",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 70,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/BG.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.0,
+              "Y": 568.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Tag": 75,
+            "ActionTag": 878292234,
+            "Size": {
+              "X": 640.0,
+              "Y": 1136.0
+            },
+            "Name": "ui_BG_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "MarkedSubImage",
+              "Path": "res/task.png",
+              "Plist": "ui.plist"
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 569.5,
+              "Y": 994.5
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8898,
+              "Y": 0.8754
+            },
+            "PreSize": {
+              "X": 0.1,
+              "Y": 0.0563
+            },
+            "LeftMargin": 537.5,
+            "RightMargin": 38.5,
+            "TopMargin": 109.5,
+            "BottomMargin": 962.5,
+            "Tag": 26,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "res/hint.png",
+                  "Plist": "ui.plist"
+                },
+                "Scale9Width": 16,
+                "Scale9Height": 16,
+                "VisibleForFrame": false,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 48.4597,
+                  "Y": 13.5147
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7572,
+                  "Y": 0.2112
+                },
+                "PreSize": {
+                  "X": 0.25,
+                  "Y": 0.25
+                },
+                "LeftMargin": 40.4597,
+                "RightMargin": 7.5403,
+                "TopMargin": 42.4853,
+                "BottomMargin": 5.5147,
+                "Tag": 32,
+                "ActionTag": 267378461,
+                "Size": {
+                  "X": 16.0,
+                  "Y": 16.0
+                },
+                "Name": "Image_task_hint",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -1450448659,
+            "Size": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "Name": "Image_task",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/gift.png",
+              "Plist": ""
+            },
+            "Scale9Width": 64,
+            "Scale9Height": 64,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 491.0,
+              "Y": 993.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7672,
+              "Y": 0.8741
+            },
+            "PreSize": {
+              "X": 0.1,
+              "Y": 0.0563
+            },
+            "LeftMargin": 459.0,
+            "RightMargin": 117.0,
+            "TopMargin": 111.0,
+            "BottomMargin": 961.0,
+            "Tag": 27,
+            "Children": [
+              {
+                "IsCustomSize": true,
+                "FontSize": 20,
+                "LabelText": "",
+                "HorizontalAlignmentType": "HT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 30.8199,
+                  "Y": -11.6296
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4816,
+                  "Y": -0.1817
+                },
+                "PreSize": {
+                  "X": 1.5625,
+                  "Y": 0.3125
+                },
+                "LeftMargin": -19.1801,
+                "RightMargin": -16.8199,
+                "TopMargin": 65.6296,
+                "BottomMargin": -21.6296,
+                "Tag": 28,
+                "ActionTag": -893861986,
+                "Size": {
+                  "X": 100.0,
+                  "Y": 20.0
+                },
+                "Name": "Text_gift",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "res/hint.png",
+                  "Plist": "ui.plist"
+                },
+                "VisibleForFrame": false,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 54.1929,
+                  "Y": 13.8921
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8468,
+                  "Y": 0.2171
+                },
+                "PreSize": {
+                  "X": 0.25,
+                  "Y": 0.25
+                },
+                "LeftMargin": 46.1929,
+                "RightMargin": 1.8071,
+                "TopMargin": 42.1079,
+                "BottomMargin": 5.8921,
+                "Tag": 30,
+                "ActionTag": -284635211,
+                "Size": {
+                  "X": 16.0,
+                  "Y": 16.0
+                },
+                "Name": "Image_gift_hint",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -1818544188,
+            "Size": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "Name": "Image_gift",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/women.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 163.6745,
+              "Y": 264.9312
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2557,
+              "Y": 0.2332
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -6.8255,
+            "RightMargin": 305.8255,
+            "TopMargin": 676.5688,
+            "BottomMargin": 70.4312,
+            "Tag": 8,
+            "ActionTag": -243723435,
+            "Size": {
+              "X": 341.0,
+              "Y": 389.0
+            },
+            "Name": "women_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "MarkedSubImage",
+              "Path": "res/dialog2.png",
+              "Plist": "ui.plist"
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 117,
+            "Scale9OriginY": 60,
+            "Scale9Width": 4,
+            "Scale9Height": 64,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 434.2111,
+              "Y": 242.1165
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6785,
+              "Y": 0.2131
+            },
+            "PreSize": {
+              "X": 0.6031,
+              "Y": 0.2165
+            },
+            "LeftMargin": 241.2111,
+            "RightMargin": 12.7889,
+            "TopMargin": 770.8835,
+            "BottomMargin": 119.1165,
+            "Tag": 11,
+            "ActionTag": 17931684,
+            "Size": {
+              "X": 386.0,
+              "Y": 246.0
+            },
+            "Name": "Image_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FontSize": 24,
+            "LabelText": "欢迎进入猎魔英雄传,\n祝您游戏愉快",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 474.9455,
+              "Y": 250.264
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7421,
+              "Y": 0.2203
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 360.9455,
+            "RightMargin": 51.0545,
+            "TopMargin": 861.736,
+            "BottomMargin": 226.264,
+            "Tag": 12,
+            "ActionTag": -1238148842,
+            "Size": {
+              "X": 228.0,
+              "Y": 48.0
+            },
+            "Name": "Text_1",
+            "ctype": "TextObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

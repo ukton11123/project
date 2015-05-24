@@ -1,0 +1,1074 @@
+{
+  "ID": "eae46b87-f815-47b1-a2bd-d8d7f648b939",
+  "Version": "2.2.5.0",
+  "Name": "fight",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 60,
+        "Speed": 1.0,
+        "Timelines": [
+          {
+            "ActionTag": 1302059443,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": -238.8273,
+                "Y": 478.8657,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 338.83,
+                "Y": 478.8657,
+                "FrameIndex": 10,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 338.83,
+                "Y": 478.8657,
+                "FrameIndex": 50,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 938.83,
+                "Y": 478.8657,
+                "FrameIndex": 60,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1302059443,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1302059443,
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          }
+        ],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 73,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 92.4435,
+              "Y": 29.1818
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1444,
+              "Y": 0.0257
+            },
+            "PreSize": {
+              "X": 0.625,
+              "Y": 0.1042
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BottomEdge",
+            "LeftMargin": 92.4435,
+            "RightMargin": 147.5565,
+            "TopMargin": 1006.8182,
+            "BottomMargin": 29.1818,
+            "Tag": 129,
+            "Children": [
+              {
+                "BackColorAlpha": 102,
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "res/skill1.png",
+                  "Plist": ""
+                },
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 64,
+                "Scale9Height": 64,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 22.0,
+                  "Y": 13.9999
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.055,
+                  "Y": 0.14
+                },
+                "PreSize": {
+                  "X": 0.16,
+                  "Y": 0.64
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 22.0,
+                "RightMargin": 314.0,
+                "TopMargin": 22.0001,
+                "BottomMargin": 13.9999,
+                "Tag": 130,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "res/skill_frame.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 33.0368,
+                      "Y": 32.6729
+                    },
+                    "Scale": {
+                      "ScaleX": 1.2,
+                      "ScaleY": 1.2
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5162,
+                      "Y": 0.5105
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BottomEdge",
+                    "LeftMargin": -8.9632,
+                    "RightMargin": -11.0368,
+                    "TopMargin": -9.6729,
+                    "BottomMargin": -8.3271,
+                    "Tag": 131,
+                    "ActionTag": -230420338,
+                    "Size": {
+                      "X": 84.0,
+                      "Y": 82.0
+                    },
+                    "Name": "Sprite_4",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "ProgressInfo": 100,
+                    "ImageFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "res/powerBar.png",
+                      "Plist": "ui.plist"
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 30.912,
+                      "Y": -19.455
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.483,
+                      "Y": -0.304
+                    },
+                    "PreSize": {
+                      "X": 1.5625,
+                      "Y": 0.2188
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BottomEdge",
+                    "LeftMargin": -19.088,
+                    "RightMargin": -16.912,
+                    "TopMargin": 76.455,
+                    "BottomMargin": -26.455,
+                    "Tag": 132,
+                    "ActionTag": 2097081253,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 14.0
+                    },
+                    "Name": "LoadingBar_1",
+                    "ctype": "LoadingBarObjectData"
+                  }
+                ],
+                "ActionTag": -1169119502,
+                "Size": {
+                  "X": 64.0,
+                  "Y": 64.0
+                },
+                "Name": "Panel_2",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "res/skill2.png",
+                  "Plist": ""
+                },
+                "ComboBoxIndex": 1,
+                "SingleColor": {},
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 64,
+                "Scale9Height": 64,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 180.0,
+                  "Y": 12.7273
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.45,
+                  "Y": 0.1273
+                },
+                "PreSize": {
+                  "X": 0.16,
+                  "Y": 0.64
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 180.0,
+                "RightMargin": 156.0,
+                "TopMargin": 23.2727,
+                "BottomMargin": 12.7273,
+                "Tag": 133,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "res/skill_frame.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 33.6192,
+                      "Y": 32.6729
+                    },
+                    "Scale": {
+                      "ScaleX": 1.2,
+                      "ScaleY": 1.2
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5253,
+                      "Y": 0.5105
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BottomEdge",
+                    "LeftMargin": -8.3808,
+                    "RightMargin": -11.6192,
+                    "TopMargin": -9.6729,
+                    "BottomMargin": -8.3271,
+                    "Tag": 134,
+                    "ActionTag": 1824464924,
+                    "Size": {
+                      "X": 84.0,
+                      "Y": 82.0
+                    },
+                    "Name": "Sprite_4_6",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "ProgressInfo": 100,
+                    "ImageFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "res/powerBar.png",
+                      "Plist": "ui.plist"
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 33.7216,
+                      "Y": -19.0915
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5269,
+                      "Y": -0.2983
+                    },
+                    "PreSize": {
+                      "X": 1.5625,
+                      "Y": 0.2188
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BottomEdge",
+                    "LeftMargin": -16.2784,
+                    "RightMargin": -19.7216,
+                    "TopMargin": 76.0915,
+                    "BottomMargin": -26.0915,
+                    "Tag": 135,
+                    "ActionTag": 1272909666,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 14.0
+                    },
+                    "Name": "LoadingBar_2",
+                    "ctype": "LoadingBarObjectData"
+                  }
+                ],
+                "ActionTag": -1517111826,
+                "Size": {
+                  "X": 64.0,
+                  "Y": 64.0
+                },
+                "Name": "Panel_2_0",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "res/skill3.png",
+                  "Plist": ""
+                },
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 64,
+                "Scale9Height": 64,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 347.28,
+                  "Y": 14.5454
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8682,
+                  "Y": 0.1455
+                },
+                "PreSize": {
+                  "X": 0.16,
+                  "Y": 0.64
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 347.28,
+                "RightMargin": -11.28,
+                "TopMargin": 21.4546,
+                "BottomMargin": 14.5454,
+                "Tag": 136,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "res/skill_frame.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 33.0368,
+                      "Y": 32.6729
+                    },
+                    "Scale": {
+                      "ScaleX": 1.2,
+                      "ScaleY": 1.2
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5162,
+                      "Y": 0.5105
+                    },
+                    "PreSize": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BottomEdge",
+                    "LeftMargin": -8.9632,
+                    "RightMargin": -11.0368,
+                    "TopMargin": -9.6729,
+                    "BottomMargin": -8.3271,
+                    "Tag": 137,
+                    "ActionTag": 1867831008,
+                    "Size": {
+                      "X": 84.0,
+                      "Y": 82.0
+                    },
+                    "Name": "Sprite_4_8",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "ProgressInfo": 100,
+                    "ImageFileData": {
+                      "Type": "MarkedSubImage",
+                      "Path": "res/powerBar.png",
+                      "Plist": "ui.plist"
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 30.912,
+                      "Y": -20.0005
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.483,
+                      "Y": -0.3125
+                    },
+                    "PreSize": {
+                      "X": 1.5625,
+                      "Y": 0.2188
+                    },
+                    "HorizontalEdge": "BothEdge",
+                    "VerticalEdge": "BottomEdge",
+                    "LeftMargin": -19.088,
+                    "RightMargin": -16.912,
+                    "TopMargin": 77.0005,
+                    "BottomMargin": -27.0005,
+                    "Tag": 138,
+                    "ActionTag": 164529469,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 14.0
+                    },
+                    "Name": "LoadingBar_3",
+                    "ctype": "LoadingBarObjectData"
+                  }
+                ],
+                "ActionTag": -1948089242,
+                "Size": {
+                  "X": 64.0,
+                  "Y": 64.0
+                },
+                "Name": "Panel_2_1",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": -912440193,
+            "Size": {
+              "X": 400.0,
+              "Y": 100.0
+            },
+            "Name": "Panel_1",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "IsCustomSize": true,
+            "FontSize": 14,
+            "LabelText": "600/600",
+            "HorizontalAlignmentType": "HT_Center",
+            "OutlineSize": 0,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "ShadowOffsetX": 0,
+            "ShadowOffsetY": 0,
+            "VisibleForFrame": false,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 219.2064,
+              "Y": 926.8928
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3425,
+              "Y": 0.8159
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 169.2064,
+            "RightMargin": 370.7936,
+            "TopMargin": 199.1072,
+            "BottomMargin": 916.8928,
+            "Tag": 55,
+            "ActionTag": 1139820000,
+            "Size": {
+              "X": 100.0,
+              "Y": 20.0
+            },
+            "Name": "Text_time",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/hit.png",
+              "Plist": ""
+            },
+            "Scale9Width": 64,
+            "Scale9Height": 34,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 595.5,
+              "Y": 615.925
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9305,
+              "Y": 0.5422
+            },
+            "PreSize": {
+              "X": 0.1,
+              "Y": 0.0354
+            },
+            "HorizontalEdge": "RightEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 563.5,
+            "RightMargin": 12.5,
+            "TopMargin": 503.075,
+            "BottomMargin": 598.925,
+            "Tag": 25,
+            "ActionTag": -95042163,
+            "Size": {
+              "X": 64.0,
+              "Y": 34.0
+            },
+            "Name": "Image_hit",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Enable": true,
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 326.0,
+              "Y": 227.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5094,
+              "Y": 0.1998
+            },
+            "PreSize": {
+              "X": 0.8594,
+              "Y": 0.0387
+            },
+            "LeftMargin": 51.0,
+            "RightMargin": 39.0,
+            "TopMargin": 887.0,
+            "BottomMargin": 205.0,
+            "Tag": 61,
+            "Children": [
+              {
+                "ProgressInfo": 100,
+                "ImageFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "res/bloodBar.png",
+                  "Plist": "ui.plist"
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 275.5,
+                  "Y": 20.5
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5009,
+                  "Y": 0.4659
+                },
+                "PreSize": {
+                  "X": 0.9821,
+                  "Y": 0.8
+                },
+                "LeftMargin": 0.5,
+                "RightMargin": -0.5,
+                "TopMargin": 3.5,
+                "BottomMargin": 0.5,
+                "Tag": 86,
+                "ActionTag": -564718775,
+                "Size": {
+                  "X": 550.0,
+                  "Y": 40.0
+                },
+                "Name": "LoadingBar_HP",
+                "ctype": "LoadingBarObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 20,
+                "LabelText": "0/0",
+                "HorizontalAlignmentType": "HT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 280.995,
+                  "Y": 18.1429
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5109,
+                  "Y": 0.4123
+                },
+                "PreSize": {
+                  "X": 0.3125,
+                  "Y": 0.024
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 180.995,
+                "RightMargin": 169.005,
+                "TopMargin": 14.3571,
+                "BottomMargin": 6.6429,
+                "Tag": 88,
+                "ActionTag": 431290251,
+                "Size": {
+                  "X": 200.0,
+                  "Y": 23.0
+                },
+                "Name": "Text_HP",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -550772533,
+            "Size": {
+              "X": 550.0,
+              "Y": 44.0
+            },
+            "Name": "Panel_3",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Enable": true,
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 373.7668,
+              "Y": 1105.0864
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.584,
+              "Y": 0.9728
+            },
+            "PreSize": {
+              "X": 0.3969,
+              "Y": 0.022
+            },
+            "LeftMargin": 246.7668,
+            "RightMargin": 139.2332,
+            "TopMargin": 18.4136,
+            "BottomMargin": 1092.5864,
+            "Tag": 62,
+            "Children": [
+              {
+                "ProgressInfo": 100,
+                "ImageFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "res/expProgress.png",
+                  "Plist": "ui.plist"
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 125.1138,
+                  "Y": 12.2356
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4926,
+                  "Y": 0.4894
+                },
+                "PreSize": {
+                  "X": 0.3906,
+                  "Y": 0.0185
+                },
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 0.1138,
+                "RightMargin": 3.8862,
+                "TopMargin": 2.2644,
+                "BottomMargin": 1.7356,
+                "Tag": 53,
+                "ActionTag": -1545971735,
+                "Size": {
+                  "X": 250.0,
+                  "Y": 21.0
+                },
+                "Name": "LoadingBar_time",
+                "ctype": "LoadingBarObjectData"
+              }
+            ],
+            "ActionTag": -1915612834,
+            "Size": {
+              "X": 254.0,
+              "Y": 25.0
+            },
+            "Name": "Panel_3_0",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/playSkill.png",
+              "Plist": ""
+            },
+            "Scale9Width": 640,
+            "Scale9Height": 446,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 680.0,
+              "Y": 242.1441
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 1.0625,
+              "Y": 0.2132
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 0.3926
+            },
+            "LeftMargin": 680.0,
+            "RightMargin": -680.0,
+            "TopMargin": 447.8559,
+            "BottomMargin": 242.1441,
+            "Tag": 62,
+            "ActionTag": 807338853,
+            "Size": {
+              "X": 640.0,
+              "Y": 446.0
+            },
+            "Name": "Image_skill",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/alarm.png",
+              "Plist": ""
+            },
+            "Scale9Width": 32,
+            "Scale9Height": 32,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 214.3654,
+              "Y": 1105.0811
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3349,
+              "Y": 0.9728
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 191.3654,
+            "RightMargin": 402.6346,
+            "TopMargin": 7.9189,
+            "BottomMargin": 1082.0811,
+            "Tag": 107,
+            "ActionTag": 286038769,
+            "Size": {
+              "X": 46.0,
+              "Y": 46.0
+            },
+            "Name": "Image_Clock",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/attack.png",
+              "Plist": ""
+            },
+            "Scale9Width": 467,
+            "Scale9Height": 127,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 338.83,
+              "Y": 478.8657
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5294,
+              "Y": 0.4215
+            },
+            "PreSize": {
+              "X": 0.7297,
+              "Y": 0.1118
+            },
+            "LeftMargin": 105.33,
+            "RightMargin": 67.67,
+            "TopMargin": 593.6343,
+            "BottomMargin": 415.3657,
+            "Tag": 108,
+            "ActionTag": 1302059443,
+            "Size": {
+              "X": 467.0,
+              "Y": 127.0
+            },
+            "Name": "Image_attack",
+            "ctype": "ImageViewObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

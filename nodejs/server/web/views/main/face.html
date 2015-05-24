@@ -1,0 +1,75 @@
+<link rel='stylesheet' media='screen' type='text/css' href='/public/plugin/tab/tab.css'/>
+<script type='text/javascript' src='/public/plugin/tab/tab.js'></script>
+<style>
+    .faceDiv{
+        width:370px;
+        height:300px;
+        border:#eee solid 1px;
+        background:#FBFBFB;
+
+    }
+    .faceItem{
+        text-align:center;
+        width:70px;
+        height:70px;
+        line-height:40px;
+        vertical-align:middle;
+        float:left;
+        cursor:pointer;
+    }
+
+
+
+</style>
+<script type="text/javascript">
+    $(document).ready()
+    {
+         $("#UITab").initTab();
+    };
+</script>
+<!--<input type="button" class="closeButton radius" onclick="closeFace()" value="X"/>-->
+
+<div class="faceDiv radius" id="UITab">
+    <div class="UITabList">
+        <ul>
+            <li class="cur">清新</li>
+            <li>女生</li>
+            <li>男生</li>
+            <li>可爱</li>
+            <div class="right closeButton" onclick="closeFace()">X</div>
+        </ul>
+    </div>
+    <div class="clear"></div>
+    <div class="UITabCon">
+        <div class="UITabBody">
+            {{each dataFace as row}}
+            {{if row.Type==1}}
+            <div class="faceItem" ><img onclick="selectFace(this.src)" class="photo" src="/public/img/face/{{row.Img}}"/></div>
+            {{/if}}
+            {{/each}}
+        </div>
+        <div class="clear"></div>
+        <div class="UITabBody">
+            {{each dataFace as row}}
+            {{if row.Type==2}}
+            <div class="faceItem" ><img onclick="selectFace(this.src)" class="photo" src="/public/img/face/{{row.Img}}"/></div>
+            {{/if}}
+            {{/each}}
+        </div>
+        <div class="UITabBody">
+            {{each dataFace as row}}
+            {{if row.Type==3}}
+            <div class="faceItem" ><img onclick="selectFace(this.src)" class="photo" src="/public/img/face/{{row.Img}}"/></div>
+            {{/if}}
+            {{/each}}
+        </div>
+        <div class="UITabBody">
+            {{each dataFace as row}}
+            {{if row.Type==4}}
+            <div class="faceItem" ><img onclick="selectFace(this.src)" class="photo" src="/public/img/face/{{row.Img}}"/></div>
+            {{/if}}
+            {{/each}}
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>

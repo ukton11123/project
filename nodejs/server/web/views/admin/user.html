@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{{sysSetup.SiteName}}后台管理系统</title>
+    {{include "../meta"}}
+
+</head>
+<style>
+    .mainDiv {
+        width:1024px;
+        margin-top:10px;
+    }
+</style>
+
+<body>
+{{include "menu"}}
+
+<div class="mainDiv  center radius">
+    <div style="margin: 10px 10px;margin-left: 100px;position:relative;">
+        <h3>用户管理</h3>
+        <form class="pure-form"  action="/admin/user/show" method="post">
+            <input type="text" class="pure-input-rounded" name="UserCode" value="{{UserCode}}">
+            <button type="submit" class="pure-button">搜索</button>
+        </form>
+        <form class="pure-form pure-form-stacked" name="form1" action="/admin/user/modify/{{UserCode}}" method="post">
+            <fieldset>
+                <legend>
+
+                </legend>
+
+                <div class="pure-g">
+                    {{each rowsfields as fields}}
+                    {{if fields.Comment!=""}}
+                    <div class="pure-u-1-3">
+                        <label >{{fields.Comment}}</label>
+                        {{if fields.Field=="Sex"}}
+                        <select name="Sex" class="pure-input-medium">
+                            <option value="0" {{if rowData && rowData["Sex"]==0}}selected{{/if}}>女</option>
+                            <option value="1" {{if rowData && rowData["Sex"]==1}}selected{{/if}}>男</option>
+                        </select>
+                        {{else if fields.Field=="DomainCode"}}
+                        <select name="DomainCode" class="pure-input-medium-1">
+                            {{each dataRoomType as data}}
+                            <option value="{{data.ID}}" {{if rowData && rowData["DomainCode"]==data.ID}}selected{{/if}}>{{data.Name}}</option>
+                            {{/each}}
+                        </select>
+                        {{else if fields.Field=="UserType"}}
+                        <select name="UserType" class="pure-input-medium-1">
+                            {{each dataRank as data}}
+                            <option value="{{data.ID}}" {{if rowData && rowData["UserType"]==data.ID}}selected{{/if}}>{{data.Name}}</option>
+                            {{/each}}
+                        </select>
+                        {{else}}
+                        <input class="pure-input-2-3"  type="text" name="{{fields.Field}}" value="{{if rowData}}{{rowData[fields.Field]}}{{/if}}">
+                        {{if fields.Field=="Face" && rowData}}
+                            <img src="{{rowData.Face}}"/>
+                        {{/if}}
+                        {{/if}}
+
+                    </div>
+                    {{/if}}
+                    {{/each}}
+                </div>
+                <div class="pure-u-1-1 textcenter">
+
+                    <button type="submit" class="pure-button pure-button-primary" Onclick="form1.action='/admin/User/insert';form1.submit();">新建</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="submit" class="pure-button pure-button-primary">修改</button>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+                </div>
+            </fieldset>
+        </form>
+        <div>
+            <form  class="pure-form pure-form"  action="/admin/user/createMutil" method="post">
+            起始号码:<input type="text" name="UserCode" value="" size="5">结束号码:<input type="text" name="endCode" value="" size="5"> <button type="submit" class="pure-button pure-button-primary">新建号段</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="mainDiv  center radius">
+    <div style="margin: 10px 10px;margin-left: 100px;position:relative;">
+    <h3>道具管理</h3>
+        <div class="b importColor">使用中的道具</div>
+
+        <div class="" >
+            <table class="pure-table pure-table-horizontal" width="100%">
+                <thead>
+                <tr align="center">
+                    <th>图片</th>
+                    <th>名称</th>
+                    <th>数量</th>
+                    <th>到期</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                {{each rowsProps as row}}
+                <tr  align="center">
+                    <td><img width=100 height=67 src="/public/img/mall/{{row.Img}}"/></td>
+                    <td>{{row.Name}}</td>
+                    <td>{{row.Amount}}个{{row.PropsID}}</td>
+                    <td>{{row.Time}}</td>
+                    <td><button class="pure-button  pure-button-primary"  Onclick="window.location='/admin/User/delProps/{{row.PropsID}}/{{UserCode}}'">删除</button></td>
+                </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </div>
+        <div class="b importColor">新增道具</div>
+        <form  class="pure-form pure-form"  action="/admin/user/addProps/{{UserCode}}" method="post">
+        <input type="hidden" name="UserCode" value="{{UserCode}}">
+        <select name="propsID" class="pure-input-medium-1">
+            {{each dataMall as data}}
+            <option value="{{data.ID}}">{{data.Name}}</option>
+            {{/each}}
+        </select>
+        数量:<input  type="text" name="amount" value="1">
+        <button type="submit" class="pure-button  pure-button-primary">新增</button>
+        </form>
+    </div>
+</div>
+{{if msg}}
+<script>
+    $.colorbox.showHint('{{msg}}');
+</script>
+
+{{/if}}
+</body>
+</html>

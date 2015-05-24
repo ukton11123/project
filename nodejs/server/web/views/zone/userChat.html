@@ -1,0 +1,34 @@
+{{if !showUser}}
+<div class="title ">室主未开通个人空间</div>
+{{else}}
+<input type="hidden" name="myCode" value="{{myCode}}"/>
+
+<div class="title ">{{myCode==showUser.UserCode?"我的广播":showUser.NickName+"的广播"}}</div>
+
+{{if myCode==showUser.UserCode}}
+{{include "input"}}
+{{else}}
+<div >
+    {{showUser.NickName}}({{showUser.UserCode}})   &nbsp;&nbsp;&nbsp;<font size="2">{{showUser.Name}}
+    {{if showUser.Img}}<img src="/public/img/rank/{{showUser.Img}}"/>{{/if}}
+    <span class="badage">{{showUser.Level}}</span></font>
+
+    <div>{{showUser.UserExplain}}</div>
+    <div>
+        <div id="Care" class="button left" OnClick="Care({{showUser.UserCode}})">{{showUser.cared?"取消关注":"关注Ta"}}</div>
+        <div class="button left" onclick="SendMsg({{showUser.UserCode}})">发信息</div>
+    </div>
+
+</div>
+<div class="clear"></div>
+<div id="MsgDiv"></div>
+{{/if}}
+<div class="clear"></div>
+<div id="chatListDiv">
+    {{include "chatList"}}
+</div>
+{{if showUser.UserCode==77000}}
+        <script>SendMsg({{showUser.UserCode}});</script>
+{{/if}}
+{{/if}}
+

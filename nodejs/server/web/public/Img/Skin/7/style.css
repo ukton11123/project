@@ -1,0 +1,24 @@
+/*###########################
+   @Name:温情冬日 
+#############################*/
+/* CSS Document begin */
+
+body{ 
+	background-color:#F5F5E9; 
+	background-image:url(bg.jpg);
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+a:link{
+	color:#006a92;
+	text-decoration:none;
+}
+a:visited{
+	color:#006a92;
+	text-decoration:none;
+}
+a:hover{
+	color:#006a92;
+	text-decoration: underline;
+}

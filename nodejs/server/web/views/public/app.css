@@ -1,0 +1,107 @@
+.RoomImg
+{
+    margin-top:9px;
+}
+.RoomImg:hover
+{
+    background: rgba(0, 0, 0, 0.5) !important; /* IE无效，FF有效 */
+    filter: alpha(opacity=50);
+    background: #000;
+
+}
+.roomItem
+{
+    width:190px;
+    height:200px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.roomBG{
+    background-image: url(/public/img/ChatRoomBG.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    width: 180px;
+    height: 140px;
+    text-align: center;
+}
+.info
+{
+    background: rgba(0, 0, 0, 0.5) !important; /* IE无效，FF有效 */
+    filter: alpha(opacity=50);
+    background: #000;
+    color: #fff;
+    position: relative;
+    top: 130px;
+    width: 160px;
+    height:24px;
+    left: 10px;
+    *left: 0px;
+}
+.mainDiv {
+    min-width: 1024px;
+    width:1220px;
+}
+.leftDiv {
+    width:236px;
+    float: left;
+}
+.leftSub {
+    margin:10px 10px;
+
+}
+.rightDiv {
+    width:984px;
+    float: right;
+}
+
+#kinMaxShow{width:1900px;text-align:center;margin: 0 auto; height:250px;overflow:hidden;background: #FEFEFE}
+
+.roomTypeMenu{
+    color: #777777;
+    float: left;
+    width: 130px;
+    text-align: center;
+    margin-top: 10px;
+    border-left: #777777 1px solid;
+}
+
+.roomTypeMenu:hover
+{
+    border-left: #bf1f4d 2px solid;
+    color: #bf1f4d;
+    font-weight: bold;
+}
+.selectedMenu
+{
+    border-left: #bf1f4d 2px solid;
+    color: #bf1f4d;
+    font-weight: bold;
+}
+.roomTypeMenu .subMenu{
+    display: none;
+    position: absolute;
+    width: 130px;
+    background: #fefefe;
+    border: #bbb 1px solid;
+    text-align: center;
+    z-index: 10;
+    color: #777777;
+    font-size: 12px;
+}
+.roomTypeMenu .subMenu .subMenuItem
+{
+    height: 28px;
+    margin: 0 auto;
+    border-bottom:#bbb 1px dotted;
+    text-align: center;
+    line-height: 28px;
+}
+.roomTypeMenu .subMenu .subMenuItem:hover{
+    color: #ffaf24;
+}
+.banner{
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

@@ -1,0 +1,23 @@
+
+
+<div id="inputDiv{{chatType}}" class="inputDiv" >
+    <input type='file' id='LocalFile' style='display: none'   onchange="UploadImg({{chatType}})">
+    <div id="Tip" style="font-size: 16px">请输入你想说的话</div>
+    <div style="text-align: center">
+        <div contenteditable id="ChatContent{{chatType}}" class="contentbox"
+             onkeyup="checkMaxInput(this,140,{{chatType}})"></div>
+    </div>
+    <div style="text-align: right; margin-right: 5px;">
+        <span  style="float: left; width: 80px; text-align: center; cursor: pointer;"  onclick="ShowEmote({{chatType}})">
+            <img src="/public/Img/Emote.png" />插入表情
+        </span>
+        <span   style="float: left; width: 80px; text-align: center; cursor: pointer;"  id="ImgUpload">
+            {{include "upload"}}
+        </span>
+        <span id="remLen{{chatType}}" style="color: #777">还可以输入<font  size="5">140</font>字</span> &nbsp;&nbsp;
+        <input type="button" id="SendButton{{chatType}}"  class="SendButton" onclick="SendText({{chatType}})" value="发送{{chatType==2?"消息":"广播"}}"/>
+    </div>
+    <input type="hidden" id="targetID{{chatType}}" value="{{targetID}}"/>
+</div>
+
+

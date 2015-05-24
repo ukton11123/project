@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {{include "../meta"}}
+
+</head>
+<style>
+
+    html { overflow-x: auto; overflow-y: auto; }
+    .mainDiv {
+        margin-top:10px;
+        text-align: center;
+        width: 100%;
+
+    }
+</style>
+<script language="JavaScript">
+    function finish()
+    {
+        var inputs=document.getElementsByTagName("INPUT");
+        var str="";
+        for (var i=0;i<inputs.length;i++)
+            if (inputs[i].type=="checkbox")
+                if (inputs[i].checked)
+                    {
+                        var amount=document.getElementById("amount"+inputs[i].name).value;
+                        var rate=document.getElementById("rate"+inputs[i].name).value;
+                        str+=";"+inputs[i].name+":"+amount+":"+rate;
+                    }
+        //  window.reload();
+
+        str=str.substring(1,str.length)
+        window.location.href="/admin/itemSelect/update/{{targetID}}/{{type}}/"+str;
+
+        //window.close();
+
+    }
+    window.parent.opener.window.location.reload()
+</script>
+<body>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp{{tableComment}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="window.location.href='/admin/itemSelect/show/{{targetID}}/{{type}}'" class="pure-button">刷新</button>
+    <button onclick="finish()" class="pure-button">完成</button>
+</h3>
+
+
+<table class="pure-table-bordered mainDiv center" border="1">
+    <thead >
+    <tr align="center">
+        <td> 选择</td>
+        <td> 数量</td>
+        <td> 几率</td>
+        {{each fields as field}}
+        <td>
+            {{if field.Comment.substr(1,1)=="_"}}{{field.Comment.substr(2,field.Comment.length)}}{{else}}{{field.Comment}}{{/if}}
+        </td>
+        {{/each}}
+    </tr>
+    </thead>
+    <tbody>
+    {{each rows as row}}
+    <tr style="
+    color:
+    {{ if row["quality"]==1}}#00cc33{{/if}}
+    {{ if row["quality"]==2}}#0000cc{{/if}}
+    {{ if row["quality"]==3}}#ac5bff{{/if}}
+    {{ if row["quality"]==4}}#ee7700{{/if}}
+    {{ if row["quality"]==5}}red{{/if}};
+    {{ if row.itemDrop}}background-color: #aaaaaa;{{/if}}
+    ">
+
+    <td> <input type="checkbox" name="{{row["ID"]}}"  {{if (row.itemDrop)}} checked="true" {{/if}}/></td>
+    <td> <input type="input"  size=5 id="amount{{row["ID"]}}" value="{{if (row.itemDrop)}} {{row.itemDrop.amount}}{{else}}1 {{/if}}"></td>
+    <td> <input type="input"  size=5  id="rate{{row["ID"]}}" value="{{if (row.itemDrop)}} {{row.itemDrop.rate}}{{else}}100 {{/if}}"></td>
+    {{each fields as field}}
+    <td>
+        {{if field.Field=="img"}}
+        <img src="/public/img/baseItem/{{row.img}}"/>
+
+        {{else if field.Comment.substr(0,2)=="S_"}}
+        {{each fields.selectData[field.Comment] as option,i}}
+        {{if row[field.Field]==i}}{{option}}{{/if}}
+        {{/each}}
+        {{else}}
+        {{row[field.Field]}}
+        {{/if}}
+    </td>
+    {{/each}}
+
+
+    </tr>
+    </tbody>
+    {{/each}}
+</table>
+
+</body>
+</html>
+
+{{if msg}}
+<script>
+
+    $.colorbox.showHint('{{msg}}');
+
+</script>
+{{/if}}

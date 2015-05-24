@@ -1,0 +1,21 @@
+
+
+
+body {
+	background-color: #a0d1f2;
+	background-image: url(bg.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+}
+a:link {
+	color: #0;
+	text-decoration: none;
+}
+a:visited {
+	color: #0;
+	text-decoration: none;
+}
+a:hover {
+	color: #0;
+	text-decoration: none;
+}

@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="/views/public/zone.css" type="text/css" media="screen"/>
+<script type='text/javascript' src='/views/public/zone.js'></script>
+<style>
+    .margin
+    {
+        margin: 20px 30px;
+
+    }
+    .mg
+    {
+        margin: 0  5px;
+    }
+    .giftItem
+    {
+        height: 70px;
+        text-align: center;
+        margin-left: 20px;
+
+    }
+    .name{
+        margin-top: 20px;
+    }
+    .money
+    {
+        margin-top: 30px;
+        color: #e9322d;
+    }
+</style>
+<div class="pure-g center margin ">
+    <div class="pure-u-3-5 alpha mg" style="width:59%;min-height: 600px;"><div class="relative radius ">{{include "zone/userChat"}}</div></div>
+
+    <div class="pure-u-2-5 alpha mg"  style="width:39%;min-height: 600px;">
+        <div class="relative radius ">
+                <div class="title">房间贡献榜</div>
+                <br>
+                {{each giftData as row}}
+                <div class="pure-g center bottomLine giftItem">
+                    <div class="pure-u-1-5"><img width="60" class="photo" height="60" src="{{row.Face}}"></div>
+                    <div class="pure-u-2-5 name">{{row.UserCode}}<br>{{row.NickName}}</div>
+                    <div class="pure-u-2-5 money">{{row.reciveMoney}}</div>
+                </div>
+                {{/each}}
+        </div>
+    </div>
+</div>
+
+
+<!--滚动翻页-->
+<input id="page" type="hidden"  value="{{page}}"/>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        var range = 50;             //距下边界长度/单位px
+        var totalheight = 0;
+        var main = $("#chatListDiv");                     //主体元素
+        $(window).scroll(function(){
+            var srollPos = $(window).scrollTop();    //滚动条距顶部距离(页面超出窗口的高度)
+            //console.log("滚动条到顶部的垂直高度: "+$(document).scrollTop());
+            // console.log("页面的文档高度 ："+$(document).height());
+            //console.log('浏览器的高度：'+$(window).height());
+
+            totalheight = parseFloat($(window).height()) + parseFloat(srollPos);
+            if(($(document).height()-range) <= totalheight) {
+                $("#page").val(parseInt($("#page").val())+1);
+                $.post("/zone/moreChat/{{view}}/{{showUser?showUser.UserCode:0}}/{{chatType}}/"+$("#page").val(),
+                        function(data){
+                            $("#chatListDiv").append(data);
+                        });
+            }
+        });
+    });
+</script>

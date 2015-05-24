@@ -1,0 +1,11 @@
+body {background:#1a1a1a url('bg.jpg') no-repeat center top;}
+a {color:#995f2b}
+a:hover{color:#995f2b}
+ul.nav a
+{
+	color:#FEFEFE;
+}
+ul.nav a:hover
+{
+	color:#995f2b;
+}

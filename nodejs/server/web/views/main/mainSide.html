@@ -1,0 +1,143 @@
+<style type="text/css">
+
+    .SideDiv {
+        margin-left: 5px;
+        border: 1px solid #EEE;
+    }
+    .SideDiv .SideSubDiv {
+        padding: 5px 5px;
+        border-bottom: 1px solid #EEE;
+    }
+    .Title {
+        border-bottom: 1px solid #EEE;
+        font-size: 18px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .Item {
+        cursor: pointer;
+        clear: both;
+        overflow: hidden;
+    }
+
+    .Apps {
+        cursor: pointer;
+        overflow: hidden;
+        float: left;
+        width: 62px;
+        text-align: center;
+        margin: 5px 2px;
+    }
+
+    .Item:hover {
+        background-color: #F0F0F0;
+    }
+
+</style>
+<script>
+    function OnClick(aType, aCode) {
+        if (aType == 1)
+            CreateFlashPage('UserInfo', '/public/Flash/UserInfo.swf?UserCode='+aCode, 330, 200);
+        if (aType == 2)
+            enterRoom(aCode,{{loginType?loginType:1}});
+    }
+    function OnAppsClick(aURL) {
+
+        window.open(aURL);
+    }
+
+
+
+</script>
+
+<div class="SideDiv borderLeft" >
+    <!--登陆区域-->
+    <div class="SideSubDiv" id="divLoginInfo">
+        {{include "unLogin"}}
+
+        {{include "myInfo"}}
+    </div>
+
+
+    <!--新闻区域-->
+    <div class="SideSubDiv">
+        <div class="Title" ><img src="/public/Img/Speak.png" width="45" height="45"/>&nbsp;&nbsp;新闻公告</div>
+        {{each dataNews as item}}
+        <div class="borderTop"><img src="/public/Img/news2.png"/>{{item.Title}}</div>
+        {{/each}}
+    </div>
+    <div class="SideSubDiv"  >
+        <div class="Title" ><img src="/public/Img/Game.png" width="45" height="45"/>&nbsp;&nbsp;热门游戏</div>
+        {{each dataApps as item}}
+        {{if (item.FlashName!="Bao.swf")}}
+        <div onclick="OnAppsClick('/game/show/{{item.FlashName}}')"  class="Apps">
+            <img  src='/public/Img/Apps/{{item.Img}}'><br>
+            {{item.Name}}
+        </div>
+        {{/if}}
+        {{/each}}
+    </div>
+    <div style="clear: both"></div>
+
+    {{each topData as data j}}
+    {{ if (j<3)}}
+    <div  class="SideSubDiv">
+        <div class="Title"><img src="{{data.img}}" width="45" height="45">&nbsp;&nbsp;{{data.name}}</div>
+        {{each data.items as item i}}
+        {{if (i==0)}}
+        <div onclick="OnClick({{data.type}},{{item.code}})"  class="Item" style="height:40px;line-height:16px;color:red">
+            <div style="float:left;width:40px;"><span class="orderNum"> </span><img width="32" height="32" src="{{item.img}}" /></div>
+            <div style="width:110px;float:left">{{item.code}}<br />{{item.name}}</div>
+            <div style="width:40px;float:left">{{item.money}}</div>
+        </div>
+        {{else (i<5)}}
+        <div onclick="OnClick({{data.type}},{{item.code}})" class="Item" >
+            <div style="width:150px;height:18px;overflow:hidden;float:left"><span class="orderNum"> </span>{{item.name}}[{{item.code}}]</div>
+            <div style="width:40px;float:left">{{item.money}}</div>
+        </div>
+        {{/if}}
+        {{/each}}
+        <div style=" clear: both;"></div>
+    </div>
+    {{/if}}
+    {{/each}}
+
+    <div class="SideSubDiv textCenter">
+        咨询客服：<a target="_blank"
+                href="http://wpa.qq.com/msgrd?v=3&uin=146310&site=qq&menu=yes"><img
+            border="0" src="http://wpa.qq.com/pa?p=2:146310:51" alt="点击这里给我发消息"
+            title="点击这里给我发消息" /></a> <br />
+        招募主播：<a target="_blank"
+                href="http://wpa.qq.com/msgrd?v=3&uin=146310&site=qq&menu=yes"><img
+            border="0" src="http://wpa.qq.com/pa?p=2:146310:51" alt="点击这里给我发消息"
+            title="点击这里给我发消息" /></a> <br />
+        商务合作：<a target="_blank"
+                href="http://wpa.qq.com/msgrd?v=3&uin=146310&site=qq&menu=yes"><img
+            border="0" src="http://wpa.qq.com/pa?p=2:146310:51" alt="点击这里给我发消息"
+            title="点击这里给我发消息" /></a><br />
+        <script type="text/javascript">
+            (function(){
+                var p = {
+                    url:location.href, /*获取URL，可加上来自分享到QQ标识，方便统计*/
+                    desc:'', /*分享理由(风格应模拟用户对话),支持多分享语随机展现（使用|分隔）*/
+                    title:'', /*分享标题(可选)*/
+                    summary:'', /*分享摘要(可选)*/
+                    pics:'', /*分享图片(可选)*/
+                    flash: '', /*视频地址(可选)*/
+                    site:'', /*分享来源(可选) 如：QQ分享*/
+                    style:'101',
+                    width:96,
+                    height:24
+                };
+                var s = [];
+                for(var i in p){
+                    s.push(i + '=' + encodeURIComponent(p[i]||''));
+                }
+                document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shareqq/index.html?',s.join('&'),'" target="_blank">分享到QQ</a>'].join(''));
+            })();
+        </script>
+        <script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
+    </div>
+
+</div>

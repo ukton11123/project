@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{{sysSetup.SiteName}}后台管理首页</title>
+    {{include "../meta"}}
+
+</head>
+<style>
+    body
+    {
+        overflow-x:auto;
+    }
+    .mainDiv {
+        margin-top:10px;
+        text-align: center;
+        width: 100%;
+
+    }
+</style>
+
+<body>
+{{include "menu"}}
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp{{tableComment}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="window.location.href='/admin/data/show/{{tableName}}'" class="pure-button">刷新</button></h3>
+
+                <table class="pure-table mainDiv center" border="1">
+                    <thead>
+                    <tr>
+                        {{each rowsfields as field}}
+                        <td>
+                        {{if field.Comment.substr(1,1)=="_"}}{{field.Comment.substr(2,field.Comment.length)}}{{else}}{{field.Comment}}{{/if}}
+                        </td>
+                        {{/each}}
+                     <td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <form class="pure-form pure-form-aligned"  action="/admin/data/insert/{{tableName}}" method="post">
+                        <tr>
+
+
+                            {{each rowsfields as field}}
+                            <td>
+                            {{if field.Comment.substr(0,2)=="C_"}}
+                            <input  name="{{field.Field}}"   type="color" placeholder="" >
+                            {{else if (field.Field=="DealManager" || field.Field=="ManagerDeal")}}
+                                <select  name="{{field.Field}}">
+                                    <option value="0">{{field.Field=="ManagerDeal"?"全部":"无"}}</option>
+                                    <option value="1">临管</option>
+                                    <option value="2">管理</option>
+                                    <option value="3">副室</option>
+                                    <option value="4">室主</option>
+                                </select>
+                            {{else if field.Comment.substr(0,2)=="B_"}}
+                            <select  name="{{field.Field}}">
+                                <option value="0">否</option>
+                                <option value="1">是</option>
+                            </select>
+                            {{else}}
+                            <input  name="{{field.Field}}"  required type="text" placeholder=""  size="5" value=""  placeholder="请输入数据...">
+                            {{/if}}
+                            </td>
+                            {{/each}}
+
+                            <td><button type="submit" class="pure-button pure-button-primary">新建</button></td>
+
+                        </tr>
+                    </form>
+
+                    {{each rowsData as row}}
+                    <form class="pure-form pure-form-aligned" action="/admin/data/modify/{{tableName}}/{{row.ID}}" method="post">
+                        <tr>
+                            {{each rowsfields as field}}
+                            <td>
+                            {{if field.Field=="Img"}}
+                            <img src="/public/img/{{tableName}}/{{row.Img}}"/>
+                            {{/if}}
+
+                            {{if field.Field=="Color"}}
+                            <input  name="{{field.Field}}"   type="color" placeholder=""  value="{{row[field.Field]}}">
+                                {{else if (field.Field=="DealManager" || field.Field=="ManagerDeal")}}
+                                <select  name="{{field.Field}}">
+                                    <option value="0" {{row[field.Field]==0?"selected":""}}>{{field.Field=="ManagerDeal"?"全部":"无"}}</option>
+                                    <option value="1" {{row[field.Field]==1?"selected":""}}>临管</option>
+                                    <option value="2" {{row[field.Field]==2?"selected":""}}>管理</option>
+                                    <option value="3" {{row[field.Field]==3?"selected":""}}>副室</option>
+                                    <option value="4" {{row[field.Field]==4?"selected":""}}>室主</option>
+                                </select>
+                            {{else if field.Comment.substr(0,2)=="B_"}}
+                            <select  name="{{field.Field}}">
+                                <option value="0" {{row[field.Field]==0?"selected":""}}>否</option>
+                                <option value="1" {{row[field.Field]==1?"selected":""}}>是</option>
+                            </select>
+                            {{else}}
+                            <input  name="{{field.Field}}"   type="text" placeholder=""   size="5" value="{{row[field.Field]}}">
+                            {{/if}}
+                            </td>
+                            {{/each}}
+
+
+
+                            <td> <button type="submit" class="pure-button pure-button-primary">修改</button>
+                                <button onclick="window.location.href='/admin/data/delete/{{tableName}}/{{row.ID}}'" class="pure-button">删除</button></td>
+                        </tr>
+                    </tbody>
+                    </form>
+                    {{/each}}
+                </table>
+
+</body>
+</html>
+
+{{if msg}}
+<script>
+    $.colorbox.showHint('{{msg}}');
+</script>
+{{/if}}

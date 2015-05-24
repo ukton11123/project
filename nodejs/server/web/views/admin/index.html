@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>{{sysSetup.SiteName}}后台管理系统</title>
+        {{include "../meta"}}
+
+        <style>
+        .loginDiv {
+            width:400px;
+            margin-top:300px;
+        }
+        </style>
+    </head>
+        <body>
+        <div class="loginDiv  center radius pure-g">
+            <form class="pure-form pure-form-aligned" action="/admin/main" method="post">
+                <fieldset>
+                <legend><h3>&nbsp;&nbsp;&nbsp;&nbsp;{{title}}</h3></legend>
+                <div class="pure-control-group">
+                    <label >用户名</label>
+                    <input name="userName" type="text" placeholder="请输入用户名">
+                </div>
+                <div class="pure-control-group">
+                    <label >登录密码</label>
+                    <input name="passWD" type="text" placeholder="请输入登录密码">
+                </div>
+                <div class="pure-controls center">
+                    <button type="submit" class="pure-button pure-button-primary">登录</button>
+                </div>
+                    </fieldset>
+            </form>
+        </div>
+
+    </body>
+    </html>

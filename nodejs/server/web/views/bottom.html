@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+#footer {
+	border-top: 1px solid #D8D8D8;
+	padding: 35px 0;
+	line-height: 25px;
+	Font-Size: 12px;
+	text-align: center;
+	clear: both;
+
+}
+
+#footer a {
+	
+}
+
+#footer .footNav i {
+	margin: 0 12px;
+	color: #CCC;
+}
+
+#footer .footNav a.first {
+	margin-left: 0;
+}
+
+#footer .copyRight {
+	font-family: Arial, Lucida, Verdana, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+<div id="footer">
+<div class="wrap">
+<div class="footNav"></div>
+<div class="copyRight">© {{sysSetup.SiteName}} 2014 All Rights Reserved. <a
+	href='/' target='_blank'>Powered by 7Color</a> {{sysSetup.ICP}}</div>
+</div>
+</div>
+</body>
+</html>
+
+<!--[if IE 6]>
+
+<script type="text/javascript">
+
+    function correctPNG()
+
+    {
+
+        for(var i=0; i<document.images.length; i++)
+
+        {
+
+            var img = document.images[i]
+
+            var imgName = img.src.toUpperCase()
+
+            if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+
+            {
+
+                var imgID = (img.id) ? "id='" + img.id + "' " : ""
+
+                var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+
+                var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+
+                var imgStyle = "display:inline-block;" + img.style.cssText
+
+                if (img.align == "left") imgStyle = "float:left;" + imgStyle
+
+                if (img.align == "right") imgStyle = "float:right;" + imgStyle
+
+                if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+
+                var strNewHTML = "<span "+ imgID + imgClass + imgTitle + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";" + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader" + "(src='" + img.src + "', sizingMethod='scale');\"></span>"
+
+                img.outerHTML = strNewHTML
+
+                i = i-1
+
+            }
+
+        }
+
+    }
+
+    correctPNG();
+
+</script>
+
+<![endif]-->

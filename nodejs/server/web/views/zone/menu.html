@@ -1,0 +1,31 @@
+<div class="textCenter margintop10">
+        {{if showUser}}
+        <div>
+            <img src="{{showUser.Face}}" class="photo" width="60" height="60" /><br>
+            {{showUser.UserCode}}<br>
+            {{showUser.NickName}}<br>
+            {{showUser.Name}}
+                {{if showUser.Img}}<img src="/public/img/rank/{{showUser.Img}}"/>{{/if}}
+            <span class="badage">{{showUser.Level}}</span>
+            <div class="pure-g margintop10">
+                <div class="pure-u-1-4 hand sfont b hover"><a href="/zone/userCared/1/{{showUser.UserCode}}">{{showUser.beCaredCount}}<br>听众</a></div>
+                <div class="pure-u-1-4 hand sfont b hover"><a href="/zone/userCared/2/{{showUser.UserCode}}">{{showUser.caredCount}}<br>收听</a></div>
+                <div class="pure-u-1-4 hand sfont b hover"><a href="/zone/userChat/{{showUser.UserCode}}">{{showUser.chatCount}}<br>广播</a></div>
+                <div class="pure-u-1-4 hand sfont b hover"><a href="/zone/userMsg/3">{{showUser.msgCount}}<br>消息</a></div>
+            </div>
+
+            <div class="hover  height30"><a href="/zone/publicChat">大厅广场</a></div>
+            <div class="hover  height30"><a href="/zone/userChat/{{myCode}}">我的广播</a></div>
+            <div class="hover  height30"><a href="/zone/userCared/1/{{myCode}}">我的关注</a></div>
+            <div class="hover  height30"><a href="/zone/userMsg/3">我的消息</a></div>
+        </div>
+        {{else}}
+            <div>
+                <button onclick="showLogin()" class="pure-button button-org">&nbsp;&nbsp;登录&nbsp;&nbsp;</button><br><br>
+                <button onclick="showReg()" class="pure-button button-blue">&nbsp;&nbsp;注册&nbsp;&nbsp;</button><br><br>
+            </div>
+         <div class="hover margintop10  height30"><a href="/zone/publicChat">大厅广场</a></div>
+
+        {{/if}}
+
+</div>

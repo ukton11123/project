@@ -1,0 +1,38 @@
+<style>
+    #divModify{
+        margin: 10px 10px;
+        width:400px;
+    }
+</style>
+
+<div class="borderLeft">
+    <div id="divModify" class="center">
+
+        <div class="font18 b importColor">我的道具</div>
+
+        <div class="" ><br><br><br>
+            <table class="pure-table pure-table-horizontal" width="100%">
+                <thead>
+                <tr align="center">
+                    <th>图片</th>
+                    <th>名称</th>
+                    <th>数量</th>
+                    <th>到期</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                {{each rowsProps as row}}
+                <tr>
+                    <td><img width=100 height=67 src="public/img/mall/{{row.Img}}"/></td>
+                    <td>{{row.Name}}</td>
+                    <td>{{row.Amount}}个</td>
+                    <td>{{row.Time}}</td>
+                </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

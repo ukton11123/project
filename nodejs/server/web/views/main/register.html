@@ -1,0 +1,94 @@
+<style>
+    .regButtonDiv
+    {
+        border-left: 1px dotted #777777;
+        margin-top: 50px;
+        padding-left: 10px;
+
+    }
+    .formDiv
+    {
+        width: 90%;
+    }
+</style>
+<script type='text/javascript' src='/public/js/jQuery.md5.js'></script>
+
+<div id="divFace" style="position: absolute;top:30px;left:210px;"></div>
+<div class="pure-g" style="width: 600px;height: 360px;" id="divReg">
+    <div class="pure-u-5-8">
+        <div class="center formDiv">
+            <div class="font24 b importColor">快速注册</div>
+            <div>您就可以与好友互动了！</div><br/>
+            <div class="textcenter" style="margin-left: 30px">
+                <form class="pure-form">
+                    <div >
+                        <label for="nickName">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;头像:&nbsp;&nbsp;</label>
+                        <img id="userFace" src="public/img/face/1-1.jpg"/> <a class="importColor" onclick="showFace()">选择头像</a>
+                    </div>
+                    <div >
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性别:&nbsp;&nbsp;</label>
+
+                        <input  type="radio" name="sex" value="0" checked>女生&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input  type="radio" name="sex" value="1" >男生
+                    </div>
+                    <div >
+                        <label for="nickName">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;昵称:&nbsp;&nbsp;</label>
+                        <input id="nickName"  type="text" title="请输入用户昵称">
+                    </div>
+                    <div >
+                        <label for="passWD">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码:&nbsp;&nbsp;</label>
+                        <input id="passWD"  type="password" title="请输入用户密码">
+                    </div>
+                    <div >
+                        <label for="conpassWD">确认密码:&nbsp;&nbsp;</label>
+                        <input id="conpassWD"  type="password" title="请输入确认密码">
+                    </div>
+                    <div class="textCenter">
+                        <label for="remember" class="pure-checkbox">
+                            <input id="remember" type="checkbox" checked> 我已阅读并同意《用户协议》
+                        </label>
+                        <img id="btnReg" src="/public/img/regbutton.png" class="hand" onclick="register()"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="pure-u-3-8">
+        <div class="regButtonDiv textCenter">
+            <br><br>
+            已有账号?<br>
+            <img class="hand"  onclick="showLogin()" src="/public/img/loginButton.png"/><br>
+            或者<br>
+            <span id="qqLoginBtn"></span>
+            <br>
+            <br><br><br>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready()
+    {
+        $("#divReg").click(function(){
+            closeFace();
+        })
+        $.setTip("nickName");
+        $.setTip("passWD");
+        $.setTip("conpassWD");
+    };
+</script>
+<script type="text/javascript">
+    //调用QC.Login方法，指定btnId参数将按钮绑定在容器节点中
+    QC.Login({
+                //btnId：插入按钮的节点id，必选
+                btnId:"qqLoginBtn",
+                //用户需要确认的scope授权项，可选，默认all
+                scope:"all",
+                //按钮尺寸，可用值[A_XL| A_L| A_M| A_S|  B_M| B_S| C_S]，可选，默认B_S
+                size: "A_L"
+            }, function(reqData, opts){//登录成功
+                //根据返回数据，更换按钮显示状态方法
+                QQReg(reqData.nickname,reqData.gender,reqData.figureurl_2);
+            }, function(opts){//注销成功
+            }
+    );
+</script>

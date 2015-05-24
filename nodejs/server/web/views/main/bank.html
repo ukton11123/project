@@ -1,0 +1,53 @@
+<style>
+    #divModify{
+        margin: 10px 30px;
+        width:400px;
+    }
+</style>
+<script type='text/javascript' src='/public/js/jQuery.md5.js'></script>
+
+<div class="borderLeft">
+    <div id="divModify" class="center">
+
+        <div class="font18 b importColor">{{sysSetup.MoneyName}}银行</div>
+        <div class="" >
+            <br><br>
+            <form class="pure-form">
+                <fieldset>
+
+                    <div >
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的{{sysSetup.MoneyName}}:&nbsp;&nbsp;</label>
+                        {{myMoney}}
+                    </div><br>
+
+                    <div >
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;银行{{sysSetup.MoneyName}}:&nbsp;&nbsp;</label>
+                        {{bankMoney}}
+                    </div><br>
+                    <div >
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;兑换金额:&nbsp;&nbsp;</label>
+                        <input id="convertMoney"  style="width: 160px" type="text" value="" >
+                    </div><br>
+                    <div >
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;银行密码:&nbsp;&nbsp;</label>
+                        <input id="payPassWD"  style="width: 160px" type="password" value="" ><a onclik="" class="importColor">初始为空&nbsp;&nbsp;设置密码</a>
+                    </div><br>
+                    <div class="textCenter">
+                        <span  id="btnOut" class="pure-button button-blue" onclick="convertBank(2)" style="width: 100px">取出</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span  id="btnIn" class="pure-button button-org" onclick="convertBank(1)" style="width: 100px">存入</span>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready()
+    {
+        $.setTip("answer","请输入您的密保答案");
+        numOnly("convertMoney");
+        $.setTip("convertMoney","请输入兑换金额");
+        $.setTip("payPassWD","请输入支付密码");
+    };
+</script>
+

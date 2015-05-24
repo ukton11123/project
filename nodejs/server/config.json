@@ -1,0 +1,10 @@
+{
+    "webPort":80,
+    "database":"unc",
+    "port": "3306",
+    "host": "localhost",
+    "user": "root",
+    "password": "ukton80123",
+    "connectionLimit":20
+
+}

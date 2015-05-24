@@ -1,0 +1,111 @@
+{
+  "ID": "71dd640c-5714-4ca8-b859-87c48f011608",
+  "Version": "2.2.5.0",
+  "Name": "map_activity",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 10,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "round/map_activity.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.0,
+              "Y": 568.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.18
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "TopMargin": 88.0,
+            "BottomMargin": 88.0,
+            "Tag": 39,
+            "ActionTag": 1272031349,
+            "Size": {
+              "X": 640.0,
+              "Y": 960.0
+            },
+            "Name": "map_activity_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "crystal.json",
+              "Plist": ""
+            },
+            "InnerActionSpeed": 1.0,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 324.5486,
+              "Y": 192.0314
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.5071,
+              "Y": 0.169
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 324.5486,
+            "RightMargin": 315.4514,
+            "TopMargin": 943.9686,
+            "BottomMargin": 192.0314,
+            "Tag": 40,
+            "ActionTag": -156943871,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "ProjectNode_1",
+            "ctype": "ProjectNodeObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

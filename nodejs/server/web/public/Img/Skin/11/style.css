@@ -1,0 +1,24 @@
+/*###########################
+   @Name:玫瑰 
+#############################*/
+/* CSS Document begin */
+
+html {
+	background: none;
+}
+body {
+background:#f3f3e9 url('bg.jpg') repeat-x center top ;
+}
+a:link {
+	color: #49976b;
+	text-decoration: none;
+}
+a:visited {
+	color: #49976b;
+	text-decoration: none;
+}
+a:hover {
+	color: #49976b;
+	text-decoration: none;
+}
+

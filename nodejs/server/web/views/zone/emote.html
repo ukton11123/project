@@ -1,0 +1,46 @@
+
+<style>
+
+    .EmoteDiv{
+        width:350px;
+        height:270px;
+        border:#eee solid 5px;
+        position: absolute;
+        left:0px;
+        top:0px;
+        background:#FBFBFB;
+        padding-left:20px;
+        padding-bottom:20px;
+        overflow:auto;
+        overflow-x:hidden;
+    }
+    .EmoteItem{
+        text-align:center;
+        width:40px;
+        height:40px;
+        line-height:40px;
+        vertical-align:middle;
+        float:left;
+        cursor:pointer;
+    }
+
+    .Img
+    {
+        border:5px solid #FFF;
+    }
+
+</style>
+<script>
+
+</script>
+<div id="EmoteDiv" class="EmoteDiv radius">
+    <div style="text-align:right;"><input type="button" class="closeButton radius" onclick="CloseEmote()" value="X"/></div>
+    <div class="clear"></div>
+    {{each dataEmote as row}}
+    <div class="EmoteItem" >
+        <img onclick="InsertEmote({{chatType}},'{{row.Img}}')" class="Img" src="/public/img/Emote/{{row.Img}}"/>
+    </div>
+    {{/each}}
+    <div class="clear"></div>
+
+</div>

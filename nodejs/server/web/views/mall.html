@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    {{include "meta"}}
+    <title>{{sysSetup.ShortName}}商城</title>
+
+    <script type="text/javascript">
+        function Buy(id, propsname, money, kind) {
+
+            if (!$("#myCode").val()) {
+                showLogin()
+                return;
+            }
+            if ($("#userProps").value == "")
+                $.colorbox.showConfirm('购买道具' + propsname + '，花费金币' + money + '个，是否确定？',"Buy2("+id+")",350);
+            else
+                $.colorbox.showConfirm("购买道具" + propsname + "，花费金币" + money + "个，<br>您已经购买了同类型的道具，<br>如果道具不同将会覆盖之前的道具，<br>是否继续？","Buy2("+id+")",350,150);
+        }
+
+        function Buy2(id)
+        {
+
+            //发起ajax请求
+            postHTML("/mall/buy/"+id,null,function(data){
+                $.colorbox.showHint(data,300);
+                setTimeout('window.location.reload()',1000);
+            });
+
+        }
+
+
+
+    </script>
+
+    <style type="text/css">
+        body
+        {
+            background-image: url(/public/Img/BG.jpg);
+            background-repeat:repeat;
+            background-attachment:fixed;;
+        }
+        .MallMenuItemSelect {
+            width: 100px;
+            background: #ff9f24;
+            text-align: center;
+            color: #fff;
+            cursor: hand;
+            border-top: 1px solid #fff;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            cursor: pointer;
+            float: left;
+            height: 30px;
+        }
+
+        .MallMenuItemSelect a {
+            color: #fff;
+        }
+
+        .MallMenuItem {
+            width: 100px;
+            text-align: center;
+            cursor: hand;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            height:30px;
+            float: left;
+        }
+
+        .MallMenuItem:hover {
+            color: #fff;
+            background: #ff9f24;
+        }
+
+        .MallMenuItem:hover a {
+            color: #fff;
+        }
+
+
+        .MainDiv {
+            width: 1024px;
+            margin: 10px auto;
+            background: rgba(255, 255, 255, 0.5) !important; /* IE无效，FF有效 */
+            filter: alpha(opacity =   50);
+            background: #fff;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            padding-bottom:10px;
+            text-align: center;
+        }
+
+        .Div {
+            position: relative;
+        }
+        .PropsDiv {
+            position: relative;
+            text-align:center;
+            width:100%;
+            margin-top:5px;
+        }
+        .mall{
+            width:940px;
+            margin: 0 auto;
+        }
+        .mallItem
+        {
+            float:left;
+            width: 210px;
+            height: 235px;
+
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            border:2px solid #ddd;
+            margin: 10px 10px;
+            text-align: center;
+        }
+        .Info
+        {
+            border-bottom:1px solid #ddd;
+            height:30px;
+            float:left;
+            width:710px;
+            text-align: left;
+
+        }
+        .MyPorps
+        {
+            text-align: left;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+{{include "head"}}
+<div class="MainDiv">
+    <div class="Div">
+        <div class="MenuDiv">
+            <div class="MallMenuItem{{kind==1?"Select":""}}" onclick="window.location.href = '/mall/show/1'"> VIP卡 </div>
+        <div class="MallMenuItem{{kind==2?"Select":""}}" onclick="window.location.href = '/mall/show/2'"> 豪车 </div>
+        <div  class="MallMenuItem{{kind==3?"Select":""}}"   onclick="window.location.href = '/mall/show/3'"> 靓号</div>
+        <div  class="Info">&nbsp;&nbsp;&nbsp;&nbsp;
+            {{if (myCode)}}
+            您好，{{nickName}} 余额: {{userMoney}}
+            {{else}}
+            <a onclick="showLogin()"><span class='Import'>登录</span></a>
+            {{/if}}&nbsp;&nbsp;<a href="#"><span class='Import'>充值</span></a>
+        </div>
+        </div>
+<div class="clear"></div>
+<div class="PropsDiv">
+
+    <input id='myCode' type=hidden 	value="{{myCode}}" />
+    <input id='userProps'  type=hidden 	value="{{if userProps }}{{userProps.ID}}{{/if}}" />
+
+
+    <!--//显示我的道具-->
+    {{ if (myCode && userProps)}}
+
+    <div class='MyPorps'><img width=100 height=67 src='/public/img/mall/{{userProps.Img}}'>
+        我的{{if (userProps.Kind==1)}}VIP卡{{else}}豪车{{/if}}:<font color=red>{{userProps.Name}}</font>
+        数量: {{userProps.Amount}} 到期时间:  <font color=red>{{userProps.Time}} </font></div>
+    {{/if}}
+    <div class="mall">
+        {{each dataMall as item}}
+        {{if item.Type==kind}}
+        <div class="mallItem">
+
+            <img src='/public/img/mall/{{item.Img}}'><br/>
+            <b>{{item.Name}}</b><br/>
+            价格：{{item.Price+sysSetup.MoneyName}}<br/>
+            期限：{{item.PropsLimit}} 天<br>
+            <input type=image src='/public/img/buy.gif' onclick=Buy({{item.ID}},'{{item.Name}}',{{item.Price}},{{item.Type}})>
+        </div>
+        {{/if}}
+
+        {{/each}}
+    </div>
+</div>
+<div class="clear"></div>
+    </div>
+</div>
+<div class="clear"></div>
+{{include "bottom"}}
+</body>
+</html>

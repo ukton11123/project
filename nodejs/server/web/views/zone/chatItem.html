@@ -1,0 +1,50 @@
+
+<style>
+    a.name{
+        color:#006a92;
+    }
+    .time{
+        color:#777777;
+    }
+</style>
+<div id="ChatItem{{ID}}" class="hidden">
+    <div class="pure-g margin10 wordbreak  bottomLine" >
+        <div class="pure-u-1-8 center">
+            <img src="{{Face}}" class="photo" width="60" height="60" /><br>
+
+        </div>
+        <div class="pure-u-7-8" id="TextDiv{{ID}}">
+            <div><a class="name" href="/zone/userChat/{{UserCode}}">{{NickName}}[{{UserCode}}]:</a><br>
+                {{=Text}}<br><br>
+            </div>
+            <div>
+                <div class="sfont time left">{{Time}}&nbsp;&nbsp;
+                    <a class="name" href="/room/show/{{RoomCode}}">{{if RoomCode}}在聊天室{{RoomCode}}中{{/if}}</a>
+                </div>
+                <div class="sfont right import">
+                    {{if myCode==UserCode}}<a onclick="$.colorbox.showConfirm('是否删除此发言?','DeleteChat({{ID}})')">删除&nbsp;&nbsp;</a>|{{/if}}
+                    {{if myCode}}<a onclick="Acclaim({{ID}})">&nbsp;&nbsp;赞<span id="Acclaim{{ID}}">({{AcclaimCount}})</span> &nbsp;&nbsp;</a>|
+                    <a onclick="ReplyChat({{ID}})">&nbsp;&nbsp;评论&nbsp;&nbsp;&nbsp;</a></div>{{/if}}
+            </div>
+            <div class="clear"></div>
+            <!--显示评论-->
+            {{each apply as row}}
+            <div class="pure-g" id="ApplyItem{{row.ID}}">
+                <div class="pure-u-1-12 center">
+                    <img src="{{row.Face}}" class="photo" width="32" height="32" /><br>
+                </div>
+                <div class="pure-u-11-12 center margintop10">
+                    <a class="name  margintop10" href="/zone/userChat/{{row.UserCode}}">{{row.NickName}}[{{row.UserCode}}]:</a>{{row.Text}}
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span  class="sfont time"> {{row.Time}}</span>
+                    {{if myCode==UserCode}}&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="$.colorbox.showConfirm('是否删除此留言?','DeleteApply({{row.ID}})')">删除&nbsp;&nbsp;</a>{{/if}}
+                </div>
+            </div>
+            {{/each}}
+
+        </div>
+    </div>
+</div>
+
+<script>
+$("#ChatItem{{ID}}").fadeIn();
+</script>

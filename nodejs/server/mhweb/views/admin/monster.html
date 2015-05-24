@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {{include "../meta"}}
+
+</head>
+<style>
+
+    html { overflow-x: auto; overflow-y: auto; }
+    .mainDiv {
+        margin-top:10px;
+        text-align: center;
+        width: 100%;
+
+    }
+</style>
+
+<body>
+{{include "menu"}}
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp{{tableComment}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="window.location.href='/admin/monster/show'" class="pure-button">刷新</button></h3>
+
+<table class="pure-table-bordered mainDiv center" border="1">
+    <thead >
+    <tr align="center">
+        {{each rowsfields as field}}
+        <td>
+            {{if field.Comment.substr(1,1)=="_"}}{{field.Comment.substr(2,field.Comment.length)}}{{else}}{{field.Comment}}{{/if}}
+        </td>
+        {{/each}}
+        <td>操作</td>
+    </tr>
+    </thead>
+    <tbody>
+    <form class="pure-form pure-form-aligned"  action="/admin/monster/insert" method="post">
+        <tr>
+            {{each rowsfields as field}}
+            <td>
+                {{if (field.Field!="ID" && field.Field!="skills")}}
+                <input  name="{{field.Field}}"  required type="text" placeholder=""  size="10" value="{{field.Default}}"  placeholder="请输入数据...">
+                {{/if}}
+            </td>
+            {{/each}}
+
+            <td><button type="submit" class="pure-button pure-button-primary">新建</button></td>
+
+        </tr>
+    </form>
+
+    {{each rowsData as row}}
+    <form class="pure-form pure-form-aligned" action="/admin/monster/modify/{{row.ID}}" method="post" id="form{{row.ID}}">
+        <tr>
+            {{each rowsfields as field}}
+            <td>
+                {{if field.Field=="skills"}}
+                <input  name="{{field.Field}}"   type="hidden" placeholder=""  id="skills{{row.ID}}" size="10" value="{{row[field.Field]}}">
+                {{each skills as skill}}
+                {{each row.skillsData as ID}}
+                {{if ID==skill.ID}}
+                                {{skill.name}},
+                {{/if}}
+                {{/each}}
+                {{/each}}
+                {{else}}
+                <input  name="{{field.Field}}"   type="text" placeholder=""   size="10" value="{{row[field.Field]}}">
+                {{/if}}
+            </td>
+            {{/each}}
+
+
+
+            <td> <button type="submit" class="pure-button pure-button-primary">修改</button>
+                <button onclick="window.location.href='/admin/monster/delete/{{row.ID}}'" class="pure-button">删除</button>
+                <button onclick="window.open('/admin/dataSelect/show/baseSkill/baseMonster/{{row.ID}}/skills')" class="pure-button">选择技能</button>
+            </td>
+        </tr>
+    </tbody>
+    </form>
+    {{/each}}
+</table>
+
+</body>
+</html>
+
+{{if msg}}
+<script>
+    $.colorbox.showHint('{{msg}}');
+</script>
+{{/if}}

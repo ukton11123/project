@@ -1,0 +1,297 @@
+{
+  "ID": "96d639f1-fe4b-4e39-85e2-5c665254aa8c",
+  "Version": "2.2.5.0",
+  "Name": "roundItem",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 130,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/roundItemBG.png",
+              "Plist": ""
+            },
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 200,
+            "Scale9Height": 100,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 131,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Default",
+                  "Path": "Default/ImageFile.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 150.2434,
+                  "Y": 50.4522
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7512,
+                  "Y": 0.5045
+                },
+                "PreSize": {
+                  "X": 0.35,
+                  "Y": 0.7
+                },
+                "LeftMargin": 115.2434,
+                "RightMargin": 14.7566,
+                "TopMargin": 14.5478,
+                "BottomMargin": 15.4522,
+                "Tag": 132,
+                "ActionTag": 1170487499,
+                "Size": {
+                  "X": 70.0,
+                  "Y": 70.0
+                },
+                "Name": "Image_ico",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 14,
+                "LabelText": "地狱恶魔",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 62.4316,
+                  "Y": 26.0096
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3122,
+                  "Y": 0.2601
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 12.4316,
+                "RightMargin": 87.5684,
+                "TopMargin": 63.9904,
+                "BottomMargin": 16.0096,
+                "Tag": 133,
+                "ActionTag": 301728007,
+                "Size": {
+                  "X": 100.0,
+                  "Y": 20.0
+                },
+                "Name": "Text_name",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "res/starBG.png",
+                  "Plist": "ui.plist"
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 25.3626,
+                  "Y": 68.641
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1268,
+                  "Y": 0.6864
+                },
+                "PreSize": {
+                  "X": 0.175,
+                  "Y": 0.35
+                },
+                "LeftMargin": 7.8626,
+                "RightMargin": 157.1374,
+                "TopMargin": 13.859,
+                "BottomMargin": 51.141,
+                "Tag": 137,
+                "ActionTag": 1396909652,
+                "Size": {
+                  "X": 35.0,
+                  "Y": 35.0
+                },
+                "Name": "star_1",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "res/starBG.png",
+                  "Plist": "ui.plist"
+                },
+                "Scale9Width": 35,
+                "Scale9Height": 35,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 61.3184,
+                  "Y": 68.641
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3066,
+                  "Y": 0.6864
+                },
+                "PreSize": {
+                  "X": 0.175,
+                  "Y": 0.35
+                },
+                "LeftMargin": 43.8184,
+                "RightMargin": 121.1816,
+                "TopMargin": 13.859,
+                "BottomMargin": 51.141,
+                "Tag": 138,
+                "ActionTag": 224665872,
+                "Size": {
+                  "X": 35.0,
+                  "Y": 35.0
+                },
+                "Name": "star_2",
+                "ctype": "ImageViewObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "res/starBG.png",
+                  "Plist": "ui.plist"
+                },
+                "Scale9Width": 35,
+                "Scale9Height": 35,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 97.2741,
+                  "Y": 68.641
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4864,
+                  "Y": 0.6864
+                },
+                "PreSize": {
+                  "X": 0.175,
+                  "Y": 0.35
+                },
+                "LeftMargin": 79.7741,
+                "RightMargin": 85.2259,
+                "TopMargin": 13.859,
+                "BottomMargin": 51.141,
+                "Tag": 139,
+                "ActionTag": 1328342874,
+                "Size": {
+                  "X": 35.0,
+                  "Y": 35.0
+                },
+                "Name": "star_3",
+                "ctype": "ImageViewObjectData"
+              }
+            ],
+            "ActionTag": -1229995228,
+            "Size": {
+              "X": 200.0,
+              "Y": 100.0
+            },
+            "Name": "Panel_1",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 200.0,
+          "Y": 100.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Layer"
+}

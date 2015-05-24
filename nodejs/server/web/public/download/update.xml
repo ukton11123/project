@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<update xmlns="http://ns.adobe.com/air/framework/update/description/2.5">
+        <versionNumber>1.0.6</versionNumber>
+        <force>yes</force>
+        <url>http://localhost/public/download/winApp.air</url>
+  <description>
+    <![CDATA[
+	bug更新
+  ]]></description>
+</update>

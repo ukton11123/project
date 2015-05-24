@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {{include "meta"}}
+    <link rel="stylesheet" href="/views/public/zone.css" type="text/css" media="screen"/>
+    <script type='text/javascript' src='/views/public/zone.js'></script>
+    <link rel="stylesheet" href="/public/Img/Skin/{{showUser?showUser.ZoneSkin:0}}/Style.css" type="text/css" media="screen"/>
+    <style>
+        .minheight
+        {
+            min-height: 768px;
+        }
+        .SkinButton
+        {
+            text-align:right;
+            float:right;
+            margin-right:-10px;
+            width:31px;
+            cursor:pointer;
+        }
+    </style>
+    <script language="JavaScript">
+
+    </script>
+</head>
+
+<body>
+
+{{include "head"}}
+<div class="pure-g width1024 center alpha radius margintop10 minheight">
+    <div class="pure-u-1-5 relative" style="width:19%">{{include "zone/menu"}}</div>
+    <div class="pure-u-4-5 relative"  style="width:80%">
+        <div class="SkinButton" onclick="$.colorbox.show('/zone/getSkin','外观风格')"><img src="/public/Img/Skin/sprite_bg.png"/></div>
+        {{include "zone/"+view}}</div>
+</div>
+{{include "bottom"}}
+<!--滚动翻页-->
+<input id="page" type="hidden"  value="{{page}}"/>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        var range = 50;             //距下边界长度/单位px
+        var totalheight = 0;
+        var main = $("#chatListDiv");                     //主体元素
+        $(window).scroll(function(){
+            var srollPos = $(window).scrollTop();    //滚动条距顶部距离(页面超出窗口的高度)
+            //console.log("滚动条到顶部的垂直高度: "+$(document).scrollTop());
+           // console.log("页面的文档高度 ："+$(document).height());
+            //console.log('浏览器的高度：'+$(window).height());
+
+            totalheight = parseFloat($(window).height()) + parseFloat(srollPos);
+            if(($(document).height()-range) <= totalheight) {
+                $("#page").val(parseInt($("#page").val())+1);
+                $.post("/zone/moreChat/{{view}}/{{showUser?showUser.UserCode:0}}/{{chatType}}/"+$("#page").val(),
+                        function(data){
+                            $("#chatListDiv").append(data);
+                        });
+            }
+        });
+    });
+</script>
+</body>
+</html>

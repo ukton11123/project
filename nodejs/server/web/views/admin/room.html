@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{{sysSetup.SiteName}}后台管理系统</title>
+    {{include "../meta"}}
+
+</head>
+<style>
+    .mainDiv {
+        width:1024px;
+        margin-top:10px;
+    }
+</style>
+
+<body>
+{{include "menu"}}
+
+<div class="mainDiv  center radius">
+    <div style="margin: 10px 10px;margin-left: 100px;position:relative;">
+        <h3>房间管理</h3>
+        <form class="pure-form"  action="/admin/room/show" method="post">
+            <input type="text" class="pure-input-rounded" name="RoomCode" value="{{roomCode}}">
+            <button type="submit" class="pure-button">搜索</button>
+        </form>
+        <form class="pure-form pure-form-stacked" name="form1" action="/admin/room/modify/{{roomCode}}" method="post">
+            <fieldset>
+                <legend>
+
+                </legend>
+
+                <div class="pure-g">
+                    {{each rowsfields as fields}}
+                    {{if fields.Comment!=""}}
+                    <div class="pure-u-1-3">
+                        <label >{{fields.Comment}}</label>
+
+                        {{if fields.Field=="LogoURL" && rowData}}
+                        <img src="/{{rowData.LogoURL}}"/>
+                        {{/if}}
+                        {{if fields.Field=="Sex"}}
+                        <select name="Sex" class="pure-input-medium">
+                            <option value="0" {{if rowData && rowData["Sex"]==0}}selected{{/if}}>女</option>
+                            <option value="1" {{if rowData && rowData["Sex"]==1}}selected{{/if}}>男</option>
+                        </select>
+                        {{else if fields.Field=="RoomType"}}
+                        <select name="RoomType" class="pure-input-medium-1">
+
+                            <option value="1" {{if rowData && rowData["RoomType"]==1}}selected{{/if}}>主播聊天室</option>
+                            <option value="2" {{if rowData && rowData["RoomType"]==2}}selected{{/if}}>2屏聊天室</option>
+                            <option value="3" {{if rowData && rowData["RoomType"]==3}}selected{{/if}}>3屏聊天室</option>
+                            <option value="4" {{if rowData && rowData["RoomType"]==4}}selected{{/if}}>4屏聊天室</option>
+                            <option value="10" {{if rowData && rowData["RoomType"]==10}}selected{{/if}}>10人聊天室</option>
+
+                        </select>
+                        {{else if fields.Field=="RoomType1"}}
+                        <select name="RoomType1" class="pure-input-medium-1">
+                            {{each dataRoomType as data}}
+                            {{if !data.UpID}}
+                            <option value="{{data.ID}}" {{if rowData && rowData["RoomType1"]==data.ID}}selected{{/if}}>{{data.Name}}</option>
+                            {{/if}}
+                            {{/each}}
+                        </select>
+                        {{else if fields.Field=="RoomType2"}}
+                        <select name="RoomType2" class="pure-input-medium-1">
+                            {{each dataRoomType as data}}
+                            {{if data.UpID}}
+                            <option value="{{data.ID}}" {{if rowData && rowData["RoomType2"]==data.ID}}selected{{/if}}>{{data.Name}}</option>
+                            {{/if}}
+                            {{/each}}
+                        </select>
+
+                        {{else}}
+                        <input class="pure-input-2-3"  type="text" name="{{fields.Field}}" value="{{if rowData}}{{rowData[fields.Field]}}{{/if}}">
+                        {{/if}}
+
+                    </div>
+                    {{/if}}
+                    {{/each}}
+                </div>
+                <div class="pure-u-1-1 textcenter">
+                    <button type="submit" class="pure-button pure-button-primary" Onclick="form1.action='/admin/room/insert';form1.submit();">新建</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="submit" class="pure-button pure-button-primary">修改</button>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+{{if msg}}
+<script>
+    $.colorbox.showHint('{{msg}}');
+</script>
+{{/if}}
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    {{include "meta"}}
+    <title>软件下载</title>
+    <style type="text/css">
+        body
+        {
+            background-image: url(/public/Img/BG.jpg);
+            background-repeat:repeat;
+            background-attachment:fixed;;
+        }
+        .Main {
+            width:1024px;
+            margin:5px auto;
+            background: rgba(255, 255, 255, 0.5) !important; /* IE无效，FF有效 */
+            filter: alpha(opacity=50);
+            background: #fff;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            word-break:break-all;
+            word-wrap:break-word
+        }
+        .Flash
+        {
+            position:relative;
+        }
+    </style>
+</head>
+
+<body>
+{{include "head"}}
+<div class="Main">
+    <div class="Flash">
+        <table><tr><td>
+            <img src="/public/img/favourite1.png" alt="" width="256" height="256" />
+        </td><td style="font-size: 12px;">
+            <h1>{{sysSetup.ShortName}}下载 </h1>
+            <p><!--<strong>客户端下载 </strong>
+                <a href="/public/download/winApp.exe"><img src="/public/img/Download2.jpg" alt="" width="80" height="30" /></a>-->
+                <strong>桌面快捷方式下载</strong>
+                <a href="/public/download/{{sysSetup.SiteName}}.url"><img src="/public/img/Download.jpg" alt="" width="80" height="30" /></a>
+            </p>
+            <p>最新版本 1.0.3  文件大小: 0.5 MB</p>
+            <p><?=$SiteName?>娱乐平台是一款全新免费在线社区，主要以时尚交流，聊天，交友，娱乐，为主题，与广</p>
+            <p>大用户共同营造和谐社区，打造网络高品位交流平台。</p>
+            <p>	软件特点：</p>
+            <ul>
+                <li>万人KTV 有容乃大 　全新的聊天界面、超清晰的图像接入、立体声宽频语音的传送、享受数万人KTV房间共同K歌的感觉。</li>
+                <li>超清图像 视无忌惮　 对图像进行了优化,3、4屏图像更加流畅清晰,更可全屏收看.体验视觉盛宴带来的超级视觉感受。</li>
+                <li> 立体宽频 天籁之音 　新版的语音质量有了较大幅度的提高, 收听到的语音效果如同本地播放一样圆润动听。</li>
+                <li> 礼物道具 全面俱到 　各种耀眼的虚拟礼物,成为您交朋识友的最佳选择。 </li>
+            </ul>
+        </td></tr></table>
+    </div>
+</div>
+<div style="clear:both"></div>
+<div class="Main">
+    <div class="Flash">
+        <table><tr><td><img src="/public/img/Flash.png" alt="Flash" width="256" height="256" />
+        </td><td style="font-size: 12px;">
+            <p>本站需要Adobe Flash 支持，如不能正常显示，请下载最新版Flash插件</p>
+            <p>	<a href="http://get.adobe.com/cn/flashplayer/"><img src="/public/img/Download.jpg" width="80" height="30" /></a></p>
+            <p>软件大小:16,936KB</p>
+            <h1 id="">Microsoft® Windows®</h1>
+            <ul>
+                <li>2.33GHz 或更快的 x86 兼容处理器，或者 Intel® Atom™ 1.6GHz 或更快的上网本处理器</li>
+                <li>Microsoft® Windows® XP（32 位）、Windows Server 2008（32 位）、Windows Vista®（32 位）、<br />Windows 7（32 位和 64 位）、</li>
+                <li>Windows 8 (32 位和 64 位), 或 Windows Server 2012 (64 位)</li>
+                <li>Internet Explorer 8.0 或更高版本、Mozilla Firefox 17或更高版本、Google Chrome，或者 Opera 11</li>
+                <li>512MB 内存（上网本推荐使用 1GB 内存）；128MB 图形内存</li>
+            </ul>
+            <p>&nbsp;</p>
+        </td></tr></table>
+    </div>
+</div>
+{{include "bottom"}}
+</body>
+
+
+</html>

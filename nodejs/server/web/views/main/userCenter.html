@@ -1,0 +1,27 @@
+<style>
+
+</style>
+
+<div class="pure-g" style="width: 600px;height: 360px;">
+    <div class="pure-u-1-4 textCenter">
+            <div class="font20 b importColor">用户管理中心</div>
+            <br>
+            <div class=""><a onclick='loadHTML("main/user/getModify","divMain");'>修改资料</a></div><br>
+            <div class=""><a  onclick='$("#divMain").load("views/main/modifyPWD.html")'>修改密码</a></div><br>
+            <div class=""><a  onclick='loadHTML("main/bank","divMain");'>我的银行</a></div><br>
+            <div class=""><a  onclick='$("#divMain").load("views/main/modifyPayPWD.html")'>银行密码</a></div><br>
+            <div class=""><a  onclick='$("#divMain").load("views/main/modifyAQ.html")'>设置密保</a></div><br>
+            <div class=""><a  onclick='loadHTML("main/user/myProps","divMain");'>我的道具</a></div><br>
+            <div class=""><a  onclick='loadHTML("main/user/moneyRecord","divMain");'>消费记录</a></div><br>
+    </div>
+    <div class="pure-u-3-4" id="divMain">
+
+    </div>
+</div>
+<script>
+    $(document).ready()
+    {
+        loadHTML("main/user/getModify","divMain");
+    };
+</script>
+

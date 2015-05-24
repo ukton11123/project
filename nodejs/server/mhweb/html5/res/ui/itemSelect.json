@@ -1,0 +1,983 @@
+{
+  "ID": "812cd945-b376-4112-9499-cb3365705fe5",
+  "Version": "2.2.5.0",
+  "Name": "itemSelect",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 65,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/form.png",
+              "Plist": ""
+            },
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 45,
+            "Scale9OriginY": 75,
+            "Scale9Width": 60,
+            "Scale9Height": 95,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 1.0
+            },
+            "Position": {
+              "X": 320.8363,
+              "Y": 871.313
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5013,
+              "Y": 0.767
+            },
+            "PreSize": {
+              "X": 0.9375,
+              "Y": 0.4401
+            },
+            "HorizontalEdge": "BothEdge",
+            "VerticalEdge": "BothEdge",
+            "LeftMargin": 20.8363,
+            "RightMargin": 19.1637,
+            "TopMargin": 264.687,
+            "BottomMargin": 371.313,
+            "Tag": 102,
+            "Children": [
+              {
+                "IsCustomSize": true,
+                "FontSize": 30,
+                "LabelText": "装备选择",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 139.5307,
+                  "Y": 461.717
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2326,
+                  "Y": 0.9234
+                },
+                "PreSize": {
+                  "X": 0.2867,
+                  "Y": 0.08
+                },
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 53.5307,
+                "RightMargin": 374.4693,
+                "TopMargin": 18.283,
+                "BottomMargin": 441.717,
+                "Tag": 103,
+                "ActionTag": -470065717,
+                "Size": {
+                  "X": 172.0,
+                  "Y": 40.0
+                },
+                "Name": "Text_1_2_2_2_3_13",
+                "ctype": "TextObjectData"
+              },
+              {
+                "InnerNodeSize": {
+                  "Width": 650,
+                  "Height": 700
+                },
+                "ScrollDirectionType": "Vertical",
+                "ClipAble": true,
+                "BackColorAlpha": 102,
+                "SingleColor": {
+                  "G": 150,
+                  "B": 100
+                },
+                "FirstColor": {
+                  "R": 101,
+                  "G": 32,
+                  "B": 0
+                },
+                "EndColor": {
+                  "R": 162,
+                  "G": 109,
+                  "B": 85
+                },
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 1.0
+                },
+                "Position": {
+                  "X": 300.3388,
+                  "Y": 416.6649
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5006,
+                  "Y": 0.7863
+                },
+                "PreSize": {
+                  "X": 0.9333,
+                  "Y": 0.76
+                },
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 20.3388,
+                "RightMargin": 19.6612,
+                "TopMargin": 83.3351,
+                "BottomMargin": 36.6649,
+                "Tag": 104,
+                "ActionTag": -1922984621,
+                "Size": {
+                  "X": 560.0,
+                  "Y": 380.0
+                },
+                "Name": "ScrollView_3",
+                "ctype": "ScrollViewObjectData"
+              },
+              {
+                "CheckedState": true,
+                "NormalBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Normal.png",
+                  "Plist": ""
+                },
+                "PressedBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Press.png",
+                  "Plist": ""
+                },
+                "DisableBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Disable.png",
+                  "Plist": ""
+                },
+                "NodeNormalFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBoxNode_Normal.png",
+                  "Plist": ""
+                },
+                "NodeDisableFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBoxNode_Disable.png",
+                  "Plist": ""
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 209.4006,
+                  "Y": 460.7372
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.349,
+                  "Y": 0.9215
+                },
+                "PreSize": {
+                  "X": 0.0333,
+                  "Y": 0.04
+                },
+                "LeftMargin": 199.4006,
+                "RightMargin": 380.5994,
+                "TopMargin": 29.2628,
+                "BottomMargin": 450.7372,
+                "Tag": 105,
+                "ActionTag": -284560792,
+                "Size": {
+                  "X": 20.0,
+                  "Y": 20.0
+                },
+                "Name": "CheckBox_1",
+                "ctype": "CheckBoxObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 14,
+                "LabelText": "全部",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 239.4146,
+                  "Y": 462.0183
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.399,
+                  "Y": 0.924
+                },
+                "PreSize": {
+                  "X": 0.0533,
+                  "Y": 0.08
+                },
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 223.4146,
+                "RightMargin": 344.5854,
+                "TopMargin": 17.9817,
+                "BottomMargin": 442.0183,
+                "Tag": 106,
+                "ActionTag": 538145851,
+                "Size": {
+                  "X": 32.0,
+                  "Y": 40.0
+                },
+                "Name": "Text_1_2_2_2_3_13_0",
+                "ctype": "TextObjectData"
+              },
+              {
+                "CheckedState": true,
+                "NormalBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Normal.png",
+                  "Plist": ""
+                },
+                "PressedBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Press.png",
+                  "Plist": ""
+                },
+                "DisableBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Disable.png",
+                  "Plist": ""
+                },
+                "NodeNormalFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBoxNode_Normal.png",
+                  "Plist": ""
+                },
+                "NodeDisableFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBoxNode_Disable.png",
+                  "Plist": ""
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 274.2473,
+                  "Y": 460.7372
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4571,
+                  "Y": 0.9215
+                },
+                "PreSize": {
+                  "X": 0.0333,
+                  "Y": 0.04
+                },
+                "LeftMargin": 264.2473,
+                "RightMargin": 315.7527,
+                "TopMargin": 29.2628,
+                "BottomMargin": 450.7372,
+                "Tag": 107,
+                "ActionTag": 634869878,
+                "Size": {
+                  "X": 20.0,
+                  "Y": 20.0
+                },
+                "Name": "CheckBox_1_0",
+                "ctype": "CheckBoxObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 14,
+                "LabelText": "普通",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 304.2616,
+                  "Y": 462.0182
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5071,
+                  "Y": 0.924
+                },
+                "PreSize": {
+                  "X": 0.0533,
+                  "Y": 0.08
+                },
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 288.2616,
+                "RightMargin": 279.7384,
+                "TopMargin": 17.9818,
+                "BottomMargin": 442.0182,
+                "Tag": 108,
+                "ActionTag": -1781438464,
+                "Size": {
+                  "X": 32.0,
+                  "Y": 40.0
+                },
+                "Name": "Text_1_2_2_2_3_13_0_0",
+                "ctype": "TextObjectData"
+              },
+              {
+                "CheckedState": true,
+                "NormalBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Normal.png",
+                  "Plist": ""
+                },
+                "PressedBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Press.png",
+                  "Plist": ""
+                },
+                "DisableBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Disable.png",
+                  "Plist": ""
+                },
+                "NodeNormalFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBoxNode_Normal.png",
+                  "Plist": ""
+                },
+                "NodeDisableFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBoxNode_Disable.png",
+                  "Plist": ""
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 336.2307,
+                  "Y": 460.7372
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5604,
+                  "Y": 0.9215
+                },
+                "PreSize": {
+                  "X": 0.0333,
+                  "Y": 0.04
+                },
+                "LeftMargin": 326.2307,
+                "RightMargin": 253.7693,
+                "TopMargin": 29.2628,
+                "BottomMargin": 450.7372,
+                "Tag": 109,
+                "ActionTag": -978847282,
+                "Size": {
+                  "X": 20.0,
+                  "Y": 20.0
+                },
+                "Name": "CheckBox_1_0_0",
+                "ctype": "CheckBoxObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 14,
+                "LabelText": "魔法",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 366.2453,
+                  "Y": 462.0182
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6104,
+                  "Y": 0.924
+                },
+                "PreSize": {
+                  "X": 0.0533,
+                  "Y": 0.08
+                },
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 350.2453,
+                "RightMargin": 217.7547,
+                "TopMargin": 17.9818,
+                "BottomMargin": 442.0182,
+                "Tag": 110,
+                "ActionTag": -285679879,
+                "Size": {
+                  "X": 32.0,
+                  "Y": 40.0
+                },
+                "Name": "Text_1_2_2_2_3_13_0_0_0",
+                "ctype": "TextObjectData"
+              },
+              {
+                "CheckedState": true,
+                "NormalBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Normal.png",
+                  "Plist": ""
+                },
+                "PressedBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Press.png",
+                  "Plist": ""
+                },
+                "DisableBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Disable.png",
+                  "Plist": ""
+                },
+                "NodeNormalFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBoxNode_Normal.png",
+                  "Plist": ""
+                },
+                "NodeDisableFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBoxNode_Disable.png",
+                  "Plist": ""
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 394.1028,
+                  "Y": 460.7372
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6568,
+                  "Y": 0.9215
+                },
+                "PreSize": {
+                  "X": 0.0333,
+                  "Y": 0.04
+                },
+                "LeftMargin": 384.1028,
+                "RightMargin": 195.8972,
+                "TopMargin": 29.2628,
+                "BottomMargin": 450.7372,
+                "Tag": 111,
+                "ActionTag": 1509823521,
+                "Size": {
+                  "X": 20.0,
+                  "Y": 20.0
+                },
+                "Name": "CheckBox_1_0_0_0",
+                "ctype": "CheckBoxObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 14,
+                "LabelText": "稀有",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 424.5805,
+                  "Y": 462.0183
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7076,
+                  "Y": 0.924
+                },
+                "PreSize": {
+                  "X": 0.0533,
+                  "Y": 0.08
+                },
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 408.5805,
+                "RightMargin": 159.4195,
+                "TopMargin": 17.9817,
+                "BottomMargin": 442.0183,
+                "Tag": 112,
+                "ActionTag": 1381974889,
+                "Size": {
+                  "X": 32.0,
+                  "Y": 40.0
+                },
+                "Name": "Text_1_2_2_2_3_13_0_0_0_0",
+                "ctype": "TextObjectData"
+              },
+              {
+                "CheckedState": true,
+                "NormalBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Normal.png",
+                  "Plist": ""
+                },
+                "PressedBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Press.png",
+                  "Plist": ""
+                },
+                "DisableBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Disable.png",
+                  "Plist": ""
+                },
+                "NodeNormalFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBoxNode_Normal.png",
+                  "Plist": ""
+                },
+                "NodeDisableFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBoxNode_Disable.png",
+                  "Plist": ""
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 452.6554,
+                  "Y": 460.7372
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7544,
+                  "Y": 0.9215
+                },
+                "PreSize": {
+                  "X": 0.0333,
+                  "Y": 0.04
+                },
+                "LeftMargin": 442.6554,
+                "RightMargin": 137.3446,
+                "TopMargin": 29.2628,
+                "BottomMargin": 450.7372,
+                "Tag": 113,
+                "ActionTag": -624169154,
+                "Size": {
+                  "X": 20.0,
+                  "Y": 20.0
+                },
+                "Name": "CheckBox_1_0_0_0_0",
+                "ctype": "CheckBoxObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 14,
+                "LabelText": "史诗",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 483.1331,
+                  "Y": 462.0183
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 252,
+                  "G": 0,
+                  "B": 252
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8052,
+                  "Y": 0.924
+                },
+                "PreSize": {
+                  "X": 0.0533,
+                  "Y": 0.08
+                },
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 467.1331,
+                "RightMargin": 100.8669,
+                "TopMargin": 17.9817,
+                "BottomMargin": 442.0183,
+                "Tag": 114,
+                "ActionTag": 1425218274,
+                "Size": {
+                  "X": 32.0,
+                  "Y": 40.0
+                },
+                "Name": "Text_1_2_2_2_3_13_0_0_0_0_0",
+                "ctype": "TextObjectData"
+              },
+              {
+                "CheckedState": true,
+                "NormalBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Normal.png",
+                  "Plist": ""
+                },
+                "PressedBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Press.png",
+                  "Plist": ""
+                },
+                "DisableBackFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBox_Disable.png",
+                  "Plist": ""
+                },
+                "NodeNormalFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBoxNode_Normal.png",
+                  "Plist": ""
+                },
+                "NodeDisableFileData": {
+                  "Type": "Default",
+                  "Path": "Default/CheckBoxNode_Disable.png",
+                  "Plist": ""
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 509.159,
+                  "Y": 460.7372
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8486,
+                  "Y": 0.9215
+                },
+                "PreSize": {
+                  "X": 0.0333,
+                  "Y": 0.04
+                },
+                "LeftMargin": 499.159,
+                "RightMargin": 80.8411,
+                "TopMargin": 29.2628,
+                "BottomMargin": 450.7372,
+                "Tag": 115,
+                "ActionTag": -804262169,
+                "Size": {
+                  "X": 20.0,
+                  "Y": 20.0
+                },
+                "Name": "CheckBox_1_0_0_0_0_0",
+                "ctype": "CheckBoxObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 14,
+                "LabelText": "传奇",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 539.6368,
+                  "Y": 462.0182
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "G": 97,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8994,
+                  "Y": 0.924
+                },
+                "PreSize": {
+                  "X": 0.0533,
+                  "Y": 0.08
+                },
+                "VerticalEdge": "TopEdge",
+                "LeftMargin": 523.6368,
+                "RightMargin": 44.3632,
+                "TopMargin": 17.9818,
+                "BottomMargin": 442.0182,
+                "Tag": 116,
+                "ActionTag": -420996741,
+                "Size": {
+                  "X": 32.0,
+                  "Y": 40.0
+                },
+                "Name": "Text_1_2_2_2_3_13_0_0_0_0_0_0",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "res/close_down.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "res/close_down.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "res/close.png",
+                  "Plist": ""
+                },
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 16,
+                "Scale9Height": 14,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 572.9551,
+                  "Y": 480.7741
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.9549,
+                  "Y": 0.9615
+                },
+                "PreSize": {
+                  "X": 0.1067,
+                  "Y": 0.128
+                },
+                "LeftMargin": 540.9551,
+                "RightMargin": -4.9551,
+                "TopMargin": -12.774,
+                "BottomMargin": 448.7741,
+                "Tag": 124,
+                "ActionTag": 147785617,
+                "Size": {
+                  "X": 64.0,
+                  "Y": 64.0
+                },
+                "Name": "Button_close",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": 1828904698,
+            "Size": {
+              "X": 600.0,
+              "Y": 500.0
+            },
+            "Name": "Panel_1",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Layer"
+}

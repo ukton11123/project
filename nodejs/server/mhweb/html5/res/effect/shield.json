@@ -1,0 +1,493 @@
+{
+  "ID": "ff46210f-a2ef-4244-ab02-7204e035b9df",
+  "Version": "2.2.5.0",
+  "Name": "shield",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 30,
+        "Speed": 1.0,
+        "Timelines": [
+          {
+            "ActionTag": 1077698167,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 308.911,
+                "Y": 427.2819,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Points": [
+                    {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    {
+                      "X": 1.0,
+                      "Y": 1.0
+                    }
+                  ],
+                  "Type": -1
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 122.95,
+                "Y": 481.4,
+                "FrameIndex": 30,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1077698167,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Points": [
+                    {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    {
+                      "X": 1.0,
+                      "Y": 1.0
+                    }
+                  ],
+                  "Type": -1
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.77,
+                "Y": 1.0,
+                "FrameIndex": 30,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1077698167,
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Points": [
+                    {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    {
+                      "X": 1.0,
+                      "Y": 1.0
+                    },
+                    {
+                      "X": 1.0,
+                      "Y": 1.0
+                    }
+                  ],
+                  "Type": -1
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": -12.0,
+                "Y": 78.0,
+                "FrameIndex": 30,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 846972588,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 515.6066,
+                "Y": 481.402,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 308.91,
+                "Y": 427.28,
+                "FrameIndex": 30,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 846972588,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 846972588,
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": 12.0,
+                "Y": -78.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 30,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -186120728,
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": -12.0,
+                "Y": 78.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1204720247,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 140.5339,
+                "Y": 243.8645,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 8
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 306.3486,
+                "Y": 359.2841,
+                "FrameIndex": 15,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 476.4974,
+                "Y": 249.2832,
+                "FrameIndex": 30,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1204720247,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 8
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 1204720247,
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 8
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          }
+        ],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 16,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/effect_shield.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 122.95,
+              "Y": 481.4
+            },
+            "Scale": {
+              "ScaleX": 0.77,
+              "ScaleY": 1.0
+            },
+            "Rotation": -12.0,
+            "RotationSkewX": -12.0,
+            "RotationSkewY": 78.0,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1921,
+              "Y": 0.4238
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 48.95,
+            "RightMargin": 443.05,
+            "TopMargin": 565.1,
+            "BottomMargin": 391.9,
+            "Tag": 17,
+            "ActionTag": 1077698167,
+            "Size": {
+              "X": 148.0,
+              "Y": 179.0
+            },
+            "Name": "effect_shield_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/effect_shield.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 308.91,
+              "Y": 427.28
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4827,
+              "Y": 0.3761
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 234.91,
+            "RightMargin": 257.09,
+            "TopMargin": 619.22,
+            "BottomMargin": 337.78,
+            "Tag": 18,
+            "ActionTag": 846972588,
+            "Size": {
+              "X": 148.0,
+              "Y": 179.0
+            },
+            "Name": "effect_shield_1_0",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/effect_shield.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 122.9493,
+              "Y": 481.4021
+            },
+            "Scale": {
+              "ScaleX": 0.77,
+              "ScaleY": 1.0
+            },
+            "Rotation": -12.0,
+            "RotationSkewX": -12.0,
+            "RotationSkewY": 78.0,
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1921,
+              "Y": 0.4238
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 48.9493,
+            "RightMargin": 443.0507,
+            "TopMargin": 565.0979,
+            "BottomMargin": 391.9021,
+            "Tag": 19,
+            "ActionTag": -186120728,
+            "Size": {
+              "X": 148.0,
+              "Y": 179.0
+            },
+            "Name": "effect_shield_1_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/l1.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 476.4974,
+              "Y": 249.2832
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7445,
+              "Y": 0.2194
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 397.9974,
+            "RightMargin": 85.0026,
+            "TopMargin": 760.2168,
+            "BottomMargin": 122.7832,
+            "Tag": 20,
+            "ActionTag": 1204720247,
+            "Size": {
+              "X": 157.0,
+              "Y": 253.0
+            },
+            "Name": "l1_4",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Layer"
+}

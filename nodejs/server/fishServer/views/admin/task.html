@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    {{include "../meta"}}
+
+</head>
+<style>
+
+    html { overflow-x: auto; overflow-y: auto; }
+    .mainDiv {
+        margin-top:10px;
+        text-align: center;
+        width: 100%;
+
+    }
+</style>
+
+<body>
+{{include "menu"}}
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp{{tableComment}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="window.location.href='/admin/task/show'" class="pure-button">刷新</button></h3>
+
+<table class="pure-table-bordered mainDiv center" border="1">
+    <thead >
+    <tr align="center">
+        {{each fields as field}}
+        <td>
+            {{if field.Comment.substr(1,1)=="_"}}{{field.Comment.substr(2,field.Comment.length)}}{{else}}{{field.Comment}}{{/if}}
+        </td>
+        {{/each}}
+        <td>奖励物品</td>
+        <td>操作</td>
+    </tr>
+    </thead>
+    <tbody>
+    <form class="pure-form pure-form-aligned"  action="/admin/task/insert" method="post">
+        <tr>
+
+
+            {{each fields as field}}
+            <td>
+
+                {{if (field.Field=="preID")}}
+                <select width="200" name="{{field.Field}}">
+                    <option value="0">无</option>
+                    {{each rows as row}}
+                    <option value="{{row["ID"]}}">{{row["name"]}}</option>
+                    {{/each}}
+                </select>
+                {{else if field.Comment.substr(0,2)=="B_"}}
+                <select  name="{{field.Field}}">
+                    <option value="0">否</option>
+                    <option value="1">是</option>
+                </select>
+                {{else if field.Comment.substr(0,2)=="S_"}}
+                <select  name="{{field.Field}}">
+                    {{i=0}}
+                    {{each fields.selectData[field.Comment] as option}}
+                    <option value="{{i}}" >{{option}}</option>
+                    {{i++}}
+                    {{/each}}
+                </select>
+                {{else if (field.Field=="ID")}}
+                {{else if (field.Field=="items")}}
+                {{else}}
+                <input  name="{{field.Field}}"  required type="text" placeholder=""  size="10" value="{{field.Default}}"  placeholder="请输入数据...">
+                {{/if}}
+            </td>
+
+            {{/each}}
+            <td></td>
+            <td><button type="submit" class="pure-button pure-button-primary">新建</button></td>
+
+        </tr>
+    </form>
+
+    {{each rows as row}}
+    <form class="pure-form pure-form-aligned" action="/admin/task/modify/{{row.ID}}" method="post" id="form{{row.ID}}">
+        <tr>
+            {{each fields as field}}
+            <td>
+
+                {{if (field.Field=="preID")}}
+                <select width="200" name="{{field.Field}}">
+                    <option value="0">无</option>
+                    {{each rows as preRow}}
+                    {{if row["ID"]!=preRow["ID"]}}
+                    <option value="{{preRow["ID"]}}" {{row[field.Field]==preRow["ID"]?"selected":""}}>
+                    {{preRow["name"]}}
+                    </option>
+                    {{/if}}
+                    {{/each}}
+                </select>
+
+                {{else if field.Comment.substr(0,2)=="B_"}}
+                <select  name="{{field.Field}}">
+                    <option value="0" {{row[field.Field]==0?"selected":""}}>否</option>
+                    <option value="1" {{row[field.Field]==1?"selected":""}}>是</option>
+                </select>
+                {{else if field.Comment.substr(0,2)=="S_"}}
+                <select  name="{{field.Field}}">
+                    {{i=0}}
+                    {{each fields.selectData[field.Comment] as option}}
+                    <option value="{{i}}" {{row[field.Field]==i?"selected":""}}>{{option}}</option>
+                    {{i++}}
+                    {{/each}}
+                </select>
+
+                {{else }}
+                <input  name="{{field.Field}}"   type="text" placeholder=""   size="10" value="{{row[field.Field]}}">
+
+
+                {{/if}}
+            </td>
+
+            {{/each}}
+
+            <td>
+
+                {{each row.itemDrop as item}}
+                            <span style="color:
+                                {{ if item.quality==1}}#00cc33{{/if}}
+                                {{ if item.quality==2}}#0000cc{{/if}}
+                                {{ if item.quality==3}}#ac5bff{{/if}}
+                                {{ if item.quality==4}}#ee7700{{/if}}
+                                {{ if item.quality==5}}red{{/if}}
+                                ">
+                                {{item.rate}}%{{item.name}}X{{item.amount}}
+                                </span><br>
+                {{/each}}
+            </td>
+
+            <td> <button type="submit" class="pure-button pure-button-primary">修改</button>
+                <button onclick="window.location.href='/admin/task/delete/{{row.ID}}'" class="pure-button">删除</button>
+                <button onclick="window.open('/admin/itemSelect/show/{{row.ID}}/1')" class="pure-button">选择奖励物品</button>
+          </td>
+        </tr>
+    </tbody>
+    </form>
+    {{/each}}
+</table>
+
+</body>
+</html>
+
+{{if msg}}
+<script>
+    $.colorbox.showHint('{{msg}}');
+</script>
+{{/if}}

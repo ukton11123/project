@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <title>{{sysSetup.SiteName}}</title>
+    {{include "meta"}}
+    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+    <script type='text/javascript' src='/public/plugin/banner.js'></script>
+    <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js?d=33" data-appid="101156031" data-redirecturi="http://www.yucool.cn:81/views/QQLogin.html" charset="utf-8"></script>
+
+
+
+
+</head>
+
+<body>
+
+{{include "head"}}
+<div id="banner">
+    <div class="banner" style="background-image: url(/public/img/banner/1.jpg)">
+    </div>
+
+    <div class="banner" style="display: none;background-image: url(/public/img/banner/2.jpg)">
+    </div>
+
+    <div class="banner" style="display: none;background-image: url(/public/img/banner/3.jpg)">
+    </div>
+
+    <div class="banner" style="display: none;background-image: url(/public/img/banner/4.jpg)">
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready()
+    {
+        $("#banner").banner(5000);
+
+    };
+</script>
+
+<div class="mainDiv radius  center">
+    <div class=" leftDiv relative ">
+        <div class="leftSub">
+            {{include "main/mainSide"}}
+        </div>
+    </div>
+
+    <div class=" rightDiv relative" > <div >{{include "main/search"}}</div>
+        <div id="divRoomList"></div></div>
+    <div class="clear"></div>
+</div>
+{{include "bottom"}}
+<input id="myCode" type="hidden" value="{{userCode}}"/>
+
+
+</body>
+</html>
+
+<script>
+    //获取热门
+    getHot();
+</script>
+{{if logined}}
+{{if showSign}}
+<script>
+
+    //加载签到面板
+    CreateFlashPage('UserInfo', '/public/Flash/sign.swf?UserCode={{userCode}}', 420, 320, document);
+</script>
+{{/if}}
+        <script>loadMyInfo()</script>
+{{/if}}
+<input id="searchPage" type="hidden"  value="0"/>
+<input id="searchContent" type="hidden"  value=""/>
+<input id="searchType" type="hidden"/>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($("#searchType").val()=="")
+                return;
+            var srollPos = $(window).scrollTop();    //滚动条距顶部距离(页面超出窗口的高度)
+
+            var totalheight =totalheight = parseFloat($(window).height()) + parseFloat(srollPos);
+            if(($(document).height()) <= totalheight) {
+                $("#searchPage").val(parseInt($("#searchPage").val())+1);
+                loadHTML("main/searchRoom","divRoomList",[$("#searchType").val(),$("#searchPage").val(),$("#searchContent").val()],true)
+            }
+        });
+    });
+</script>
+
+
+
+

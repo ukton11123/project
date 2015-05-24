@@ -1,0 +1,659 @@
+{
+  "ID": "34846d3c-6cce-4688-bc43-696cea186983",
+  "Version": "2.2.5.0",
+  "Name": "info",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 71,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/title.png",
+              "Plist": ""
+            },
+            "Scale9Width": 640,
+            "Scale9Height": 101,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.3689,
+              "Y": 1085.5
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5006,
+              "Y": 0.9555
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 0.0889
+            },
+            "LeftMargin": 0.3689,
+            "RightMargin": -0.3689,
+            "BottomMargin": 1035.0,
+            "Tag": 153,
+            "Children": [
+              {
+                "FontSize": 20,
+                "LabelText": "lv.16",
+                "HorizontalAlignmentType": "HT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 46.8286,
+                  "Y": 49.8097
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0732,
+                  "Y": 0.4932
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 21.8286,
+                "RightMargin": 568.1714,
+                "TopMargin": 41.1903,
+                "BottomMargin": 39.8097,
+                "Tag": 77,
+                "ActionTag": 1290940527,
+                "Size": {
+                  "X": 50.0,
+                  "Y": 20.0
+                },
+                "Name": "Text_level",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 20,
+                "LabelText": "进击的勇士",
+                "HorizontalAlignmentType": "HT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 223.0169,
+                  "Y": 80.2847
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3485,
+                  "Y": 0.7949
+                },
+                "PreSize": {
+                  "X": 0.3125,
+                  "Y": 0.024
+                },
+                "LeftMargin": 123.0169,
+                "RightMargin": 316.9831,
+                "TopMargin": 9.2153,
+                "BottomMargin": 68.7847,
+                "Tag": 78,
+                "ActionTag": -998353386,
+                "Size": {
+                  "X": 200.0,
+                  "Y": 23.0
+                },
+                "Name": "Text_nickName",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "res/money.png",
+                  "Plist": "ui.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 769
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 342.5304,
+                  "Y": 80.7648
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5352,
+                  "Y": 0.7997
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 334.5304,
+                "RightMargin": 289.4696,
+                "TopMargin": 12.2352,
+                "BottomMargin": 72.7648,
+                "Tag": 79,
+                "ActionTag": 995624112,
+                "Size": {
+                  "X": 16.0,
+                  "Y": 16.0
+                },
+                "Name": "ui_money_2",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 20,
+                "LabelText": "998213",
+                "TouchScaleChangeAble": true,
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 407.7798,
+                  "Y": 81.2397
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6372,
+                  "Y": 0.8044
+                },
+                "PreSize": {
+                  "X": 0.1563,
+                  "Y": 0.2376
+                },
+                "LeftMargin": 357.7798,
+                "RightMargin": 182.2202,
+                "TopMargin": 7.7603,
+                "BottomMargin": 69.2397,
+                "Tag": 80,
+                "ActionTag": 689839313,
+                "Size": {
+                  "X": 100.0,
+                  "Y": 24.0
+                },
+                "Name": "Text_money",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "res/token.png",
+                  "Plist": "ui.plist"
+                },
+                "BlendFunc": {
+                  "Src": 770,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 487.7725,
+                  "Y": 80.7648
+                },
+                "Scale": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7621,
+                  "Y": 0.7997
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 471.7725,
+                "RightMargin": 136.2275,
+                "TopMargin": 4.2352,
+                "BottomMargin": 64.7648,
+                "Tag": 81,
+                "ActionTag": 850340040,
+                "Size": {
+                  "X": 32.0,
+                  "Y": 32.0
+                },
+                "Name": "UI_diamond_3",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 20,
+                "LabelText": "5600",
+                "TouchScaleChangeAble": true,
+                "HorizontalAlignmentType": "HT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 556.4035,
+                  "Y": 80.172
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.8694,
+                  "Y": 0.7938
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 501.4035,
+                "RightMargin": 28.5965,
+                "TopMargin": 9.328,
+                "BottomMargin": 68.672,
+                "Tag": 82,
+                "ActionTag": 1493338006,
+                "Size": {
+                  "X": 110.0,
+                  "Y": 23.0
+                },
+                "Name": "Text_token",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 14,
+                "LabelText": "经验",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 5,
+                "ShadowOffsetY": 5,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 174.1272,
+                  "Y": 50.3005
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2721,
+                  "Y": 0.498
+                },
+                "PreSize": {
+                  "X": 0.0437,
+                  "Y": 0.198
+                },
+                "LeftMargin": 160.1272,
+                "RightMargin": 451.8728,
+                "TopMargin": 40.6995,
+                "BottomMargin": 40.3005,
+                "Tag": 83,
+                "ActionTag": -47196932,
+                "Size": {
+                  "X": 28.0,
+                  "Y": 20.0
+                },
+                "Name": "Text_5",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 14,
+                "LabelText": "体力",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 173.9986,
+                  "Y": 29.7099
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2719,
+                  "Y": 0.2942
+                },
+                "PreSize": {
+                  "X": 0.0437,
+                  "Y": 0.198
+                },
+                "LeftMargin": 159.9986,
+                "RightMargin": 452.0014,
+                "TopMargin": 61.2901,
+                "BottomMargin": 19.7099,
+                "Tag": 84,
+                "ActionTag": 453726497,
+                "Size": {
+                  "X": 28.0,
+                  "Y": 20.0
+                },
+                "Name": "Text_5_0",
+                "ctype": "TextObjectData"
+              },
+              {
+                "ProgressInfo": 100,
+                "ImageFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "res/expProgress2.png",
+                  "Plist": "ui.plist"
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 397.184,
+                  "Y": 48.1035
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6206,
+                  "Y": 0.4763
+                },
+                "PreSize": {
+                  "X": 0.5938,
+                  "Y": 0.1584
+                },
+                "HorizontalEdge": "BothEdge",
+                "LeftMargin": 207.184,
+                "RightMargin": 52.816,
+                "TopMargin": 44.8965,
+                "BottomMargin": 40.1035,
+                "Tag": 87,
+                "ActionTag": -1628936563,
+                "Size": {
+                  "X": 380.0,
+                  "Y": 16.0
+                },
+                "Name": "LoadingBar_exp",
+                "ctype": "LoadingBarObjectData"
+              },
+              {
+                "ProgressInfo": 100,
+                "ImageFileData": {
+                  "Type": "MarkedSubImage",
+                  "Path": "res/powerBar.png",
+                  "Plist": "ui.plist"
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 396.5404,
+                  "Y": 28.7907
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6196,
+                  "Y": 0.2851
+                },
+                "PreSize": {
+                  "X": 0.6016,
+                  "Y": 0.1584
+                },
+                "LeftMargin": 204.0404,
+                "RightMargin": 50.9596,
+                "TopMargin": 64.2093,
+                "BottomMargin": 20.7907,
+                "Tag": 89,
+                "ActionTag": -1264488540,
+                "Size": {
+                  "X": 385.0,
+                  "Y": 16.0
+                },
+                "Name": "LoadingBar_power",
+                "ctype": "LoadingBarObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 12,
+                "LabelText": "125/200",
+                "HorizontalAlignmentType": "HT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 394.0404,
+                  "Y": 29.4149
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6157,
+                  "Y": 0.2912
+                },
+                "PreSize": {
+                  "X": 0.3125,
+                  "Y": 0.0146
+                },
+                "LeftMargin": 294.0404,
+                "RightMargin": 145.9596,
+                "TopMargin": 64.5851,
+                "BottomMargin": 22.4149,
+                "Tag": 90,
+                "ActionTag": 1830380318,
+                "Size": {
+                  "X": 200.0,
+                  "Y": 14.0
+                },
+                "Name": "Text_power",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 12,
+                "LabelText": "881/1352",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 395.6015,
+                  "Y": 48.5335
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6181,
+                  "Y": 0.4805
+                },
+                "PreSize": {
+                  "X": 0.3125,
+                  "Y": 0.0146
+                },
+                "LeftMargin": 295.6015,
+                "RightMargin": 144.3985,
+                "TopMargin": 45.4665,
+                "BottomMargin": 41.5335,
+                "Tag": 88,
+                "ActionTag": -655336037,
+                "Size": {
+                  "X": 200.0,
+                  "Y": 14.0
+                },
+                "Name": "Text_exp",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": 424684122,
+            "Size": {
+              "X": 640.0,
+              "Y": 101.0
+            },
+            "Name": "Image_1",
+            "ctype": "ImageViewObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

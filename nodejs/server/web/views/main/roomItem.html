@@ -1,0 +1,17 @@
+
+<div class="left textcenter  roomItem hidden" id="roomItem{{RoomCode}}">
+
+    <div class="info">
+        {{RoomName}}
+    </div>
+    <div class="roomBG">
+        <img id="photo"  onclick="enterRoom({{RoomCode}},{{loginType?loginType:1}})" src="{{LogoURL}}" width="160" height="120" class="RoomImg"/>
+    </div>
+    <div>
+        ID:<font color="red">{{RoomCode}}</font>&nbsp;<font color="#1e90ff">{{MemberCount}}</font>人<img src="/public/img/RoomIcon{{RoomType}}.png"/>
+    </div>
+</div>
+
+<script>
+    $("#roomItem{{RoomCode}}").fadeIn();
+</script>

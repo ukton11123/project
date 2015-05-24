@@ -1,0 +1,328 @@
+{
+  "ID": "0ea399c6-92c4-467e-b51d-85a1af72c571",
+  "Version": "2.2.5.0",
+  "Name": "map1_1",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 600,
+        "Speed": 1.0,
+        "Timelines": [
+          {
+            "ActionTag": 305952672,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 96.5797,
+                "Y": -300.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 30
+                },
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 96.5797,
+                "Y": 1300.0,
+                "FrameIndex": 600,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 305952672,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 0.5,
+                "Y": 0.5,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 30
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.5,
+                "Y": 0.5,
+                "FrameIndex": 600,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": 305952672,
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 30
+                },
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 600,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          }
+        ],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "round/map_1.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.3331,
+              "Y": 568.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.1814
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5005,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 0.3331,
+            "RightMargin": -0.3331,
+            "TopMargin": 88.0,
+            "BottomMargin": 88.0,
+            "Tag": 1,
+            "ActionTag": 125172915,
+            "Size": {
+              "X": 640.0,
+              "Y": 960.0
+            },
+            "Name": "map_1_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "monster/monster1.ExportJson",
+              "Plist": ""
+            },
+            "IsLoop": true,
+            "IsAutoPlay": true,
+            "CurrentAnimationName": "stand",
+            "AnchorPoint": {},
+            "Position": {
+              "X": 320.0,
+              "Y": 568.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 320.0,
+            "RightMargin": 274.0,
+            "TopMargin": 522.0,
+            "BottomMargin": 568.0,
+            "UserData": "{\"kind\":1,\"id\":1}",
+            "Tag": 2,
+            "ActionTag": 607137348,
+            "Size": {
+              "X": 46.0,
+              "Y": 46.0
+            },
+            "Name": "monster_1",
+            "ctype": "ArmatureNodeObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Default",
+              "Path": "Default/Sprite.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 96.5797,
+              "Y": -300.0
+            },
+            "Scale": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1509,
+              "Y": -0.2641
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 73.5797,
+            "RightMargin": 520.4203,
+            "TopMargin": 1413.0,
+            "BottomMargin": -323.0,
+            "Tag": 8,
+            "ActionTag": 305952672,
+            "Size": {
+              "X": 46.0,
+              "Y": 46.0
+            },
+            "Name": "Sprite_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "round/building1.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 487.936,
+              "Y": 772.6979
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7624,
+              "Y": 0.6802
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 331.436,
+            "RightMargin": -4.436,
+            "TopMargin": 199.8021,
+            "BottomMargin": 609.1979,
+            "UserData": "{\"kind\":3}",
+            "Tag": 9,
+            "ActionTag": 125248997,
+            "Size": {
+              "X": 313.0,
+              "Y": 327.0
+            },
+            "Name": "building1_2",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "round/building2.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 99.5702,
+              "Y": 766.5098
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1556,
+              "Y": 0.6747
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 5.0702,
+            "RightMargin": 445.9298,
+            "TopMargin": 207.9902,
+            "BottomMargin": 605.0098,
+            "UserData": "{\"kind\":3}",
+            "Tag": 10,
+            "ActionTag": 1107477389,
+            "Size": {
+              "X": 189.0,
+              "Y": 323.0
+            },
+            "Name": "building2_3",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

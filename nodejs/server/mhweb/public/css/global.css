@@ -1,0 +1,378 @@
+body
+{
+    font-size: 14px;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    font-family: "微软雅黑";
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 0px;
+    overflow:auto;
+    overflow-x:hidden;
+    background: #FBFBFB;
+    /*background-image: url(../Img/BG.jpg);*/
+	/*background-repeat:repeat;*/
+	/*background-attachment:fixed;*/
+}
+
+img{
+	border:none;
+	vertical-align:middle;
+}
+table{
+	border:none;
+	padding:0px;
+	margin:0px;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:0px;
+	font-size:14px;
+}
+.Import{
+	color: #ac5bff;
+	}
+A{
+	border:none;
+	TEXT-DECORATION: none;	
+	color:#000000;
+	cursor:pointer;
+}
+A:link {
+ color:#000000;
+ TEXT-DECORATION: none;
+ 
+ 
+}
+A:visited {
+ COLOR: #000000;
+ TEXT-DECORATION: none
+}
+A:hover {
+ 	COLOR: #ff7f24;
+  TEXT-DECORATION: none;
+  
+}
+A:active {
+ COLOR: #ff7f24;  
+  TEXT-DECORATION: none;
+}
+#Main {
+	height: 768px;
+	width: 1024px;
+}
+#Left {
+	float: left;
+	width:200px;
+	height:768px;
+}
+#Right {
+	float: left;
+	width:824px;
+	height:768px;	
+}
+#MyInfo {
+	height:80px;	
+}
+
+.input{
+	border: 1px solid #666;	
+	width:110px;
+}
+.input2{
+	border: 1px solid #666;	
+}
+
+.ImgTD {
+	background-image: url(../public/Img/Button.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor:pointer;
+}
+.TitleText {
+	font-size: 18px;
+}
+.CenterDiv
+{
+    text-align:center;
+}
+	.Menu {
+		float: left;
+		width: 200px; 
+	}
+	.Line {
+		background-color: #fff;
+		width: 1024px;
+		height: 1px;
+		margin: 0 auto;
+		clear: both;
+	}
+
+	a{
+		cursor:pointer;
+	}
+
+.clear {
+    /* 如果从 .container 中删除了 overflow:hidden，则可以将此类放置在 <br /> 或空 div 中，作为 #container 内最后一个浮动 div 之后的最终元素 */
+    clear: both;
+    height: 0;
+    font-size: 1px;
+    line-height: 0px;
+}
+/*透明效果*/
+.alpha{
+    background: rgba(255, 255, 255, 0.7) !important; /* IE无效，FF有效 */
+    filter: alpha(opacity=70);
+    background: #fff;
+}
+.alphaBlue{
+    background: rgba(15, 183, 255, 0.5) !important; /* IE无效，FF有效 */
+    filter: alpha(opacity=50);
+    background: #0FB7FF;
+}
+.alphaRed{
+    background: rgba(255, 0, 0, 0.5) !important; /* IE无效，FF有效 */
+    filter: alpha(opacity=50);
+    background: #ff0000;
+}
+/*圆角边框*/
+.radius{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+/*居中*/
+.center{
+    margin: 0 auto;
+}
+/*文字居中*/
+.textCenter{
+    text-align: center;
+}
+/*居左*/
+.left{
+    float: left;
+}
+/*居右*/
+.right{
+    float: right;
+}
+/*1024宽*/
+.width1024
+{
+    width: 1024px;
+}
+
+/*边框*/
+.border
+{
+   border: 1px solid #666666;
+}
+/*边框*/
+.borderitem
+{
+    border-top: 1px solid #666666;
+    border-left: 1px solid #666666;
+    margin: -2px -2px;
+}
+/*相对定位,用于透明层之后*/
+.relative
+{
+    position:relative;
+
+}
+.margintop10
+{
+    margin-top: 10px;
+}
+.margin10
+{
+    margin:10px 10px;
+}
+/*照片效果*/
+.photo
+{
+    border:5px solid #FFF;
+}
+/*徽章*/
+.badage
+{
+    width: 20px;
+    background: #bf1f4d;
+    color: #fff;
+    display:-moz-inline-box;
+    display:inline-block;
+    text-align: center;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+/*飞行提示文字*/
+.flyText{
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    background: #ff6f00;
+    filter: alpha(opacity=0);
+    border: 2px #fff solid;
+}
+/*手型鼠标*/
+.hand
+{
+    cursor: pointer;
+}
+/*小字体*/
+.font12
+{
+    font-size: 12px;
+}
+.font14
+{
+    font-size: 14px;
+}
+.font16
+{
+    font-size: 16px;
+}
+.font18
+{
+    font-size: 18px;
+}
+.font20
+{
+    font-size: 20px;
+}
+.font24
+{
+    font-size: 24px;
+}
+/*粗体*/
+.b
+{
+    font-weight: bold;
+}
+/*斜体*/
+.i
+{
+    font-style:italic;
+}
+/*悬停效果*/
+.hover:hover
+{
+    background: #FBFBFB;
+    border: 1px #666666 solid;
+    margin: -2px -2px;
+}
+/*定义高度*/
+.height30
+{
+    height: 30px;
+    line-height: 30px;
+}
+/*换行*/
+.wordbreak
+{
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/*醒目颜色*/
+.importColor{
+    color: #bf1f4d;
+}
+
+.closeButton
+{
+    width: 24px;
+    font-size:14px;
+    text-align:center;
+    cursor:pointer;
+    height:24px;
+    line-height:24px;
+    border:1px solid  #eee;
+    background:#ff9f24;
+    color:#fff;
+    display:inline-block;
+    margin-top:5px;
+    margin-right:5px;
+
+}
+.title {
+    font-size:16px;
+    width:150px;
+    text-align:left;
+    height:30px;
+    line-height:30px;
+    color:#bf1f4d;
+    border-bottom: #bf1f4d 2px solid;
+}
+.button {
+    width: 100px;
+    background: #ff9f24;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    border: 5px solid #eee;
+}
+.whiteBG
+{
+    background: #FBFBFB;
+}
+.overhidden
+{
+    overflow: hidden;
+}
+.orderNum
+{
+    font-style: italic;
+}
+/*边框*/
+.borderBottom
+{
+    border-bottom: 1px #ddd dotted;
+}
+.borderTop
+{
+    border-top: 1px #ddd dotted;
+}
+.borderLeft
+{
+    border-left: 1px #ddd solid;
+}
+.borderRight
+{
+    border-right: 1px #ddd solid;
+}
+.hidden
+{
+    display: none;
+}
+
+.button-green,
+.button-red,
+.button-org,
+.button-blue {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-green {
+    background: rgb(121, 184, 86); /* this is a green */
+}
+
+.button-red {
+    background: rgb(191, 31, 77); /* this is a maroon */
+}
+
+.button-org {
+    background: rgb(223, 104, 22); /* this is an orange */
+}
+
+.button-blue {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}

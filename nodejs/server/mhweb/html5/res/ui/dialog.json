@@ -1,0 +1,388 @@
+{
+  "ID": "c5f86580-e24f-4442-af5a-b1a50fd608cd",
+  "Version": "2.2.5.0",
+  "Name": "dialog",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [
+          {
+            "ActionTag": -163561860,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 320.0,
+                "Y": 568.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -163561860,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -163561860,
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "EasingData": {
+                  "Type": 0
+                },
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          }
+        ],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 46,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/form5.png",
+              "Plist": ""
+            },
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 160,
+            "Scale9OriginY": 83,
+            "Scale9Width": 10,
+            "Scale9Height": 17,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.0,
+              "Y": 568.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 0.8594,
+              "Y": 0.2377
+            },
+            "LeftMargin": 45.0,
+            "RightMargin": 45.0,
+            "TopMargin": 433.0,
+            "BottomMargin": 433.0,
+            "Tag": 47,
+            "Children": [
+              {
+                "IsCustomSize": true,
+                "FontSize": 24,
+                "LabelText": "是否退出游戏?",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 277.805,
+                  "Y": 137.268
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5051,
+                  "Y": 0.5084
+                },
+                "PreSize": {
+                  "X": 4.5455,
+                  "Y": 0.2412
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BothEdge",
+                "LeftMargin": 27.805,
+                "RightMargin": 22.195,
+                "TopMargin": 112.232,
+                "BottomMargin": 116.768,
+                "Tag": 48,
+                "ActionTag": 640453967,
+                "Size": {
+                  "X": 500.0,
+                  "Y": 41.0
+                },
+                "Name": "Text_content_2",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "取消",
+                "TextColor": {},
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "res/button5_down.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "res/button5_down.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "res/button5.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9Width": 150,
+                "Scale9Height": 80,
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 171.8931,
+                  "Y": 62.4995
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3125,
+                  "Y": 0.2315
+                },
+                "PreSize": {
+                  "X": 0.2182,
+                  "Y": 0.1852
+                },
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 111.8931,
+                "RightMargin": 318.1069,
+                "TopMargin": 182.5005,
+                "BottomMargin": 37.4995,
+                "Tag": 56,
+                "ActionTag": 253935557,
+                "Size": {
+                  "X": 120.0,
+                  "Y": 50.0
+                },
+                "Name": "Button_cancle",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 36,
+                "LabelText": "猎魔传说",
+                "HorizontalAlignmentType": "HT_Center",
+                "VerticalAlignmentType": "VT_Center",
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 281.655,
+                  "Y": 219.159
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5121,
+                  "Y": 0.8117
+                },
+                "PreSize": {
+                  "X": 4.5455,
+                  "Y": 0.2412
+                },
+                "HorizontalEdge": "BothEdge",
+                "VerticalEdge": "BothEdge",
+                "LeftMargin": 31.655,
+                "RightMargin": 18.345,
+                "TopMargin": 30.341,
+                "BottomMargin": 198.659,
+                "Tag": 57,
+                "ActionTag": 2007283368,
+                "Size": {
+                  "X": 500.0,
+                  "Y": 41.0
+                },
+                "Name": "Text_content_2_0",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "确定",
+                "TextColor": {},
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "res/button5_down.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "res/button5_down.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "res/button5.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9Width": 150,
+                "Scale9Height": 80,
+                "OutlineSize": 0,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "G": 127,
+                  "B": 80
+                },
+                "ShadowOffsetX": 0,
+                "ShadowOffsetY": 0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 390.8333,
+                  "Y": 62.4995
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7106,
+                  "Y": 0.2315
+                },
+                "PreSize": {
+                  "X": 0.2182,
+                  "Y": 0.1852
+                },
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 330.8333,
+                "RightMargin": 99.1667,
+                "TopMargin": 182.5005,
+                "BottomMargin": 37.4995,
+                "Tag": 58,
+                "ActionTag": 364217049,
+                "Size": {
+                  "X": 120.0,
+                  "Y": 50.0
+                },
+                "Name": "Button_confirm",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": -163561860,
+            "Size": {
+              "X": 550.0,
+              "Y": 270.0
+            },
+            "Name": "Panel_2",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Layer"
+}

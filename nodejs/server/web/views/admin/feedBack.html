@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{{sysSetup.SiteName}}后台管理</title>
+    {{include "../meta"}}
+
+</head>
+<style>
+    .mainDiv {
+        width:1224px;
+        margin-top:10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+{{include "menu"}}
+<div class="mainDiv  center radius">
+    <div style="margin: 10px 10px;position:relative;">
+        <h3>用户意见反馈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="window.location.href='/admin/feedBack/show/{{page}}'" class="pure-button">刷新</button></h3>
+        <table class="pure-table pure-table-horizontal">
+            <thead>
+            <tr align="center">
+                <th>号码</th>
+                <th>内容</th>
+                <th>时间</th>
+                <th>操作</th>
+            </tr>
+
+            </thead>
+
+            <tbody>
+
+            {{each rowsData as row}}
+
+            <tr>
+
+
+                <td>{{row.userCode}}</td>
+                <td>{{row.text}}</td>
+                <td>{{row.time}}</td>
+
+                <td><button onclick="window.location.href='/admin/feedBack/delete/{{row.ID}}'" class="pure-button">删除</button></td>
+
+
+
+
+            </tr>
+
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
+
+{{if msg}}
+<script>
+    $.colorbox.showHint('{{msg}}');
+</script>
+{{/if}}
+</body>
+</html>

@@ -1,0 +1,13 @@
+
+<div>
+    {{each dataSingle as data}}
+    {{include "roomItem" data}}
+    {{/each}}
+</div>
+<div class="title import b ">热门房间</div>
+<div>
+    {{each dataHot as data}}
+        {{include "roomItem" data}}
+    {{/each}}
+</div>
+<div class="clear"></div>

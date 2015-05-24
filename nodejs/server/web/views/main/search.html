@@ -1,0 +1,46 @@
+
+<div class="pure-g " id="divSearch">
+    <div class="pure-u-9-12">
+        <div class="roomTypeMenu   hand  font20  selectedMenu" id="hot" onclick="showMenu(-1);getHot()" onmouseover="showMenu(-1);">热门</div>
+
+        <div  id="Menu0" class="roomTypeMenu   hand  font20 " >
+            <div > <span onmouseover="showMenu(0)" onclick="showMenu(0);searchRoom(13,0,0,this);">我的房间</span><img src="/public/Img/down.png"/></div>
+            <div id="subMenu0" class="subMenu radius">
+                <div class="  hand   font14 subMenuItem"  onclick="searchRoom(11,0,0,this)"> 我收藏的</div>
+                <div class="  hand   font14 subMenuItem"  onclick="searchRoom(12,0,0,this)"> 我创建的</div>
+            </div>
+        </div>
+        {{each dataRoomType as data i}}
+        {{if data.UpID==0}}
+        <div id="Menu{{data.ID}}"  class="roomTypeMenu  hand   font20"  >
+            <div > <span onmouseover="showMenu({{data.ID}})" onclick="showMenu({{data.ID}});searchRoom(1,0,{{data.ID}},this)">{{data.Name}}</span><img src="/public/Img/down.png"/></div>
+            <div id="subMenu{{data.ID}}" class="subMenu radius">
+                {{each dataRoomType as subdata}}
+                {{if subdata.UpID==data.ID}}
+                <div class="  hand   font14 subMenuItem" onclick="searchRoom(2,0,{{subdata.ID}},this)">
+                    {{subdata.Name}}{{if subdata.userCount}}({{subdata.userCount}}){{/if}}</div>
+                {{/if}}
+                {{/each}}
+            </div>
+        </div>
+        {{/if}}
+        {{/each}}
+
+    </div>
+    <div class="pure-u-3-12 searchDiv"><form class="pure-form">
+        <input required type="text" id="searchText"  class="pure-input-rounded" value="房间号码/房间名称" onclick="this.value=''">
+        <img id="btnSearch" src="/public/img/search.png" class="hand" onclick="searchRoom(3,0)" title="搜索房间"/>&nbsp;&nbsp;
+        <span id="userCount" title="当前用户 {{totalCount}} 人" class="importColor i">{{totalCount}}</span><i>人</i>
+    </form>
+    </div>
+</div>
+
+<div class="clear"></div>
+<script>
+    $("body").click(function(){
+        $(".roomTypeMenu .subMenu").hide()
+    })
+    $.setTip("btnSearch");
+    $.setTip("userCount");
+
+</script>

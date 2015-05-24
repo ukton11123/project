@@ -1,0 +1,30 @@
+<style>
+
+    .SkinDiv{
+        width:535px;
+        height:400px;
+        margin-top:40px;
+    }
+    .SkinItem{
+        text-align:center;
+        width:175px;
+        height:100px;
+        line-height:100px;
+        float:left;
+        cursor:pointer;
+    }
+
+
+</style>
+
+<div id="SkinDiv" class="SkinDiv">
+
+
+    {{data=[0,1,2,3,4,5,6,7,8,9,10,11]}}
+    {{each data as i}}
+    <div class="SkinItem radius" >
+        <img onclick="SelectSkin({{i}})" class="Img" src="/public/Img/Skin/{{i}}/themelogo.jpg"/>
+    </div>
+    {{/each}}
+    <div class="clear"></div>
+</div>

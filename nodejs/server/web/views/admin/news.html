@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{{sysSetup.SiteName}}后台管理系统</title>
+    {{include "../meta"}}
+
+</head>
+<style>
+    .mainDiv {
+        width:1224px;
+        margin-top:10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+{{include "menu"}}
+<div class="mainDiv alpha center radius">
+    <div style="margin: 10px 10px;position:relative;">
+        <h3>系统消息管理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="window.location.href='/admin/news/show'" class="pure-button">刷新</button></h3>
+        <table class="pure-table pure-table-horizontal">
+            <thead>
+            <tr align="center">
+                {{each rowsfields as field}}
+                <th>
+                    {{if field.Comment.substr(1,1)=="_"}}
+                    {{field.Comment.substr(2,field.Comment.length)}}
+                    {{else}}
+                    {{field.Comment}}
+                    {{/if}}
+                </th>
+                {{/each}}
+                <th>操作</th>
+                <th>发送</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <form class="pure-form"  action="/admin/news/insert/{{tableName}}" method="post">
+                    {{each rowsfields as field}}
+                    {{if field.Field=="TypeName"}}
+                    <td><select name="TypeName" class="pure-input-medium">
+                        <option value="公告">公告</option>
+                        <option value="新闻">新闻</option>
+                        <option value="更新">更新</option>
+                    </select></td>
+                    {{else}}
+
+                    <td>
+                        {{if field.Field!="ID"}}
+                        <input class="pure-input" required type="text" name="{{field.Field}}" placeholder="请输入数据...">
+                        {{/if}}
+                    </td>
+                    {{/if}}
+                    {{/each}}
+                    <td><button type="submit" class="pure-button pure-button-primary">新建</button></td>
+                </form>
+            </tr>
+            {{each rowsData as row}}
+
+            <tr>
+                <form class="pure-form" accept-charset="utf-8" action="/admin/news/modify/{{row.ID}}" method="post">
+                    {{each rowsfields as field}}
+
+                    <td>
+                        {{if field.Field=="Text"}}
+
+                        <textarea class="pure-input" cols="30"  rows="10" name="{{field.Field}}" >{{row[field.Field]}}</textarea>
+
+                        {{else if field.Field=="TypeName"}}
+                        <select name="TypeName" class="pure-input-medium">
+                            <option value="公告" {{if row.Type=="公告"}}selected{{/if}}>公告</option>
+                            <option value="新闻" {{if row.Type=="新闻"}}selected{{/if}}>新闻</option>
+                            <option value="更新" {{if row.Type=="更新"}}selected{{/if}}>更新</option>
+                        </select>
+                        {{else}}
+                        <input class="pure-input"  {{if field.Field=="ID"}} readonly {{/if}} type="text" name="{{field.Field}}"   value="{{row[field.Field]}}">
+                        {{/if}}
+                    </td>
+
+                    {{/each}}
+                    <td>
+                        <button type="submit" class="pure-button pure-button-primary">修改</button>
+                </form>
+                <button onclick="window.location.href='/admin/news/delete/{{row.ID}}'" class="pure-button">删除</button>
+
+                </td>
+                <td><button onclick="window.location.href='/admin/news/send/{{row.ID}}'" class="pure-button pure-button-primary">发送</button></td>
+
+
+
+
+            </tr>
+
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
+
+{{if msg}}
+<script>
+    $.colorbox.showHint('{{msg}}');
+</script>
+{{/if}}
+</body>
+</html>

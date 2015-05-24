@@ -1,0 +1,44 @@
+<style>
+    #divModify{
+        margin: 10px 10px;
+        width:430px;
+    }
+</style>
+
+<div class="borderLeft">
+    <div id="divModify" class="center">
+
+        <div class="font18 b importColor">消费记录</div>
+        <div class="right hand" onclick='loadHTML("main/user/moneyRecord/{{page-0+1}}","divMain");' ><img src="public/img/next.png"/></div>
+        <div class="right hand" onclick='loadHTML("main/user/moneyRecord/{{page-1>0?page-1:0}}","divMain");'  ><img src="public/img/forward.png"/> </div>
+
+        <div class="clear"></div>
+        <div class="" >
+            <table class="pure-table pure-table-horizontal" width="100%">
+                <thead>
+                <tr align="center">
+                    <th>类型</th>
+                    <th>对象</th>
+                    <th>金额</th>
+                    <th>余额</th>
+                    <th>时间</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                {{each rowsMoney as row}}
+                <tr class="font12">
+                    <td>{{row.recordName}}</td>
+                    <td>{{row.target}}</td>
+                    <td>{{row.money}}</td>
+                    <td>{{row.moneyLess}}</td>
+                    <td>{{row.dealTime}}</td>
+                </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
